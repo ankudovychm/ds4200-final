@@ -1,39 +1,62 @@
-import pandas as pd
 import plotly.graph_objects as go
+import pandas as pd
 
-df = pd.read_csv('data.csv')
+def _code_mapping(df, src, targ):
+    '''
+    Helper function used by make sankey to create labels
+    '''
+    labels = list(set(df[src]).union(set(df[targ])))
+    codes = list(range(len(labels)))
+    lc_map = dict(zip(labels, codes))
+    df = df.replace({src:lc_map, targ:lc_map})
+    return df, labels
 
-df['decade'] = (df['year'] // 10) * 10
+def df_stacking(df, cols, vals=None):
+    '''
+    Helper function used by make sankey to stack dataframes for a multi-layered chart
+    '''
+    df_pairs = []
+    for i in range(len(cols) - 1):
+        if vals:
+            df_pair = df.groupby([cols[i], cols[i + 1]])[vals].sum().reset_index()
+        else:
+            df_pair = df.groupby([cols[i], cols[i + 1]]).apply(lambda x: pd.Series({'value': 1})).reset_index()
 
-df['artists'] = df['artists'].apply(eval)  # Converts string list to actual list
+        df_pair.columns = ['src', 'targ', 'value']
+        df_pairs.append(df_pair)
 
-# Explode the 'artists' column so each artist gets its own row
-df_exploded = df.explode('artists')
+    stacked = pd.concat(df_pairs, axis=0)
+    return stacked
 
-# Count occurrences of each artist per decade
-top_artists_per_decade = df_exploded.groupby(['decade', 'artists']).size().reset_index(name='count')
+def make_sankey(df, cols, vals=None):
+    """
+    A wrapper function to create a Sankey diagram from a dataframe and an arbitrary list of columns.
 
-# Sort and keep only the top 10 artists per decade
-top_artists_per_decade = top_artists_per_decade.sort_values(['decade', 'count'], ascending=[True, False])
-top_artists_per_decade = top_artists_per_decade.groupby('decade').head(10)
+    :param df: Input dataframe with aggregated columns
+    :param cols: List of column names which define the layers of the plot
+    :param vals: column name for values used in plot (optional)
+    :param color: Column to base color intensity on (optional)
+    :return: A new dataframe where labels have been encoded + list of labels
+    """
+    stacked_df = df_stacking(df, cols, vals)
+    df_mapped, labels = _code_mapping(stacked_df, 'src', 'targ')
 
-# Create label mappings
-unique_labels = list(top_artists_per_decade['decade'].unique()) + list(top_artists_per_decade['artists'].unique())
-label_to_index = {label: i for i, label in enumerate(unique_labels)}
+    link = {
+        'source': df_mapped['src'], 
+        'target': df_mapped['targ'], 
+        'value': df_mapped['value'],
+    }
 
-# Define Sankey sources, targets, and values
-sources = top_artists_per_decade['decade'].map(label_to_index)
-targets = top_artists_per_decade['artists'].map(label_to_index)
-values = top_artists_per_decade['count']
+    node = {
+        'label': labels,
+        'pad': 20,
+        'thickness': 15,
+    }
 
-# Create Sankey diagram
-fig = go.Figure(data=[go.Sankey(
-    node=dict(
-        pad=15, thickness=20, line=dict(color="black", width=0.5),
-        label=unique_labels
-    ),
-    link=dict(source=sources, target=targets, value=values)
-)])
-
-fig.update_layout(title_text="Sankey Diagram of Top Artists by Releases per Decade", font_size=10)
-fig.show()
+    sk = go.Sankey(link=link, node=node)
+    fig = go.Figure(sk)
+    fig.update_layout(
+        title="Sankey Diagram of Top Artists by Decade and Genre",
+        font=dict(size=12)
+    )
+    fig.show()
