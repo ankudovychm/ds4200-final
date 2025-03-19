@@ -39,6 +39,25 @@ def find_near_duplicates(df):
 
     return result
 
+def find_year_differences(df):
+
+    # Exclude 'id', 'year', 'popularity', and 'release_date' columns from comparison
+    comparison_cols = [col for col in df.columns if col not in ['id', 'year', 'popularity', 'release_date']]
+
+    # Group by the relevant columns and count unique 'year' and 'id'
+    grouped = df.groupby(comparison_cols).agg(
+        unique_years=('year', 'nunique'),
+        unique_ids=('id', 'nunique')
+    )
+
+    # Find cases where multiple unique years exist
+    duplicates = grouped[grouped['unique_years'] > 1].reset_index()
+
+    # Merge back to get the full row details
+    result = df.merge(duplicates, on=comparison_cols, how='inner')
+
+    return result
+
 
 data_folder = os.path.join(os.path.dirname(__file__))
 # List all CSV files in the Data folder
@@ -56,4 +75,9 @@ df = pd.read_csv("data.csv")  # Load your dataset
 near_duplicates_df = find_near_duplicates(df)
 # Print
 print(near_duplicates_df)
+
+
+print("")
+print("Songs Released in different years")
+print(find_year_differences(df))
 
