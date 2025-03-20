@@ -1,0 +1,200 @@
+:root {
+    --accent-color: #1DB954;
+    --off-green: #c4ffab;
+}
+
+/* General Styling */
+body {
+    font-family: Trebuchet, sans-serif;
+    background: #f0f4f8;
+
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--accent-color);
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-link:hover, .dropdown-content .nav-link:hover {
+    color: var(--off-green);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--accent-color);
+    min-width: 160px;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+}
+
+.dropdown-content .nav-link {
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+    .dropdown-content .nav-link {
+      font-size: 0.9em;
+      font-weight: normal;
+    }
+
+/* Footer styling  */
+footer {
+    text-align: center;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+h1, h2, h3 {
+    color: var( --accent-color);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.1em;
+    color: #666666;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.main{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.textbox{
+    background: white;
+    border-radius: 10px;
+    color: black;
+    width: 70%;
+    padding: 20px;
+}
+
+.textbox a {
+  color:var(--accent-color);
+}
+
+.textbox a:hover {
+  color: var(--off-green);
+}
+
+button.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 12px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card:focus {
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  width: 100%;
+  overflow: hidden;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.card-image {
+    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  outline: 5px solid var(--accent-color);
+  outline-offset: -5px;
+}
+
+.card-body {
+  padding-top: 1rem;
+}
+
+.card-title {
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.card-description {
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card-contain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  padding: 16px;
+  align-items: center;
+  place-items: center;
+}

@@ -3,10 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+<nav id="nav" class="navbar"></nav>
 
-Test
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('nav').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+<br><br><br>
 
+
+<h1>The Sound of Music</h1>
+<div class="subtitle">
+    <p>Investigating how Spotify Music and its Popularity has Changed Over Time</p>
+</div>
+
+
+
+<div class = "main">
+<h2>About the Project</h2>
+
+    <div class = "textbox">
+        Text text text text
+        <br> <br>
+        more text blah blah test
+    </div>
+
+      <br> <br>
+    <h2>About the Data</h2>
+    <div class = "textbox">
+        Text text text text
+        <br> <br>
+        more text blah blah test
+    </div>
+
+    <br> <br>
+    <h2>Reference Papers</h2>
+    <div class = "textbox">
+
+        <ol>
+            <li>
+                <a href="https://www.test.com/"><strong>Paper 1 Name, author etc</strong></a>
+                <br>
+                Lorem ipsum Lorem ipsum Lorem ipsum (Talk about paper)
+            </li>
+               <br><br>
+            <li>
+                <a href="https://www.test.com/"><strong>Paper 2 Name, author etc</strong></a>
+                <br>
+                Lorem ipsum Lorem ipsum Lorem ipsum (Talk about paper)
+            </li>
+        </ol>
+
+    </div>
+
+    <br> <br>
+    <h2>Visualizations</h2>
+
+    <div class="card-contain">
+
+    <button class="card" onclick="window.location.href='viz/network.html'">
+    <div class="card-header">
+        <img src="imgs/viz/network.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Network Chart</h2>
+        <p class="card-description">Desc</p>
+
+    </div>
+</button>
+
+
+    <button class="card" onclick="window.location.href='viz/sankey.html'">
+    <div class="card-header">
+        <img src="imgs/viz/sankey.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Sankey Chart</h2>
+        <p class="card-description">Desc</p>
+
+    </div>
+</button>
+
+
+    <button class="card" onclick="window.location.href='viz/line.html'">
+    <div class="card-header">
+        <img src="imgs/viz/line.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Line Chart</h2>
+        <p class="card-description">Desc</p>
+
+    </div>
+</button>
+
+
+    <button class="card" onclick="window.location.href='viz/scatter.html'">
+    <div class="card-header">
+        <img src="imgs/viz/scatter.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Scatter Chart</h2>
+        <p class="card-description">Desc</p>
+
+    </div>
+</button>
+
+
+    <button class="card" onclick="window.location.href='viz/bar.html'">
+    <div class="card-header">
+        <img src="imgs/viz/bar.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Bar Chart</h2>
+        <p class="card-description">Desc</p>
+
+    </div>
+</button>
+
+        </div>
+
+
+
+</div>
+
+<br> <br><br>
+<footer id="footer"></footer>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    })
+    .catch(error => console.error('Error fetching footer:', error));
+</script>
 </body>
 </html>
