@@ -1,11 +1,26 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
+      <meta charset="UTF-8">
     <title>Title</title>
      <link rel="stylesheet" href="../styles.css">
-</head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
 
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
 <body>
+
 <nav id="nav" class="navbar"></nav>
 
     <script>
@@ -18,24 +33,34 @@
     </script>
 <br><br><br>
 
+<div class="main">
+
 <h1>Line Chart</h1>
+<div class="subtitle">
+    <p>This line chart shows how the average characteristics of songs changed over time.
+    Clicking on any of the Features in the logend allow you to filter to that feature.
+
+    <br> <br>
+      Shift clicking will select multiple, while clicking anywhere else on the chart will reset to
+      all being included.
+
+    </p>
+</div>
 <br><br>
 
 <h2>Visualization</h2>
-<div class="textbox"><iframe
-  id="lineplotFrame"
-  src="../../Graphs/lineplot.html"
-  scrolling="no"
-  style="outline: none; border: none;"
-></iframe>
+  <div class="textbox">
+  <div id="vis"></div>
+
 </div>
 
-<h2>Takeaways</h2>
+  <h2>Takeaways</h2>
 <div class="textbox"></div>
 
 <h2>Methodology</h2>
 <div class="textbox"></div>
 
+</div>
 
 <br> <br><br>
 <footer id="footer"></footer>
@@ -47,18 +72,27 @@
     })
     .catch(error => console.error('Error fetching footer:', error));
   </script>
+
+ <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-ae1da6dba53d44f9dbf243d1fb3445af"}, "mark": {"type": "line", "point": true}, "encoding": {"color": {"field": "feature", "legend": {"labelExpr": "replace(datum.label, '_mean', '')", "title": "Feature"}, "type": "nominal"}, "opacity": {"condition": {"param": "param_1", "value": 1}, "value": 0.1}, "tooltip": [{"field": "decade", "title": "Decade", "type": "ordinal"}, {"field": "feature", "title": "Feature", "type": "nominal"}, {"field": "mean", "format": ".3f", "title": "Mean", "type": "quantitative"}], "x": {"axis": {"labelAngle": -45}, "field": "decade", "title": "Decade", "type": "ordinal"}, "y": {"field": "mean", "scale": {"domain": [0, 1]}, "title": "Feature Value", "type": "quantitative"}}, "height": 450, "params": [{"name": "param_1", "select": {"type": "point", "fields": ["feature"], "toggle": true}, "bind": "legend"}], "title": "Average Song Characteristics Over Decades", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-ae1da6dba53d44f9dbf243d1fb3445af": [{"decade": 1920, "feature": "danceability_mean", "mean": 0.5869626024190402}, {"decade": 1930, "feature": "danceability_mean", "mean": 0.5416644360666037}, {"decade": 1940, "feature": "danceability_mean", "mean": 0.4734760892183639}, {"decade": 1950, "feature": "danceability_mean", "mean": 0.47685818136020147}, {"decade": 1960, "feature": "danceability_mean", "mean": 0.4946971558647501}, {"decade": 1970, "feature": "danceability_mean", "mean": 0.52492741}, {"decade": 1980, "feature": "danceability_mean", "mean": 0.5463854861460957}, {"decade": 1990, "feature": "danceability_mean", "mean": 0.566081830058791}, {"decade": 2000, "feature": "danceability_mean", "mean": 0.5741422528759035}, {"decade": 2010, "feature": "danceability_mean", "mean": 0.597418944067968}, {"decade": 2020, "feature": "danceability_mean", "mean": 0.6929043349753695}, {"decade": 1920, "feature": "energy_mean", "mean": 0.23513321907920406}, {"decade": 1930, "feature": "energy_mean", "mean": 0.28665499771703845}, {"decade": 1940, "feature": "energy_mean", "mean": 0.25489632130316037}, {"decade": 1950, "feature": "energy_mean", "mean": 0.28675285340050377}, {"decade": 1960, "feature": "energy_mean", "mean": 0.41451975640697736}, {"decade": 1970, "feature": "energy_mean", "mean": 0.5337163684}, {"decade": 1980, "feature": "energy_mean", "mean": 0.5947152916372797}, {"decade": 1990, "feature": "energy_mean", "mean": 0.5860663286870007}, {"decade": 2000, "feature": "energy_mean", "mean": 0.6515856146594727}, {"decade": 2010, "feature": "energy_mean", "mean": 0.6290113693486397}, {"decade": 2020, "feature": "energy_mean", "mean": 0.6312316354679803}, {"decade": 1920, "feature": "instrumentalness_mean", "mean": 0.3771808998361295}, {"decade": 1930, "feature": "instrumentalness_mean", "mean": 0.276706906440465}, {"decade": 1940, "feature": "instrumentalness_mean", "mean": 0.36317575564832877}, {"decade": 1950, "feature": "instrumentalness_mean", "mean": 0.24779513398287153}, {"decade": 1960, "feature": "instrumentalness_mean", "mean": 0.15757783257046398}, {"decade": 1970, "feature": "instrumentalness_mean", "mean": 0.116031112901}, {"decade": 1980, "feature": "instrumentalness_mean", "mean": 0.12226880702115868}, {"decade": 1990, "feature": "instrumentalness_mean", "mean": 0.10974444665896187}, {"decade": 2000, "feature": "instrumentalness_mean", "mean": 0.08384779384912959}, {"decade": 2010, "feature": "instrumentalness_mean", "mean": 0.08742008918933954}, {"decade": 2020, "feature": "instrumentalness_mean", "mean": 0.01637552430541872}, {"decade": 1920, "feature": "liveness_mean", "mean": 0.21091022239563012}, {"decade": 1930, "feature": "liveness_mean", "mean": 0.22563888365273851}, {"decade": 1940, "feature": "liveness_mean", "mean": 0.2213433606450774}, {"decade": 1950, "feature": "liveness_mean", "mean": 0.2092191435768262}, {"decade": 1960, "feature": "liveness_mean", "mean": 0.20868729858304774}, {"decade": 1970, "feature": "liveness_mean", "mean": 0.216406105}, {"decade": 1980, "feature": "liveness_mean", "mean": 0.20463920906801006}, {"decade": 1990, "feature": "liveness_mean", "mean": 0.1965469222652128}, {"decade": 2000, "feature": "liveness_mean", "mean": 0.19558161814109742}, {"decade": 2010, "feature": "liveness_mean", "mean": 0.18955559320319612}, {"decade": 2020, "feature": "liveness_mean", "mean": 0.17853541871921183}, {"decade": 1920, "feature": "speechiness_mean", "mean": 0.29147506827936015}, {"decade": 1930, "feature": "speechiness_mean", "mean": 0.2040650120431459}, {"decade": 1940, "feature": "speechiness_mean", "mean": 0.15384684614384186}, {"decade": 1950, "feature": "speechiness_mean", "mean": 0.09367880604534005}, {"decade": 1960, "feature": "speechiness_mean", "mean": 0.05773077395263185}, {"decade": 1970, "feature": "speechiness_mean", "mean": 0.05976392}, {"decade": 1980, "feature": "speechiness_mean", "mean": 0.062035234256926954}, {"decade": 1990, "feature": "speechiness_mean", "mean": 0.0805281091402442}, {"decade": 2000, "feature": "speechiness_mean", "mean": 0.08771882826020565}, {"decade": 2010, "feature": "speechiness_mean", "mean": 0.0988584353191059}, {"decade": 2020, "feature": "speechiness_mean", "mean": 0.14138369458128078}, {"decade": 1920, "feature": "acousticness_mean", "mean": 0.8015542322278579}, {"decade": 1930, "feature": "acousticness_mean", "mean": 0.8676937093831814}, {"decade": 1940, "feature": "acousticness_mean", "mean": 0.8709742469892053}, {"decade": 1950, "feature": "acousticness_mean", "mean": 0.8403343648916877}, {"decade": 1960, "feature": "acousticness_mean", "mean": 0.6240131855143485}, {"decade": 1970, "feature": "acousticness_mean", "mean": 0.40016156956099996}, {"decade": 1980, "feature": "acousticness_mean", "mean": 0.29863357417128467}, {"decade": 1990, "feature": "acousticness_mean", "mean": 0.30753306716948897}, {"decade": 2000, "feature": "acousticness_mean", "mean": 0.26976103569327087}, {"decade": 2010, "feature": "acousticness_mean", "mean": 0.2640940249974714}, {"decade": 2020, "feature": "acousticness_mean", "mean": 0.21993088809359604}, {"decade": 1920, "feature": "valence_mean", "mean": 0.5421426082715567}, {"decade": 1930, "feature": "valence_mean", "mean": 0.5678957074039167}, {"decade": 1940, "feature": "valence_mean", "mean": 0.4878297984133177}, {"decade": 1950, "feature": "valence_mean", "mean": 0.4785971750176322}, {"decade": 1960, "feature": "valence_mean", "mean": 0.551939326308251}, {"decade": 1970, "feature": "valence_mean", "mean": 0.58509794}, {"decade": 1980, "feature": "valence_mean", "mean": 0.5644203088161209}, {"decade": 1990, "feature": "valence_mean", "mean": 0.5449972061705443}, {"decade": 2000, "feature": "valence_mean", "mean": 0.5302951820726866}, {"decade": 2010, "feature": "valence_mean", "mean": 0.4563707010215434}, {"decade": 2020, "feature": "valence_mean", "mean": 0.5010478078817734}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
 </body>
 </html>
 
-<script>
-  const iframe = document.getElementById('lineplotFrame');
-  iframe.addEventListener('load', () => {
-    try {
-      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-      iframe.style.height = iframeDoc.body.scrollHeight +10 + 'px';
-      iframe.style.width = iframeDoc.body.scrollWidth+10 + 'px';
-    } catch (error) {
-      console.error('Error adjusting iframe dimensions:', error);
-    }
-  });
-</script>
+

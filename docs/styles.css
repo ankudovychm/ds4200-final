@@ -161,7 +161,6 @@ button.card {
   width: 100%;
   overflow: hidden;
   background-color: #d9d9d9;
-  border-radius: 10px;
 }
 
 .card-image {
@@ -197,4 +196,31 @@ button.card {
   padding: 16px;
   align-items: center;
   place-items: center;
+}
+
+/* Bar chart filter buttons styles */
+.vega-bind-radio input[type="radio"] {
+  margin-right: 8px;
+  accent-color: var(--accent-color);
+     cursor: pointer;
+}
+
+.vega-bind-radio label {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin-right: 5px;
+margin-top: 5px;
+  border-radius: 5px;
+  background: #f0f4f8;
+  color: black;
+  cursor: pointer;
+
+}
+
+.vega-bind-radio label:hover {
+    background: var(--accent-color);
+    color: white;
+     transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
