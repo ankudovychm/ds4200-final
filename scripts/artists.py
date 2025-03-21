@@ -40,7 +40,7 @@ df_top_artists['genres'] = df_top_artists['genres'].str[0]
 
 # Drop duplicates
 df_top_artists = df_top_artists.drop_duplicates(subset=['decade', 'artists', 'genres'])
+df_top_artists_sorted = df_top_artists.sort_values(by='decade', ascending=True)
 
-# Create Sankey plot (Decade → Artist → Genre), color-coded by count
 cols = ["decade", "artists", "genres"]
-make_sankey(df_top_artists, cols, 'count')
+make_sankey(df_top_artists_sorted, cols, 'count')
