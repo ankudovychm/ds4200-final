@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
       <meta charset="UTF-8">
-    <title>Title</title>
+    <title>DS4300 Final Group 28 - Scatter Chart</title>
      <link rel="stylesheet" href="../styles.css">
   <style>
     #vis.vega-embed {
@@ -54,10 +54,26 @@
 </div>
 
   <h2>Takeaways</h2>
-<div class="textbox"></div>
+<div class="textbox">
+
+Many of the charts show a variability in what is most popular and common, which demonstrates how there is no one way to make a popular song due to individual taste. This applies to acousticness, valence, and danceability where we see wide spreads in how the songs score on the attribute and popularity. For valence and danceability, there was no clear trend. Songs seem to have any value of these attributes and any popularity. For acousticness, we saw the most insightful bimodal distribution. While songs of any acousticness could be popular, there are strong clusters showing that non-acoustic songs are more popular while acoustic songs are less popular.
+<br><br>
+Other musical attributes show that one level of the metric is vastly more common and so both popular and unpopular songs are at the same level. Speechiness, liveness, and instrumentalness fall into this category. For speechiness, nearly all songs are at zero, indicating that they are purely musical, rather than spoken word. This means that not much can be predicted about if a song will be popular based on its speechiness score. We do see some unpopular spoken pieces, which are likely spoken comedy recordings. There are also some songs at moderate speechiness, likely rap songs, that vary in popularity. For liveness, most songs on Spotify are not live recordings, but there are some. It seems that, when given the choice, people mostly prefer to not listen to a live recording, but there are some popular ones that could be iconic performances, or songs that have faux audience elements that appeal to people but aren’t scoring high enough to be confidently live recordings. For instrumentalness, most songs on Spotify have vocals and songs with vocals are much more common.
+    <br><br>
+Overall, this figure provides a broad picture of the availability of different types of songs and how popular the types are. For some attributes, this shows the overwhelming popularity (both by listeners and musicians) for one polar end of an attribute, while for others it shows the individual taste and variability available.
+
+
+
+
+
+
+
+</div>
 
 <h2>Methodology</h2>
-<div class="textbox"></div>
+<div class="textbox">
+    This is a random sample from all songs in the dataset, so it reflects songs from all years. Each point represents an individual song. Click and drag to select songs on any chart and it will highlight those same songs on the other chart, allowing you to see how it measures up on the other musical attributes. This allows us to compare which levels of each music attribute are most popular and most common.
+</div>
 
 </div>
 

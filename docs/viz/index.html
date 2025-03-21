@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>DS4300 Final Group 28 - Visualizations</title>
+     <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
+<nav id="nav" class="navbar"></nav>
+
+    <script>
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('nav').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+<br><br><br>
+
+
+   <h1>Visualizations</h1>
+
+    <div class="card-contain">
+
+    <button class="card" onclick="window.location.href='viz/network.html'">
+    <div class="card-header">
+        <img src="../imgs/viz/network.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Network Chart</h2>
+        <p class="card-description">Desc</p>
+
+    </div>
+</button>
+
+
+    <button class="card" onclick="window.location.href='viz/sankey.html'">
+    <div class="card-header">
+        <img src="../imgs/viz/sankey.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Sankey Chart</h2>
+        <p class="card-description">Shows how closely related differnet genres are to each other</p>
+
+    </div>
+</button>
+
+
+    <button class="card" onclick="window.location.href='viz/line.html'">
+    <div class="card-header">
+        <img src="../imgs/viz/line.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Line Chart</h2>
+        <p class="card-description">Shows the prevalence of song characteristics over time</p>
+
+    </div>
+</button>
+
+
+    <button class="card" onclick="window.location.href='viz/scatter.html'">
+    <div class="card-header">
+        <img src="../imgs/viz/scatter.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Scatter Chart</h2>
+        <p class="card-description">Shows the relationship between popularity and song characteristics</p>
+
+    </div>
+</button>
+
+
+    <button class="card" onclick="window.location.href='viz/bar.html'">
+    <div class="card-header">
+        <img src="../imgs/viz/bar.png" class="card-image">
+    </div>
+    <div class="card-body">
+
+        <h2 class="card-title">Bar Chart</h2>
+        <p class="card-description">Shows the average characteristics of songs over time.</p>
+
+    </div>
+</button>
+
+        </div>
+
+
+
+</div>
+
+<br> <br><br>
+<footer id="footer"></footer>
+<script>
+  fetch('../footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    })
+    .catch(error => console.error('Error fetching footer:', error));
+</script>
 
 </body>
 </html>

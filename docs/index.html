@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>DS4300 Final Group 28 - Home</title>
      <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -39,9 +39,23 @@
       <br> <br>
     <h2>About the Data</h2>
     <div class = "textbox">
-        Text text text text
-        <br> <br>
-        more text blah blah test
+        	The dataset is sourced from Spotify’s API (<a href="https://developer.spotify.com/documentation/web-api">documentation here</a>) and published on <a href="https://www.kaggle.com/datasets/vatsalmavani/spotify-dataset/data">Kaggle</a>.  It includes a number of categorical and quantitative data points. In the dataset, there are a number of different views, with data from 1921 to 2020. They include data on specific songs, as well as averaged by genre, year, and artist. The full dataset features this information for over 170,000 songs, and there are 19 total attributes for each. This project will focus mainly on the songs data, which includes data on each song, such as genre, artists, release date and popularity. It also includes ‘vibe’ based metrics about the song, which are defined in detail below. We focused on these attributes of songs that capture aspects that make people like specific songs over others.
+Musical Attributes (<a href="https://developer.spotify.com/documentation/web-api/reference/get-audio-features">more info here</a>):
+        <br><br>
+All attributes are scored on a scale from 0.0 to 1.0, and determined by the Spotify Algorithm.
+Speechiness - The presence of spoken words in a track. The more exclusively speech-like the recording, the higher the value. Values above 0.66 describe tracks that are likely entirely spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, including rap music. Values below 0.33 are likely only music.
+ <br><br>
+        <strong>Acousticness -</strong> A confidence measure of whether the track is acoustic, where 1.0 is highly likely to be acoustic.
+ <br><br>
+        <strong>Liveness -</strong> Detects the presence of an audience in the recording. A value above 0.8 provides strong likelihood that the track was performed live.
+ <br><br>
+        <strong>Danceability -</strong> How suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity, higher values being more danceable.
+ <br><br>
+        <strong>Valence -</strong> A measure of the musical positiveness conveyed by a track. Tracks with high valence values sound more positive, while tracks with low valence sound more negative.
+ <br><br>
+        <strong>Instrumentalness -</strong> Predicts whether a track contains no vocals, values above 0.5 having a good likelihood of containing no vocal content. Vocals here refers to words, not sounds such as “ooh” and “aah”.
+
+
     </div>
 
     <br> <br>
@@ -76,7 +90,7 @@
     <div class="card-body">
 
         <h2 class="card-title">Network Chart</h2>
-        <p class="card-description">Desc</p>
+        <p class="card-description">Shows how closely related differnet genres are to each other.</p>
 
     </div>
 </button>
@@ -89,7 +103,7 @@
     <div class="card-body">
 
         <h2 class="card-title">Sankey Chart</h2>
-        <p class="card-description">Desc</p>
+        <p class="card-description">Shows the top artists per decade.</p>
 
     </div>
 </button>
@@ -102,7 +116,7 @@
     <div class="card-body">
 
         <h2 class="card-title">Line Chart</h2>
-        <p class="card-description">Desc</p>
+        <p class="card-description">Shows the prevalence of song characteristics over time</p>
 
     </div>
 </button>
@@ -115,7 +129,7 @@
     <div class="card-body">
 
         <h2 class="card-title">Scatter Chart</h2>
-        <p class="card-description">Desc</p>
+        <p class="card-description">Shows the relationship between popularity and song characteristics</p>
 
     </div>
 </button>
@@ -128,7 +142,7 @@
     <div class="card-body">
 
         <h2 class="card-title">Bar Chart</h2>
-        <p class="card-description">Desc</p>
+        <p class="card-description">Shows the average characteristics of songs over time.</p>
 
     </div>
 </button>
