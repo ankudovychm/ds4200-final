@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-72d73462715dea3ff926a63dcd87876b"}, "mark": {"type": "bar"}, "encoding": {"color": {"condition": {"param": "param_1", "field": "attribute", "legend": null, "scale": {"range": ["#4C78A8", "#F58517", "#72B7B2", "#53A24A", "#EECA3B", "#B379A2"]}, "type": "ordinal"}, "value": null}, "x": {"field": "value", "scale": {"domain": [0, 1]}, "stack": null, "title": "Average Value", "type": "quantitative"}, "y": {"field": "attribute", "sort": ["speechiness", "acousticness", "liveness", "danceability", "valence", "instrumentalness"], "title": "Musical Attributes", "type": "ordinal"}}, "height": 300, "params": [{"name": "param_1", "select": {"type": "point", "fields": ["decade"]}, "bind": {"input": "radio", "options": ["1920s", "1930s", "1940s", "1950s", "1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"], "name": "Decades: "}, "value": "2020s"}], "title": "Average Musical Attributes of Decades' Most Popular Songs", "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-72d73462715dea3ff926a63dcd87876b": [{"attribute": "speechiness", "decade": "1920s", "value": 0.0875823416506718}, {"attribute": "acousticness", "decade": "1920s", "value": 0.942866142034549}, {"attribute": "liveness", "decade": "1920s", "value": 0.19900767754318616}, {"attribute": "danceability", "decade": "1920s", "value": 0.6120057581573896}, {"attribute": "valence", "decade": "1920s", "value": 0.607641650671785}, {"attribute": "instrumentalness", "decade": "1920s", "value": 0.3920845347024952}, {"attribute": "speechiness", "decade": "1930s", "value": 0.22777259565667013}, {"attribute": "acousticness", "decade": "1930s", "value": 0.79616525336091}, {"attribute": "liveness", "decade": "1930s", "value": 0.22047693898655638}, {"attribute": "danceability", "decade": "1930s", "value": 0.5914413650465357}, {"attribute": "valence", "decade": "1930s", "value": 0.573621302998966}, {"attribute": "instrumentalness", "decade": "1930s", "value": 0.19251461723888313}, {"attribute": "speechiness", "decade": "1940s", "value": 0.10508155583437892}, {"attribute": "acousticness", "decade": "1940s", "value": 0.8630475407779171}, {"attribute": "liveness", "decade": "1940s", "value": 0.22352942283563362}, {"attribute": "danceability", "decade": "1940s", "value": 0.4720163111668758}, {"attribute": "valence", "decade": "1940s", "value": 0.45307547051442904}, {"attribute": "instrumentalness", "decade": "1940s", "value": 0.26080675392722713}, {"attribute": "speechiness", "decade": "1950s", "value": 0.05772428146679881}, {"attribute": "acousticness", "decade": "1950s", "value": 0.7892346878097126}, {"attribute": "liveness", "decade": "1950s", "value": 0.18187755203171455}, {"attribute": "danceability", "decade": "1950s", "value": 0.504134935579782}, {"attribute": "valence", "decade": "1950s", "value": 0.5049917244796829}, {"attribute": "instrumentalness", "decade": "1950s", "value": 0.1362434617096135}, {"attribute": "speechiness", "decade": "1960s", "value": 0.04987902240325866}, {"attribute": "acousticness", "decade": "1960s", "value": 0.5303050512729124}, {"attribute": "liveness", "decade": "1960s", "value": 0.19708671079429735}, {"attribute": "danceability", "decade": "1960s", "value": 0.5103977596741344}, {"attribute": "valence", "decade": "1960s", "value": 0.5882624745417514}, {"attribute": "instrumentalness", "decade": "1960s", "value": 0.09405520307026476}, {"attribute": "speechiness", "decade": "1970s", "value": 0.05397935046049442}, {"attribute": "acousticness", "decade": "1970s", "value": 0.357949828230732}, {"attribute": "liveness", "decade": "1970s", "value": 0.1760720794958798}, {"attribute": "danceability", "decade": "1970s", "value": 0.5538734852157053}, {"attribute": "valence", "decade": "1970s", "value": 0.6041968007755696}, {"attribute": "instrumentalness", "decade": "1970s", "value": 0.06730680567135239}, {"attribute": "speechiness", "decade": "1980s", "value": 0.051349284657128756}, {"attribute": "acousticness", "decade": "1980s", "value": 0.26278355223482974}, {"attribute": "liveness", "decade": "1980s", "value": 0.17646176615688208}, {"attribute": "danceability", "decade": "1980s", "value": 0.5847911692155896}, {"attribute": "valence", "decade": "1980s", "value": 0.5960747903305377}, {"attribute": "instrumentalness", "decade": "1980s", "value": 0.06368121194375924}, {"attribute": "speechiness", "decade": "1990s", "value": 0.0731865440464666}, {"attribute": "acousticness", "decade": "1990s", "value": 0.24537146051790898}, {"attribute": "liveness", "decade": "1990s", "value": 0.18473610842207164}, {"attribute": "danceability", "decade": "1990s", "value": 0.597307115198451}, {"attribute": "valence", "decade": "1990s", "value": 0.5644551306873185}, {"attribute": "instrumentalness", "decade": "1990s", "value": 0.052274442526621494}, {"attribute": "speechiness", "decade": "2000s", "value": 0.07948342143200385}, {"attribute": "acousticness", "decade": "2000s", "value": 0.21477698374819795}, {"attribute": "liveness", "decade": "2000s", "value": 0.1840738106679481}, {"attribute": "danceability", "decade": "2000s", "value": 0.605988467083133}, {"attribute": "valence", "decade": "2000s", "value": 0.5537182123978855}, {"attribute": "instrumentalness", "decade": "2000s", "value": 0.03895833380586256}, {"attribute": "speechiness", "decade": "2010s", "value": 0.10631658536585366}, {"attribute": "acousticness", "decade": "2010s", "value": 0.2595592034146342}, {"attribute": "liveness", "decade": "2010s", "value": 0.170870199556541}, {"attribute": "danceability", "decade": "2010s", "value": 0.6518219068736142}, {"attribute": "valence", "decade": "2010s", "value": 0.46821606651884695}, {"attribute": "instrumentalness", "decade": "2010s", "value": 0.027500581893569846}, {"attribute": "speechiness", "decade": "2020s", "value": 0.12409571428571428}, {"attribute": "acousticness", "decade": "2020s", "value": 0.20801186666666668}, {"attribute": "liveness", "decade": "2020s", "value": 0.16908619047619047}, {"attribute": "danceability", "decade": "2020s", "value": 0.7205238095238096}, {"attribute": "valence", "decade": "2020s", "value": 0.5229776190476191}, {"attribute": "instrumentalness", "decade": "2020s", "value": 0.004231971904761905}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
