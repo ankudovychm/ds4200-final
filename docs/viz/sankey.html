@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <title>DS4300 Final Group 28 - Sankey Chart</title>
+     <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav id="nav" class="navbar"></nav>
+
+<script>
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('nav').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+<br><br><br>
+
+<div class="main">
+
+<h1>Sankey Chart</h1>
+<div class="subtitle">
+    <p>
+This Sankey shows the makeup of the most popular artists, as well as their genre by eah decade.
+    <br> <br>
+The color scales shows the average popularity for each, scaled individually for decade, artist, and genre.
+
+    </p>
+</div>
+<br><br>
+
+<h2>Visualization</h2>
+  <div class="textbox">
+  <div id="vis"></div>
+
+</div>
+
+  <h2>Takeaways</h2>
+<div class="textbox">
+    The Sankey diagram provides an overview of how musical trends, artists, and genres have evolved over the past century. By tracking the top artists of each decade and their associated genres, we can observe the dynamic shifts in popular music preferences, cultural influences, and the emergence of new styles over time. In the early decades, classical, jazz, and tango were dominant, with composers like Igor Stravinsky and Ludwig van Beethoven, alongside jazz icons like Billie Holiday, shaping the soundscape. As we move into the mid-20th century, rock and roll, blues, and country music began to take center stage, reflecting the cultural revolutions of the time. The influence of bands like The Beatles, The Rolling Stones, and Fleetwood Mac in the 1960s and 1970s highlights the peak of rock’s dominance, while the 1980s introduced a blend of classic rock, dance pop, and alternative music.
+
+<br><br>
+    The 1990s marked the rise of hip-hop, grunge, and alternative rock, with artists like Nirvana, The Notorious B.I.G., and 2Pac shaping the music industry. This shift continued into the 2000s and beyond, where hip-hop and pop became the defining genres, fueled by artists such as Kendrick Lamar, Drake, and Taylor Swift. The visualization also highlights how certain artists maintain relevance across multiple decades, showing their lasting impact on the industry. Additionally, the increasing variety of genres and subgenres—such as alternative metal, k-pop, hip-hop, and baroque pop—demonstrates the diversification of music and the influence of globalization and digital streaming in shaping modern listening habits. The Sankey diagram effectively captures this transformation, revealing both the persistence of classic influences and the continuous reinvention of musical styles in response to cultural, technological, and generational changes.
+
+</div>
+
+<h2>Methodology</h2>
+<div class="textbox">
+
+    The Sankey diagram visually
+represents the flow of musical
+influence across decades while
+maintaining clarity and
+organization. Each node is
+distinguished by colored
+blocks using a grayscale
+gradient based on their
+values/counts, emphasizing the
+prominence of decades, artists,
+and genres. The connections
+between artists and genres
+illustrate key trends in musical
+evolution, with the varying
+widths of flow lines further
+highlighting their influence in
+specific eras. This format is
+particularly effective for
+showcasing the progression
+of musical styles and artist
+impact without overwhelming
+viewers with excessive details.
+The inclusion of genre labels
+on the right provides additional
+context, helping to pinpoint
+major shifts in popular music
+trends. By structuring the
+visualization this way, users
+can explore both overarching
+patterns and specific
+relationships, gaining a
+deeper understanding of
+how music has evolved
+across generations.
+</div>
+
+</div>
+
+<br> <br><br>
+<footer id="footer"></footer>
+<script>
+  fetch('../footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    })
+    .catch(error => console.error('Error fetching footer:', error));
+  </script>
+
+<script>
+  fetch('../ChartFiles/sankey.html')
+    .then(response => response.text())
+    .then(html => {
+      // Parse the fetched HTML string into a document
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, "text/html");
+      // Extract the body content of the fetched document
+      const bodyContent = doc.body.innerHTML;
+      const container = document.getElementById('vis');
+      container.innerHTML = bodyContent;
+
+      // Find and re-add any script tags in the inserted content so that they execute
+      const scripts = container.querySelectorAll('script');
+      scripts.forEach(oldScript => {
+        const newScript = document.createElement('script');
+        if (oldScript.src) {
+          newScript.src = oldScript.src;
+        } else {
+          newScript.textContent = oldScript.textContent;
+        }
+        document.body.appendChild(newScript);
+      });
+    })
+    .catch(error => console.error('Error loading sankey visualization:', error));
+</script>
+
+</body>
+</html>

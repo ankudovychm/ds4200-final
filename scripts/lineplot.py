@@ -2,7 +2,7 @@ import pandas as pd
 import altair as alt
 
 # Load data
-df = pd.read_csv('data.csv')
+df = pd.read_csv('../data/data.csv')
 
 # Create 'decade' column
 df['decade'] = (df['year'] // 10) * 10
@@ -60,11 +60,13 @@ chart = alt.Chart(df_melted).mark_line(point=True).encode(
         alt.Tooltip('mean:Q', title='Mean', format='.3f')
     ]
 ).properties(
-    width=700,
+    width='container',
     height=450,
     title='Average Song Characteristics Over Decades'
 ).add_params(
-    selection)
+    selection
+)
+chart.autosize = {"type": "fit", "contains": "padding"}
 
 # Save the chart to an HTML file
-chart.save('chart.html')
+chart.save('../docs/ChartFiles/line.html')

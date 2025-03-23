@@ -20,7 +20,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+     z-index: 1000;
 }
+
 
 .nav-link {
     color: #ffffff;
@@ -48,7 +50,8 @@ body {
     background-color: var(--accent-color);
     min-width: 160px;
     border-radius: 0 0 10px 10px;
-    z-index: 1;
+    z-index: 9999;
+    box-shadow: black;
 }
 
 .dropdown-content .nav-link {
@@ -123,6 +126,11 @@ h2 {
     font-size: 1.125rem;
     line-height: 1.6;
     letter-spacing: 0.5px;
+}
+
+#vis{
+    width: 100%;
+
 }
 
 .textbox a {
@@ -232,3 +240,4 @@ margin-top: 5px;
 .textbox strong {
     color: var(--accent-color);
 }
+

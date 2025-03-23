@@ -31,9 +31,6 @@ def df_stacking(df, cols, vals=None):
     stacked = pd.concat(df_pairs, axis=0)
     return stacked
 
-import pandas as pd
-import plotly.graph_objects as go
-import matplotlib.pyplot as plt
 
 def make_sankey(df, cols, vals=None, popularity_cols=None):
     """
@@ -98,9 +95,30 @@ def make_sankey(df, cols, vals=None, popularity_cols=None):
 
         rgba_colors.append(f'rgba({int(c[0]*255)}, {int(c[1]*255)}, {int(c[2]*255)}, 1)')
 
+
+    # This is for the custom hover
+    # Compute incoming and outcoming values for each node
+    incoming_dict = df_mapped.groupby('targ')['value'].sum().to_dict()
+    outcoming_dict = df_mapped.groupby('src')['value'].sum().to_dict()
+
+    incoming = []
+    outcoming = []
+    for i in range(len(labels)):
+        incoming.append(incoming_dict.get(i, 0))
+        outcoming.append(outcoming_dict.get(i, 0))
+
+    # Build customdata for each node: [num, pop, incoming, outcoming]
+    customdata = []
+    for i in range(len(labels)):
+        num_val = node_counts[i]      # Total count for the node
+        pop_val = round(node_popularity[i], 2)  # Average popularity for the node
+        inc_val = incoming[i]
+        out_val = outcoming[i]
+        customdata.append([num_val, pop_val, inc_val, out_val])
+
     link = {
-        'source': df_mapped['src'], 
-        'target': df_mapped['targ'], 
+        'source': df_mapped['src'],
+        'target': df_mapped['targ'],
         'value': df_mapped['value'],
     }
 
@@ -108,13 +126,65 @@ def make_sankey(df, cols, vals=None, popularity_cols=None):
         'label': labels,
         'pad': 20,
         'thickness': 15,
-        'color': rgba_colors  # Nodes colored by popularity type
+        'color': rgba_colors,
+        'customdata': customdata,
+        'hovertemplate': "<span style='display:block; text-align:center'><b>%{label}</b></span><br><b>Count:</b> %{customdata[0]}<br><b>Avg. Popularity:</b> %{customdata[1]}<br><b>Incoming Flow:</b> %{customdata[2]}<br><b>Outgoing Flow:</b> %{customdata[3]}<extra></extra>",
     }
 
-    sk = go.Sankey(link=link, node=node)
+    sk = go.Sankey(link=link, node=node, domain=dict(x=[0.15, 0.85], y=[0, 1]))
     fig = go.Figure(sk)
     fig.update_layout(
         title="Sankey Diagram of Artists, Genres, and Decades (Colored by Popularity)",
-        font=dict(size=12)
+        font=dict(size=12),
+        height=900,
+        margin=dict(l=50, r=50, t=50, b=150)
     )
-    fig.write_html("sankey.html")
+
+    custom_headers = ['Decade', 'Artists', 'Genre']
+    custom_colormaps = ['Oranges', 'Blues', 'Greens']
+
+    # Compute actual min and max popularity for each
+    min_decade = min(pop_maps['avg_popularity_decade'].values())
+    max_decade = max(pop_maps['avg_popularity_decade'].values())
+    min_artist = min(pop_maps['avg_popularity'].values())
+    max_artist = max(pop_maps['avg_popularity'].values())
+    min_genre = min(pop_maps['avg_popularity_genre'].values())
+    max_genre = max(pop_maps['avg_popularity_genre'].values())
+    pop_ranges = [
+        (min_decade, max_decade),
+        (min_artist, max_artist),
+        (min_genre, max_genre)
+    ]
+
+    for i, header in enumerate(custom_headers):
+        dummy_trace = go.Scatter(
+            x=[None],
+            y=[None],
+            mode='markers',
+            marker=dict(
+                colorscale=custom_colormaps[i],
+                cmin=pop_ranges[i][0],
+                cmax=pop_ranges[i][1],
+                color=[(pop_ranges[i][0] + pop_ranges[i][1]) / 2],  # Midpoint of the range
+                showscale=True,
+                colorbar=dict(
+                    title=header,
+                    orientation='h',
+                    x=0.15 + i * 0.35,
+                    xanchor='center',
+                    y=-0.1,            # position below the chart
+                    yanchor='top',
+                    len=0.25,
+                    thickness=15,
+                    xpad=10,
+                    ypad=10
+                )
+            ),
+            hoverinfo='none',
+            showlegend=False
+        )
+        fig.add_trace(dummy_trace)
+
+    fig.update_xaxes(showticklabels=False, zeroline=False)
+    fig.update_yaxes(showticklabels=False, zeroline=False)
+    fig.write_html("../docs/ChartFiles/sankey.html")

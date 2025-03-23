@@ -1,10 +1,10 @@
 import pandas as pd
 import ast
-from sankey import make_sankey
+from scripts.processing.sankey import make_sankey
 
 # Read the data
-data1 = pd.read_csv('data.csv')
-data2 = pd.read_csv('data_w_genres.csv')
+data1 = pd.read_csv('../Data/data.csv')
+data2 = pd.read_csv('../Data/data_w_genres.csv')
 
 # Convert string lists to actual lists
 data1['artists'] = data1['artists'].apply(ast.literal_eval)
@@ -61,4 +61,4 @@ df_top_artists_sorted['avg_popularity_genre'] = df_top_artists_sorted['avg_popul
 # Use count for flow, and pass all three popularity metrics
 cols = ["decade", "artists", "genres"]
 
-make_sankey(df_top_artists_sorted, cols, 'count', ['avg_popularity', 'avg_popularity_decade', 'avg_popularity_genre'])  
+make_sankey(df_top_artists_sorted, cols, 'count', ['avg_popularity', 'avg_popularity_decade', 'avg_popularity_genre'])
