@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>DS4300 Final Group 28 - Network Chart</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../styles.css">
+
+
+    <script src="../JS/multiselect-dropdown.js"></script>
+    <script src="../JS/CreateSliders.js"></script> <!-- Holds the code for the modular sliders-->
+    <script type="text/javascript" src="../JS/coRef.js"></script>
+
+    <!-- Holds the code for the network viz-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+<nav id="nav" class="navbar"></nav>
+
+    <script>
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('nav').innerHTML = html;
+            })
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+<br><br><br>
+
+<div class="main">
+    <h1>Network Chart</h1>
+<div class="subtitle">
+    <p>This bar chart shows which genres are most closely related
+
+    <br> <br>
+     You can filter below the chart. Hovering shows genres that are connected to the node, and clicking will take
+        you to a map of artists of that genre on Spotify.
+
+    </p>
+</div>
+<br><br>
+
+<h2>Visualization</h2>
+<div class="textbox">
+    <h4 style="text-align: center;">Co-occurance Network of Genres</h4>
+    <div id="vis"></div>
+
+
+  <!--  Filters! -->
+
+                <div id="FiltersandTitle">
+
+                <div id="contains"
+                    style="background-color: #fff; margin: 0px; padding: 10px; display: flex; align-items: center;">
+
+                    <div id="first">
+                        <input type="checkbox" id="filterCheckbox" name="filterCheckbox"
+                            style="transform: scale(1.5); margin-right: 10px;">
+                        <label for="filterCheckbox" style="color: #7a7369; font-size: 16px;">Show Neighbor Nodes Outside
+                            of Filter Parameters on Hover</label>
+                    </div>
+
+                    <!-- The spacer div will push the second div to 25% of the width -->
+                    <div style="flex-grow: 1;"></div>
+
+                    <div style="color: #7a7369;" id="second">
+                        <label for="site-search">Search for genre by name:</label>
+                        <input type="search" id="site-search" name="q" />
+                        <button onclick="Searched()">Search</button>
+                    </div>
+
+                </div>
+
+                <div class="Filter-Container" id="Filter-Container">
+
+
+                    <!--There is a modular filter builder, this uses the CreateSliders.js file to build filters-->
+
+                    <div class="child">
+
+
+                        <h3>Community Filter</h3>
+
+                        <div class="slider" style="color: #7a7369;">
+
+
+                            <select name="comms" id="comms" multiple multiple multiselect-search="true"
+                                multiselect-select-all="true">
+
+                                <!-- Holds a bunch of different options for community. This could maybe be done better?-->
+                                <option value="0.0">0</option>
+                                <option value="1.0">1</option>
+                                <option value="2.0">2</option>
+                                <option value="3.0">3</option>
+                                <option value="4.0">4</option>
+                                <option value="5.0">5</option>
+                                <option value="6.0">6</option>
+                                <option value="7.0">7</option>
+                                <option value="8.0">8</option>
+                                <option value="9.0">9</option>
+                                <option value="10.0">10</option>
+                                <option value="11.0">11</option>
+                                <option value="12.0">12</option>
+                                <option value="13.0">13</option>
+                                <option value="14.0">14</option>
+                                <option value="15.0">15</option>
+                                <option value="16.0">16</option>
+                                <option value="17.0">17</option>
+                                <option value="18.0">18</option>
+                                <option value="19.0">19</option>
+                                <option value="20.0">20</option>
+
+                            </select>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <script>
+                        CreateSlider('degree', 1, 'Filter-Container', 1);
+                        CreateSlider('betweenness', .01, 'Filter-Container', .01);
+                        CreateSlider('eigenvector', .01, 'Filter-Container', .05);
+                    </script>
+
+                </div>
+            </div>
+
+        </div>
+</div>
+
+  <h2>Takeaways</h2>
+<div class="textbox">
+
+
+</div>
+
+<h2>Methodology</h2>
+<div class="textbox">
+
+
+
+</div>
+
+</div>
+
+<br> <br><br>
+<footer id="footer"></footer>
+<script>
+  fetch('../footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    })
+    .catch(error => console.error('Error fetching footer:', error));
+  </script>
+
+
+</body>
+
+        <script src='https://code.jquery.com/jquery.min.js'></script>
+        <script type="text/javascript">
+            $(function () {
+                loadGraph("coref.json", "vis");
+
+                // Function to clear all graphs from all containers
+                function clearAllGraphs() {
+                    $('.network').remove();
+                    // Clear any existing graph content inside all graph containers
+
+                }
+
+                // General function to load the corresponding graph script into the specific container
+                async function loadGraph(graphScript, containerID) {
+
+                    // Create new network div
+                    var div_string = '<div style="width: 100%;"  class="network"></div>';
+
+                    // Insert the div into the container with the provided containerID. Th
+                    $(div_string).appendTo(document.getElementById(containerID));
+
+                    // Insert the graph
+                    await graph("../ChartFiles/" + graphScript);
+
+                    document.getElementById("comms").loadOptions();
+                }
+            });
+        </script>
+
+</html>
