@@ -246,7 +246,7 @@ function UpdateFilters(dataset, node, link, label) {
     label.text(d => d.name).attr('visibility', function (o) {
         // If a node is neighbor with source, show text -- if not, don't.
 
-        if (NewNodes.includes(o.__proto__.id) && o.__proto__.degree > 3) {
+        if (NewNodes.includes(o.__proto__.id) && o.__proto__.degree > 75) {
             return "visible";
         }
 

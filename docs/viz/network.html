@@ -136,18 +136,83 @@
             </div>
 
         </div>
-</div>
+
 
   <h2>Takeaways</h2>
 <div class="textbox">
+The first and most obvious observation from this exploration is that Spotify has a massive amount of genres, over 6,000 in fact!
+    The chart on this page had to be very limited to only show the top genres as well as the smaller genres connected to them,
+    as an introduction into the data.
+
+    <br><br>
+    After filtering by these most prevalent genre, we see that there are large hubs or typical genres, typically with one large
+    genre (ie pop or rock) as its main node, with a lot of smaller sub-genres branching off of it. The vast majority of these smaller
+    genres have only one connection with the larger umbrella category (such as 'Psychedelic Soul' -> 'Funk'); while the larger umbrella nodes
+    such as 'Rock' and 'Pop' generally reach out across the network.
+    <br><br>
+However, there are some less prevalent genres that act as a connection point between different areas on the graph.
+    One example, is 'singer songwriter', which is actually connected to every community on the graph, despite being a
+    relatively uncommon genre.
 
 
 </div>
 
 <h2>Methodology</h2>
 <div class="textbox">
+First, the data had to be processed, as the original dataset represented genres in a string of comma seperated values.
+    So, that column was processed into a list of lists representing the genres for each entry.
+
+    <br><br>
+After processing the data, songs with only one genre were reomved, and fed into a network algorithm to compute the
+    various metrics for each node and relationship, turning it into a JSON file. This JSON file was then read in by a D3.js
+    force directed network graph to create the chart.
+<br><br>
+    <strong> The Metrics Are:</strong>
+    <br>
+    <ul>
+                            <li>
+                                <strong>Node:</strong> The circles, each representing a different genre.
+                            </li>
+         <br>
+                            <li>
+                                <strong>Edge:</strong> The lines, each representing a connection between two genres.
+                            </li>
+        <br>
+                            <li>
+                                <strong>Degree:</strong> Counts the number of edges connected to a node.
+                                A node with more connections will appear larger in the visualization.
+                            </li>
+        <br>
+                            <li>
+                                <strong>Modularity/Community:</strong> Groups nodes into distinct communities
+                                based on the strength of their connections with one another. Nodes within the
+                                same community are more interconnected, and each community is represented by
+                                a unique color.
+                            </li>
+        <br>
+                            <li>
+                                <strong>Betweenness:</strong> A measure of importance. Specifically, this measures
+                                how important a node is for connecting other nodes, by capturing how often a
+                                node is on the shortest path between other nodes.
+                            </li>
+        <br>
+                            <li>
+                                <strong>Eigenvector:</strong> A measure of importance. Specifically, it both counts
+                                the number of connections a node has and also how well-connected its connections are.
+                                A node scores higher if it links to other nodes that themselves have many connections.
+                            </li>
+                        </ul>
+
+    <br><br>
+    Additionally, you are able to interact with the graph through a number of filter sliders, limiting to certain values
+    for the computer network attributes, or by certain algorithmically defined communities.
+       <br><br>
+    Finally, you are able to use the search bar to search for your favorite genre, and clicking on a node takes you to
+    a site that lists all artists in that genre on Spotify, allowing ou to scan through their music.
 
 
+
+</div>
 
 </div>
 

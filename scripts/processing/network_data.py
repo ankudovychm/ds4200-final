@@ -127,7 +127,7 @@ def build_json_structure(genre_entries):
     return network_json
 
 # For filtering how many show up.. no filtering you get massive chart
-DEFAULT_TOP_N = 5
+DEFAULT_TOP_N = 10
 DEFAULT_MIN_DEGREE = 20
 
 

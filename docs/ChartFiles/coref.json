@@ -1,8 +1,8 @@
 {
     "metrics": {
         "num_entries": "13649",
-        "num_nodes": 412,
-        "num_edges": 912
+        "num_nodes": 488,
+        "num_edges": 1716
     },
     "directed": false,
     "multigraph": false,
@@ -33,10 +33,20 @@
             "betweenness": 0.0014638863610207582,
             "eigenvector": 0.0005743964925609826,
             "degree_cent": 0.009315657470440702,
-            "modularity": 1,
+            "modularity": 2,
             "id": "sadrap",
             "genre_name": "sad rap",
             "name": "Sad Rap"
+        },
+        {
+            "degree": 33,
+            "betweenness": 0.0018983184812824986,
+            "eigenvector": 0.0012703656629110295,
+            "degree_cent": 0.011823719097097814,
+            "modularity": 2,
+            "id": "calirap",
+            "genre_name": "cali rap",
+            "name": "Cali Rap"
         },
         {
             "degree": 36,
@@ -63,7 +73,7 @@
             "betweenness": 0.0035160449929919693,
             "eigenvector": 0.1247476477568271,
             "degree_cent": 0.054460766750268716,
-            "modularity": 0,
+            "modularity": 3,
             "id": "dancerock",
             "genre_name": "dance rock",
             "name": "Dance Rock"
@@ -73,7 +83,7 @@
             "betweenness": 0.00415923089281982,
             "eigenvector": 0.07530552688615004,
             "degree_cent": 0.03618774632748119,
-            "modularity": 0,
+            "modularity": 3,
             "id": "newromantic",
             "genre_name": "new romantic",
             "name": "New Romantic"
@@ -83,7 +93,7 @@
             "betweenness": 0.004439472562009831,
             "eigenvector": 0.08855329592145578,
             "degree_cent": 0.04693658187029738,
-            "modularity": 1,
+            "modularity": 3,
             "id": "newwave",
             "genre_name": "new wave",
             "name": "New Wave"
@@ -97,6 +107,16 @@
             "id": "newwavepop",
             "genre_name": "new wave pop",
             "name": "New Wave Pop"
+        },
+        {
+            "degree": 41,
+            "betweenness": 0.0006732108702072265,
+            "eigenvector": 0.0010126040702537506,
+            "degree_cent": 0.014690075241848798,
+            "modularity": 2,
+            "id": "indier&b",
+            "genre_name": "indie r&b",
+            "name": "Indie R&B"
         },
         {
             "degree": 147,
@@ -133,7 +153,7 @@
             "betweenness": 0.004070595208635793,
             "eigenvector": 0.025282190420286482,
             "degree_cent": 0.04514510927982802,
-            "modularity": 0,
+            "modularity": 3,
             "id": "numetal",
             "genre_name": "nu metal",
             "name": "Nu Metal"
@@ -143,7 +163,7 @@
             "betweenness": 0.0008560044431333356,
             "eigenvector": 0.004684756129532592,
             "degree_cent": 0.015406664278036546,
-            "modularity": 0,
+            "modularity": 3,
             "id": "rapmetal",
             "genre_name": "rap metal",
             "name": "Rap Metal"
@@ -293,7 +313,7 @@
             "betweenness": 0.0025901086513766824,
             "eigenvector": 0.0019787801082007594,
             "degree_cent": 0.018631314940881404,
-            "modularity": 1,
+            "modularity": 0,
             "id": "christianrock",
             "genre_name": "christian rock",
             "name": "Christian Rock"
@@ -303,7 +323,7 @@
             "betweenness": 0.000339815633567722,
             "eigenvector": 0.01580928246471125,
             "degree_cent": 0.015048369759942672,
-            "modularity": 1,
+            "modularity": 0,
             "id": "postgrunge",
             "genre_name": "post-grunge",
             "name": "Post-Grunge"
@@ -323,7 +343,7 @@
             "betweenness": 0.005023865952992129,
             "eigenvector": 0.04721682817449643,
             "degree_cent": 0.04084557506270154,
-            "modularity": 1,
+            "modularity": 0,
             "id": "lilith",
             "genre_name": "lilith",
             "name": "Lilith"
@@ -333,7 +353,7 @@
             "betweenness": 0.0015107870463798656,
             "eigenvector": 0.31247832141968357,
             "degree_cent": 0.04299534217126478,
-            "modularity": 0,
+            "modularity": 3,
             "id": "mellowgold",
             "genre_name": "mellow gold",
             "name": "Mellow Gold"
@@ -343,7 +363,7 @@
             "betweenness": 0.010536139761590792,
             "eigenvector": 0.09055035651237658,
             "degree_cent": 0.07237549265496238,
-            "modularity": 1,
+            "modularity": 0,
             "id": "poprock",
             "genre_name": "pop rock",
             "name": "Pop Rock"
@@ -363,7 +383,7 @@
             "betweenness": 0.02314420626042665,
             "eigenvector": 0.07496593151359145,
             "degree_cent": 0.05159441060551773,
-            "modularity": 0,
+            "modularity": 3,
             "id": "adultstandards",
             "genre_name": "adult standards",
             "name": "Adult Standards"
@@ -373,7 +393,7 @@
             "betweenness": 0.0038034714974034592,
             "eigenvector": 0.27487105671558343,
             "degree_cent": 0.04442852024364027,
-            "modularity": 0,
+            "modularity": 3,
             "id": "albumrock",
             "genre_name": "album rock",
             "name": "Album Rock"
@@ -383,7 +403,7 @@
             "betweenness": 0.01842410257452446,
             "eigenvector": 0.18545214273112354,
             "degree_cent": 0.07488355428161948,
-            "modularity": 0,
+            "modularity": 3,
             "id": "artrock",
             "genre_name": "art rock",
             "name": "Art Rock"
@@ -393,7 +413,7 @@
             "betweenness": 0.003870971186725709,
             "eigenvector": 0.31375085450361234,
             "degree_cent": 0.046578287352203505,
-            "modularity": 0,
+            "modularity": 3,
             "id": "classicrock",
             "genre_name": "classic rock",
             "name": "Classic Rock"
@@ -403,7 +423,7 @@
             "betweenness": 0.0022589667008429907,
             "eigenvector": 0.07839902533953662,
             "degree_cent": 0.029380150483697597,
-            "modularity": 0,
+            "modularity": 3,
             "id": "classicukpop",
             "genre_name": "classic uk pop",
             "name": "Classic Uk Pop"
@@ -413,7 +433,7 @@
             "betweenness": 0.002344685756334749,
             "eigenvector": 0.29292058185173225,
             "degree_cent": 0.057327122895019705,
-            "modularity": 0,
+            "modularity": 3,
             "id": "folkrock",
             "genre_name": "folk rock",
             "name": "Folk Rock"
@@ -423,7 +443,7 @@
             "betweenness": 0.0006170066909519268,
             "eigenvector": 0.029418894630028107,
             "degree_cent": 0.02149767108563239,
-            "modularity": 0,
+            "modularity": 3,
             "id": "glamrock",
             "genre_name": "glam rock",
             "name": "Glam Rock"
@@ -433,7 +453,7 @@
             "betweenness": 0.02943434386450586,
             "eigenvector": 0.3345467640100374,
             "degree_cent": 0.10569688283769257,
-            "modularity": 0,
+            "modularity": 3,
             "id": "rock",
             "genre_name": "rock",
             "name": "Rock"
@@ -443,7 +463,7 @@
             "betweenness": 0.009412700095921841,
             "eigenvector": 0.2868001809393959,
             "degree_cent": 0.04586169831601576,
-            "modularity": 0,
+            "modularity": 3,
             "id": "softrock",
             "genre_name": "soft rock",
             "name": "Soft Rock"
@@ -453,7 +473,7 @@
             "betweenness": 0.004246347669126003,
             "eigenvector": 0.07205937194026563,
             "degree_cent": 0.029021855965603725,
-            "modularity": 0,
+            "modularity": 3,
             "id": "symphonicrock",
             "genre_name": "symphonic rock",
             "name": "Symphonic Rock"
@@ -463,7 +483,7 @@
             "betweenness": 0.0011622945866212322,
             "eigenvector": 0.0542410819564623,
             "degree_cent": 0.01612325331422429,
-            "modularity": 0,
+            "modularity": 3,
             "id": "yachtrock",
             "genre_name": "yacht rock",
             "name": "Yacht Rock"
@@ -569,11 +589,21 @@
             "name": "Urban Contemporary"
         },
         {
+            "degree": 56,
+            "betweenness": 0.001725855069375798,
+            "eigenvector": 0.0010194655505028805,
+            "degree_cent": 0.020064493013256895,
+            "modularity": 0,
+            "id": "christianalternativerock",
+            "genre_name": "christian alternative rock",
+            "name": "Christian Alternative Rock"
+        },
+        {
             "degree": 25,
             "betweenness": 0.0009235152783315904,
             "eigenvector": 0.009568092608802231,
             "degree_cent": 0.008957362952346828,
-            "modularity": 0,
+            "modularity": 3,
             "id": "acidrock",
             "genre_name": "acid rock",
             "name": "Acid Rock"
@@ -583,7 +613,7 @@
             "betweenness": 0.003363027221345785,
             "eigenvector": 0.021484744941515043,
             "degree_cent": 0.017914725904693656,
-            "modularity": 0,
+            "modularity": 3,
             "id": "classicgaragerock",
             "genre_name": "classic garage rock",
             "name": "Classic Garage Rock"
@@ -593,7 +623,7 @@
             "betweenness": 0.03202390013588123,
             "eigenvector": 0.024449106121272504,
             "degree_cent": 0.06915084199211752,
-            "modularity": 1,
+            "modularity": 3,
             "id": "experimental",
             "genre_name": "experimental",
             "name": "Experimental"
@@ -603,7 +633,7 @@
             "betweenness": 0.0003478810054254794,
             "eigenvector": 0.013931582413704714,
             "degree_cent": 0.011823719097097814,
-            "modularity": 0,
+            "modularity": 3,
             "id": "freakbeat",
             "genre_name": "freakbeat",
             "name": "Freakbeat"
@@ -613,7 +643,7 @@
             "betweenness": 0.0026127469154264304,
             "eigenvector": 0.025372941407638877,
             "degree_cent": 0.026872088857040486,
-            "modularity": 0,
+            "modularity": 3,
             "id": "protopunk",
             "genre_name": "protopunk",
             "name": "Protopunk"
@@ -623,7 +653,7 @@
             "betweenness": 0.017526847471007422,
             "eigenvector": 0.12866702248305706,
             "degree_cent": 0.04478681476173414,
-            "modularity": 0,
+            "modularity": 3,
             "id": "psychedelicrock",
             "genre_name": "psychedelic rock",
             "name": "Psychedelic Rock"
@@ -633,7 +663,7 @@
             "betweenness": 0.001512706050090274,
             "eigenvector": 0.07600467926444439,
             "degree_cent": 0.027946972411322105,
-            "modularity": 0,
+            "modularity": 3,
             "id": "brillbuildingpop",
             "genre_name": "brill building pop",
             "name": "Brill Building Pop"
@@ -643,7 +673,7 @@
             "betweenness": 0.0016525231212559971,
             "eigenvector": 0.06971242910075552,
             "degree_cent": 0.02293084915800788,
-            "modularity": 0,
+            "modularity": 3,
             "id": "bubblegumpop",
             "genre_name": "bubblegum pop",
             "name": "Bubblegum Pop"
@@ -653,7 +683,7 @@
             "betweenness": 0.000596097314334017,
             "eigenvector": 0.042464075188824016,
             "degree_cent": 0.01719813686850591,
-            "modularity": 0,
+            "modularity": 3,
             "id": "merseybeat",
             "genre_name": "merseybeat",
             "name": "Merseybeat"
@@ -699,6 +729,16 @@
             "name": "Hip Hop"
         },
         {
+            "degree": 90,
+            "betweenness": 0.01514163367800874,
+            "eigenvector": 0.005307381725744646,
+            "degree_cent": 0.03224650662844858,
+            "modularity": 3,
+            "id": "electro",
+            "genre_name": "electro",
+            "name": "Electro"
+        },
+        {
             "degree": 37,
             "betweenness": 0.0018094879717382897,
             "eigenvector": 0.00202003689961457,
@@ -733,7 +773,7 @@
             "betweenness": 0.0009638190889589914,
             "eigenvector": 0.0016911727323448977,
             "degree_cent": 0.008599068434252954,
-            "modularity": 0,
+            "modularity": 3,
             "id": "swedishhardrock",
             "genre_name": "swedish hard rock",
             "name": "Swedish Hard Rock"
@@ -759,14 +799,44 @@
             "name": "Tropical"
         },
         {
+            "degree": 27,
+            "betweenness": 8.323296275315718e-05,
+            "eigenvector": 0.0009530463486428427,
+            "degree_cent": 0.009673951988534575,
+            "modularity": 2,
+            "id": "trapsoul",
+            "genre_name": "trap soul",
+            "name": "Trap Soul"
+        },
+        {
+            "degree": 75,
+            "betweenness": 0.019433991138327486,
+            "eigenvector": 0.0005599178595445675,
+            "degree_cent": 0.026872088857040486,
+            "modularity": 3,
+            "id": "afropop",
+            "genre_name": "afropop",
+            "name": "Afropop"
+        },
+        {
             "degree": 79,
             "betweenness": 0.019199615179894415,
             "eigenvector": 0.005292534740015316,
             "degree_cent": 0.028305266929415977,
-            "modularity": 0,
+            "modularity": 3,
             "id": "bowpop",
             "genre_name": "bow pop",
             "name": "Bow Pop"
+        },
+        {
+            "degree": 20,
+            "betweenness": 0.003860875483839034,
+            "eigenvector": 0.0002451507184531271,
+            "degree_cent": 0.007165890361877463,
+            "modularity": 3,
+            "id": "cello",
+            "genre_name": "cello",
+            "name": "Cello"
         },
         {
             "degree": 174,
@@ -783,7 +853,7 @@
             "betweenness": 0.0038476974867728956,
             "eigenvector": 0.0038783457450060847,
             "degree_cent": 0.01719813686850591,
-            "modularity": 0,
+            "modularity": 3,
             "id": "canadianmetal",
             "genre_name": "canadian metal",
             "name": "Canadian Metal"
@@ -793,7 +863,7 @@
             "betweenness": 0.00016754510632559108,
             "eigenvector": 0.007126103496729741,
             "degree_cent": 0.015048369759942672,
-            "modularity": 0,
+            "modularity": 3,
             "id": "speedmetal",
             "genre_name": "speed metal",
             "name": "Speed Metal"
@@ -813,7 +883,7 @@
             "betweenness": 0.006609474404827659,
             "eigenvector": 0.00972835423659766,
             "degree_cent": 0.02508061626657112,
-            "modularity": 0,
+            "modularity": 3,
             "id": "funkrock",
             "genre_name": "funk rock",
             "name": "Funk Rock"
@@ -823,7 +893,7 @@
             "betweenness": 0.004103980887532915,
             "eigenvector": 0.0005592199153104675,
             "degree_cent": 0.01254030813328556,
-            "modularity": 1,
+            "modularity": 0,
             "id": "reggaefusion",
             "genre_name": "reggae fusion",
             "name": "Reggae Fusion"
@@ -833,7 +903,7 @@
             "betweenness": 0.0005110182087029964,
             "eigenvector": 0.0052726165498966126,
             "degree_cent": 0.01719813686850591,
-            "modularity": 0,
+            "modularity": 3,
             "id": "groovemetal",
             "genre_name": "groove metal",
             "name": "Groove Metal"
@@ -843,7 +913,7 @@
             "betweenness": 0.005211223834387612,
             "eigenvector": 0.002273052410901762,
             "degree_cent": 0.025797205302758867,
-            "modularity": 0,
+            "modularity": 3,
             "id": "melodicmetalcore",
             "genre_name": "melodic metalcore",
             "name": "Melodic Metalcore"
@@ -853,7 +923,7 @@
             "betweenness": 0.004053484328426187,
             "eigenvector": 0.2536361516654944,
             "degree_cent": 0.057327122895019705,
-            "modularity": 0,
+            "modularity": 3,
             "id": "countryrock",
             "genre_name": "country rock",
             "name": "Country Rock"
@@ -863,7 +933,7 @@
             "betweenness": 0.008381857350150016,
             "eigenvector": 0.17933923826225331,
             "degree_cent": 0.05625223934073808,
-            "modularity": 0,
+            "modularity": 3,
             "id": "hardrock",
             "genre_name": "hard rock",
             "name": "Hard Rock"
@@ -873,7 +943,7 @@
             "betweenness": 0.0017479687421069806,
             "eigenvector": 0.049741865386871226,
             "degree_cent": 0.01827302042278753,
-            "modularity": 0,
+            "modularity": 3,
             "id": "southernrock",
             "genre_name": "southern rock",
             "name": "Southern Rock"
@@ -983,7 +1053,7 @@
             "betweenness": 0.0019441238644522484,
             "eigenvector": 0.00047799737231785105,
             "degree_cent": 0.008957362952346828,
-            "modularity": 1,
+            "modularity": 2,
             "id": "electropowerpop",
             "genre_name": "electropowerpop",
             "name": "Electropowerpop"
@@ -993,7 +1063,7 @@
             "betweenness": 0.006256125730248677,
             "eigenvector": 0.007407635446858658,
             "degree_cent": 0.038337513436044426,
-            "modularity": 1,
+            "modularity": 0,
             "id": "poppunk",
             "genre_name": "pop punk",
             "name": "Pop Punk"
@@ -1013,7 +1083,7 @@
             "betweenness": 0.004094492284037954,
             "eigenvector": 0.005058848965021252,
             "degree_cent": 0.02651379433894661,
-            "modularity": 1,
+            "modularity": 3,
             "id": "industrial",
             "genre_name": "industrial",
             "name": "Industrial"
@@ -1053,7 +1123,7 @@
             "betweenness": 0.011493605292106414,
             "eigenvector": 0.003668369222003579,
             "degree_cent": 0.02615549982085274,
-            "modularity": 1,
+            "modularity": 3,
             "id": "ska",
             "genre_name": "ska",
             "name": "Ska"
@@ -1089,6 +1159,26 @@
             "name": "Gothic Rock"
         },
         {
+            "degree": 47,
+            "betweenness": 0.0061728427189113675,
+            "eigenvector": 0.0006166961126606743,
+            "degree_cent": 0.016839842350412037,
+            "modularity": 0,
+            "id": "christianmusic",
+            "genre_name": "christian music",
+            "name": "Christian Music"
+        },
+        {
+            "degree": 37,
+            "betweenness": 0.0009064022001695948,
+            "eigenvector": 0.0006107688786057038,
+            "degree_cent": 0.013256897169473305,
+            "modularity": 0,
+            "id": "worship",
+            "genre_name": "worship",
+            "name": "Worship"
+        },
+        {
             "degree": 28,
             "betweenness": 0.0004974249843904658,
             "eigenvector": 0.0022955964526512715,
@@ -1113,17 +1203,27 @@
             "betweenness": 0.003464101469157557,
             "eigenvector": 0.00344536632432459,
             "degree_cent": 0.024364027230383372,
-            "modularity": 1,
+            "modularity": 0,
             "id": "canadianrock",
             "genre_name": "canadian rock",
             "name": "Canadian Rock"
         },
         {
             "degree": 23,
+            "betweenness": 0.0005109730151569133,
+            "eigenvector": 0.0013364658267385806,
+            "degree_cent": 0.008240773916159082,
+            "modularity": 2,
+            "id": "houstonrap",
+            "genre_name": "houston rap",
+            "name": "Houston Rap"
+        },
+        {
+            "degree": 23,
             "betweenness": 0.0065319290680356835,
             "eigenvector": 0.0020198838382650135,
             "degree_cent": 0.008240773916159082,
-            "modularity": 2,
+            "modularity": 0,
             "id": "opm",
             "genre_name": "opm",
             "name": "Opm"
@@ -1189,14 +1289,34 @@
             "name": "Neo Soul"
         },
         {
+            "degree": 36,
+            "betweenness": 0.0016297848754260845,
+            "eigenvector": 0.00034933466494428017,
+            "degree_cent": 0.012898602651379433,
+            "modularity": 3,
+            "id": "acidhouse",
+            "genre_name": "acid house",
+            "name": "Acid House"
+        },
+        {
             "degree": 53,
             "betweenness": 0.002874711531048056,
             "eigenvector": 0.001369407301182873,
             "degree_cent": 0.018989609458975275,
-            "modularity": 2,
+            "modularity": 0,
             "id": "bigbeat",
             "genre_name": "big beat",
             "name": "Big Beat"
+        },
+        {
+            "degree": 48,
+            "betweenness": 0.0019881560210681707,
+            "eigenvector": 0.00035509298243058317,
+            "degree_cent": 0.01719813686850591,
+            "modularity": 2,
+            "id": "chicagohouse",
+            "genre_name": "chicago house",
+            "name": "Chicago House"
         },
         {
             "degree": 200,
@@ -1223,10 +1343,30 @@
             "betweenness": 0.0016692539751198877,
             "eigenvector": 0.004925744282566525,
             "degree_cent": 0.013973486205661053,
-            "modularity": 0,
+            "modularity": 3,
             "id": "madchester",
             "genre_name": "madchester",
             "name": "Madchester"
+        },
+        {
+            "degree": 48,
+            "betweenness": 0.0019733436939348833,
+            "eigenvector": 0.0001197879565197282,
+            "degree_cent": 0.01719813686850591,
+            "modularity": 1,
+            "id": "techno",
+            "genre_name": "techno",
+            "name": "Techno"
+        },
+        {
+            "degree": 25,
+            "betweenness": 0.0013059846063036493,
+            "eigenvector": 0.0005903344141667598,
+            "degree_cent": 0.008957362952346828,
+            "modularity": 2,
+            "id": "canadianhiphop",
+            "genre_name": "canadian hip hop",
+            "name": "Canadian Hip Hop"
         },
         {
             "degree": 34,
@@ -1243,7 +1383,7 @@
             "betweenness": 0.0016819776971581843,
             "eigenvector": 0.03472721401549119,
             "degree_cent": 0.03511286277319957,
-            "modularity": 0,
+            "modularity": 3,
             "id": "pubrock",
             "genre_name": "pub rock",
             "name": "Pub Rock"
@@ -1263,7 +1403,7 @@
             "betweenness": 0.00023350820655200388,
             "eigenvector": 0.0018679293581889392,
             "degree_cent": 0.009673951988534575,
-            "modularity": 1,
+            "modularity": 3,
             "id": "nowave",
             "genre_name": "no wave",
             "name": "No Wave"
@@ -1283,7 +1423,7 @@
             "betweenness": 0.0014043472357557023,
             "eigenvector": 0.023444913787544965,
             "degree_cent": 0.017914725904693656,
-            "modularity": 0,
+            "modularity": 3,
             "id": "sophistipop",
             "genre_name": "sophisti-pop",
             "name": "Sophisti-Pop"
@@ -1293,7 +1433,7 @@
             "betweenness": 0.0023910577453537755,
             "eigenvector": 0.020952468112344264,
             "degree_cent": 0.03905410247223217,
-            "modularity": 1,
+            "modularity": 3,
             "id": "ukpostpunk",
             "genre_name": "uk post-punk",
             "name": "Uk Post-Punk"
@@ -1313,7 +1453,7 @@
             "betweenness": 0.002862628455402492,
             "eigenvector": 0.007314379542207171,
             "degree_cent": 0.024722321748477247,
-            "modularity": 2,
+            "modularity": 0,
             "id": "acousticpop",
             "genre_name": "acoustic pop",
             "name": "Acoustic Pop"
@@ -1323,7 +1463,7 @@
             "betweenness": 0.008792450329086985,
             "eigenvector": 0.01921863066363816,
             "degree_cent": 0.038337513436044426,
-            "modularity": 2,
+            "modularity": 0,
             "id": "neomellow",
             "genre_name": "neo mellow",
             "name": "Neo Mellow"
@@ -1333,7 +1473,7 @@
             "betweenness": 0.0023254114224235066,
             "eigenvector": 0.037856623307742525,
             "degree_cent": 0.02293084915800788,
-            "modularity": 0,
+            "modularity": 3,
             "id": "synthpop",
             "genre_name": "synthpop",
             "name": "Synthpop"
@@ -1343,7 +1483,7 @@
             "betweenness": 0.002852149795858856,
             "eigenvector": 0.00583174548867054,
             "degree_cent": 0.0240057327122895,
-            "modularity": 1,
+            "modularity": 0,
             "id": "indiecoustica",
             "genre_name": "indiecoustica",
             "name": "Indiecoustica"
@@ -1353,7 +1493,7 @@
             "betweenness": 0.003182292716757208,
             "eigenvector": 0.016311858819616432,
             "degree_cent": 0.029380150483697597,
-            "modularity": 1,
+            "modularity": 0,
             "id": "pianorock",
             "genre_name": "piano rock",
             "name": "Piano Rock"
@@ -1373,7 +1513,7 @@
             "betweenness": 0.00012926763937768943,
             "eigenvector": 0.013003440354458742,
             "degree_cent": 0.013256897169473305,
-            "modularity": 0,
+            "modularity": 3,
             "id": "supergroup",
             "genre_name": "supergroup",
             "name": "Supergroup"
@@ -1393,7 +1533,7 @@
             "betweenness": 0.0006242043805412861,
             "eigenvector": 0.002768375845153941,
             "degree_cent": 0.016839842350412037,
-            "modularity": 1,
+            "modularity": 0,
             "id": "neonpoppunk",
             "genre_name": "neon pop punk",
             "name": "Neon Pop Punk"
@@ -1403,7 +1543,7 @@
             "betweenness": 0.0026641916604416608,
             "eigenvector": 0.0016765716202168986,
             "degree_cent": 0.016839842350412037,
-            "modularity": 1,
+            "modularity": 0,
             "id": "pixie",
             "genre_name": "pixie",
             "name": "Pixie"
@@ -1413,7 +1553,7 @@
             "betweenness": 0.0008812963985213726,
             "eigenvector": 0.0015954492336831495,
             "degree_cent": 0.013973486205661053,
-            "modularity": 1,
+            "modularity": 0,
             "id": "popemo",
             "genre_name": "pop emo",
             "name": "Pop Emo"
@@ -1443,7 +1583,7 @@
             "betweenness": 0.017412284403082755,
             "eigenvector": 0.04314066118849056,
             "degree_cent": 0.06341812970261554,
-            "modularity": 0,
+            "modularity": 3,
             "id": "funk",
             "genre_name": "funk",
             "name": "Funk"
@@ -1463,20 +1603,40 @@
             "betweenness": 0.0006488261958864401,
             "eigenvector": 0.00607849290349871,
             "degree_cent": 0.013615191687567179,
-            "modularity": 2,
+            "modularity": 0,
             "id": "contemporarycountry",
             "genre_name": "contemporary country",
             "name": "Contemporary Country"
+        },
+        {
+            "degree": 22,
+            "betweenness": 0.0002564830082891089,
+            "eigenvector": 0.0012327336544466286,
+            "degree_cent": 0.007882479398065209,
+            "modularity": 0,
+            "id": "countrypop",
+            "genre_name": "country pop",
+            "name": "Country Pop"
         },
         {
             "degree": 32,
             "betweenness": 0.0001605757241150691,
             "eigenvector": 0.00955191973479578,
             "degree_cent": 0.01146542457900394,
-            "modularity": 2,
+            "modularity": 0,
             "id": "countryroad",
             "genre_name": "country road",
             "name": "Country Road"
+        },
+        {
+            "degree": 25,
+            "betweenness": 0.0006876044306304233,
+            "eigenvector": 0.003531383843335357,
+            "degree_cent": 0.008957362952346828,
+            "modularity": 0,
+            "id": "moderncountryrock",
+            "genre_name": "modern country rock",
+            "name": "Modern Country Rock"
         },
         {
             "degree": 74,
@@ -1499,11 +1659,41 @@
             "name": "Escape Room"
         },
         {
+            "degree": 87,
+            "betweenness": 0.008820195152736517,
+            "eigenvector": 0.0026714499285577574,
+            "degree_cent": 0.031171623074166963,
+            "modularity": 3,
+            "id": "ambient",
+            "genre_name": "ambient",
+            "name": "Ambient"
+        },
+        {
+            "degree": 115,
+            "betweenness": 0.016113416555814112,
+            "eigenvector": 0.00255069085881277,
+            "degree_cent": 0.04120386958079541,
+            "modularity": 3,
+            "id": "compositionalambient",
+            "genre_name": "compositional ambient",
+            "name": "Compositional Ambient"
+        },
+        {
+            "degree": 22,
+            "betweenness": 5.7707381829145757e-05,
+            "eigenvector": 0.00016465964102442353,
+            "degree_cent": 0.007882479398065209,
+            "modularity": 1,
+            "id": "drift",
+            "genre_name": "drift",
+            "name": "Drift"
+        },
+        {
             "degree": 91,
             "betweenness": 0.008884912818355158,
             "eigenvector": 0.0019970793629248565,
             "degree_cent": 0.032604801146542454,
-            "modularity": 1,
+            "modularity": 3,
             "id": "drone",
             "genre_name": "drone",
             "name": "Drone"
@@ -1517,6 +1707,16 @@
             "id": "postrock",
             "genre_name": "post-rock",
             "name": "Post-Rock"
+        },
+        {
+            "degree": 36,
+            "betweenness": 0.001136420002284374,
+            "eigenvector": 0.0006143134198868093,
+            "degree_cent": 0.012898602651379433,
+            "modularity": 0,
+            "id": "ccm",
+            "genre_name": "ccm",
+            "name": "Ccm"
         },
         {
             "degree": 94,
@@ -1553,7 +1753,7 @@
             "betweenness": 0.001803447569631527,
             "eigenvector": 0.009219630323146726,
             "degree_cent": 0.015764958796130418,
-            "modularity": 0,
+            "modularity": 3,
             "id": "australianrock",
             "genre_name": "australian rock",
             "name": "Australian Rock"
@@ -1603,7 +1803,7 @@
             "betweenness": 0.010432827203860798,
             "eigenvector": 0.00032581090695538986,
             "degree_cent": 0.01612325331422429,
-            "modularity": 1,
+            "modularity": 3,
             "id": "otacore",
             "genre_name": "otacore",
             "name": "Otacore"
@@ -1683,7 +1883,7 @@
             "betweenness": 0.0017888558848236464,
             "eigenvector": 0.023840833787447013,
             "degree_cent": 0.02149767108563239,
-            "modularity": 2,
+            "modularity": 0,
             "id": "country",
             "genre_name": "country",
             "name": "Country"
@@ -1713,10 +1913,20 @@
             "betweenness": 0.011292228359716784,
             "eigenvector": 0.040496565721520425,
             "degree_cent": 0.05159441060551773,
-            "modularity": 0,
+            "modularity": 3,
             "id": "soul",
             "genre_name": "soul",
             "name": "Soul"
+        },
+        {
+            "degree": 49,
+            "betweenness": 0.0019029847516729434,
+            "eigenvector": 0.01572728749047203,
+            "degree_cent": 0.017556431386599784,
+            "modularity": 0,
+            "id": "texascountry",
+            "genre_name": "texas country",
+            "name": "Texas Country"
         },
         {
             "degree": 26,
@@ -1763,17 +1973,27 @@
             "betweenness": 0.0033899778111796193,
             "eigenvector": 0.001870597779499436,
             "degree_cent": 0.01254030813328556,
-            "modularity": 0,
+            "modularity": 3,
             "id": "germanrock",
             "genre_name": "german rock",
             "name": "German Rock"
+        },
+        {
+            "degree": 25,
+            "betweenness": 0.0020742818790928513,
+            "eigenvector": 0.0003176777396980574,
+            "degree_cent": 0.008957362952346828,
+            "modularity": 3,
+            "id": "neuedeutschewelle",
+            "genre_name": "neue deutsche welle",
+            "name": "Neue Deutsche Welle"
         },
         {
             "degree": 32,
             "betweenness": 0.0005572320589417287,
             "eigenvector": 0.00262656957516163,
             "degree_cent": 0.01146542457900394,
-            "modularity": 0,
+            "modularity": 3,
             "id": "germanmetal",
             "genre_name": "german metal",
             "name": "German Metal"
@@ -1783,7 +2003,7 @@
             "betweenness": 0.001986593979886809,
             "eigenvector": 0.044618733459129735,
             "degree_cent": 0.02293084915800788,
-            "modularity": 0,
+            "modularity": 3,
             "id": "glammetal",
             "genre_name": "glam metal",
             "name": "Glam Metal"
@@ -1793,7 +2013,7 @@
             "betweenness": 0.012707716810555844,
             "eigenvector": 0.05045291703299194,
             "degree_cent": 0.057685417413113574,
-            "modularity": 0,
+            "modularity": 3,
             "id": "metal",
             "genre_name": "metal",
             "name": "Metal"
@@ -1803,7 +2023,7 @@
             "betweenness": 0.006734971239600498,
             "eigenvector": 0.007634865095126337,
             "degree_cent": 0.02651379433894661,
-            "modularity": 0,
+            "modularity": 3,
             "id": "powermetal",
             "genre_name": "power metal",
             "name": "Power Metal"
@@ -1813,7 +2033,7 @@
             "betweenness": 0.00047932746022180363,
             "eigenvector": 0.009385154917860081,
             "degree_cent": 0.01827302042278753,
-            "modularity": 0,
+            "modularity": 3,
             "id": "thrashmetal",
             "genre_name": "thrash metal",
             "name": "Thrash Metal"
@@ -1833,7 +2053,7 @@
             "betweenness": 0.002090588880497551,
             "eigenvector": 0.0012148373721484027,
             "degree_cent": 0.01719813686850591,
-            "modularity": 0,
+            "modularity": 3,
             "id": "doommetal",
             "genre_name": "doom metal",
             "name": "Doom Metal"
@@ -1843,7 +2063,7 @@
             "betweenness": 0.000402531868468006,
             "eigenvector": 0.0014467672347245218,
             "degree_cent": 0.012182013615191686,
-            "modularity": 0,
+            "modularity": 3,
             "id": "sludgemetal",
             "genre_name": "sludge metal",
             "name": "Sludge Metal"
@@ -1863,7 +2083,7 @@
             "betweenness": 0.0030150893922049433,
             "eigenvector": 0.005416311906883042,
             "degree_cent": 0.018989609458975275,
-            "modularity": 0,
+            "modularity": 3,
             "id": "spacerock",
             "genre_name": "space rock",
             "name": "Space Rock"
@@ -1873,7 +2093,7 @@
             "betweenness": 0.0005842186781978337,
             "eigenvector": 0.004047613951258517,
             "degree_cent": 0.014331780723754926,
-            "modularity": 1,
+            "modularity": 3,
             "id": "stonerrock",
             "genre_name": "stoner rock",
             "name": "Stoner Rock"
@@ -1913,7 +2133,7 @@
             "betweenness": 0.0035375561529308952,
             "eigenvector": 0.05559696348146428,
             "degree_cent": 0.04335363668935865,
-            "modularity": 0,
+            "modularity": 3,
             "id": "permanentwave",
             "genre_name": "permanent wave",
             "name": "Permanent Wave"
@@ -1933,7 +2153,7 @@
             "betweenness": 0.008982558592731634,
             "eigenvector": 0.17858991339849725,
             "degree_cent": 0.06091006807595843,
-            "modularity": 0,
+            "modularity": 3,
             "id": "rootsrock",
             "genre_name": "roots rock",
             "name": "Roots Rock"
@@ -1997,6 +2217,16 @@
             "id": "ukpop",
             "genre_name": "uk pop",
             "name": "Uk Pop"
+        },
+        {
+            "degree": 24,
+            "betweenness": 0.0026528674923717538,
+            "eigenvector": 0.00022638422475461747,
+            "degree_cent": 0.008599068434252954,
+            "modularity": 3,
+            "id": "americancontemporaryclassical",
+            "genre_name": "american contemporary classical",
+            "name": "American Contemporary Classical"
         },
         {
             "degree": 72,
@@ -2089,6 +2319,16 @@
             "name": "Dancehall"
         },
         {
+            "degree": 93,
+            "betweenness": 0.06030749951897911,
+            "eigenvector": 0.0006006302191499149,
+            "degree_cent": 0.0333213901827302,
+            "modularity": 3,
+            "id": "world",
+            "genre_name": "world",
+            "name": "World"
+        },
+        {
             "degree": 27,
             "betweenness": 0.00016481711501520915,
             "eigenvector": 0.0007809471284274652,
@@ -2123,7 +2363,7 @@
             "betweenness": 0.00018673572476250676,
             "eigenvector": 0.0013632008376767335,
             "degree_cent": 0.007165890361877463,
-            "modularity": 0,
+            "modularity": 3,
             "id": "melodicthrash",
             "genre_name": "melodic thrash",
             "name": "Melodic Thrash"
@@ -2133,7 +2373,7 @@
             "betweenness": 0.0033142876776023965,
             "eigenvector": 0.00812882401929381,
             "degree_cent": 0.02615549982085274,
-            "modularity": 0,
+            "modularity": 3,
             "id": "oldschoolthrash",
             "genre_name": "old school thrash",
             "name": "Old School Thrash"
@@ -2149,21 +2389,111 @@
             "name": "Nyhc"
         },
         {
+            "degree": 75,
+            "betweenness": 0.0037035152610155526,
+            "eigenvector": 0.0006569531216225853,
+            "degree_cent": 0.026872088857040486,
+            "modularity": 1,
+            "id": "microhouse",
+            "genre_name": "microhouse",
+            "name": "Microhouse"
+        },
+        {
+            "degree": 31,
+            "betweenness": 0.0018381544003536587,
+            "eigenvector": 7.103566349895024e-05,
+            "degree_cent": 0.011107130060910067,
+            "modularity": 1,
+            "id": "minimaltechno",
+            "genre_name": "minimal techno",
+            "name": "Minimal Techno"
+        },
+        {
+            "degree": 30,
+            "betweenness": 0.001428608321922504,
+            "eigenvector": 0.00021178792282083202,
+            "degree_cent": 0.010748835542816195,
+            "modularity": 2,
+            "id": "newfrenchtouch",
+            "genre_name": "new french touch",
+            "name": "New French Touch"
+        },
+        {
+            "degree": 72,
+            "betweenness": 0.001557770940487253,
+            "eigenvector": 0.004439440495767126,
+            "degree_cent": 0.025797205302758867,
+            "modularity": 3,
+            "id": "bebop",
+            "genre_name": "bebop",
+            "name": "Bebop"
+        },
+        {
+            "degree": 70,
+            "betweenness": 0.0013991717709612127,
+            "eigenvector": 0.0038668240648117016,
+            "degree_cent": 0.02508061626657112,
+            "modularity": 3,
+            "id": "contemporarypostbop",
+            "genre_name": "contemporary post-bop",
+            "name": "Contemporary Post-Bop"
+        },
+        {
+            "degree": 62,
+            "betweenness": 0.0025576007934116725,
+            "eigenvector": 0.0018225627179303103,
+            "degree_cent": 0.022214260121820133,
+            "modularity": 3,
+            "id": "freejazz",
+            "genre_name": "free jazz",
+            "name": "Free Jazz"
+        },
+        {
+            "degree": 83,
+            "betweenness": 0.0018875531089456664,
+            "eigenvector": 0.004700898772883564,
+            "degree_cent": 0.029738445001791472,
+            "modularity": 3,
+            "id": "jazz",
+            "genre_name": "jazz",
+            "name": "Jazz"
+        },
+        {
+            "degree": 104,
+            "betweenness": 0.006598276340734206,
+            "eigenvector": 0.00787197860172039,
+            "degree_cent": 0.03726262988176281,
+            "modularity": 3,
+            "id": "jazzfunk",
+            "genre_name": "jazz funk",
+            "name": "Jazz Funk"
+        },
+        {
             "degree": 119,
             "betweenness": 0.01024950846344544,
             "eigenvector": 0.014155137742856639,
             "degree_cent": 0.042637047653170904,
-            "modularity": 0,
+            "modularity": 3,
             "id": "jazzfusion",
             "genre_name": "jazz fusion",
             "name": "Jazz Fusion"
+        },
+        {
+            "degree": 42,
+            "betweenness": 0.009809181916533719,
+            "eigenvector": 0.0008188253332691384,
+            "degree_cent": 0.015048369759942672,
+            "modularity": 3,
+            "id": "newage",
+            "genre_name": "new age",
+            "name": "New Age"
         },
         {
             "degree": 27,
             "betweenness": 0.0009640476304950598,
             "eigenvector": 0.0009733226507129677,
             "degree_cent": 0.009673951988534575,
-            "modularity": 1,
+            "modularity": 0,
             "id": "socalpoppunk",
             "genre_name": "socal pop punk",
             "name": "Socal Pop Punk"
@@ -2173,7 +2503,7 @@
             "betweenness": 0.0019999713162993844,
             "eigenvector": 0.003389763480993469,
             "degree_cent": 0.016481547832318165,
-            "modularity": 1,
+            "modularity": 0,
             "id": "folkpop",
             "genre_name": "folk-pop",
             "name": "Folk-Pop"
@@ -2193,7 +2523,7 @@
             "betweenness": 0.004331120830502533,
             "eigenvector": 0.00036196864110750167,
             "degree_cent": 0.012898602651379433,
-            "modularity": 2,
+            "modularity": 1,
             "id": "shiverpop",
             "genre_name": "shiver pop",
             "name": "Shiver Pop"
@@ -2203,7 +2533,7 @@
             "betweenness": 0.0020207574717387663,
             "eigenvector": 0.00254049131675371,
             "degree_cent": 0.013615191687567179,
-            "modularity": 0,
+            "modularity": 3,
             "id": "wrestling",
             "genre_name": "wrestling",
             "name": "Wrestling"
@@ -2223,7 +2553,7 @@
             "betweenness": 0.00044746494424510513,
             "eigenvector": 0.0011886902184402195,
             "degree_cent": 0.012898602651379433,
-            "modularity": 1,
+            "modularity": 2,
             "id": "nycpop",
             "genre_name": "nyc pop",
             "name": "Nyc Pop"
@@ -2283,7 +2613,7 @@
             "betweenness": 0.003958040654347728,
             "eigenvector": 0.023052850261542735,
             "degree_cent": 0.027230383375134358,
-            "modularity": 0,
+            "modularity": 3,
             "id": "classicsoul",
             "genre_name": "classic soul",
             "name": "Classic Soul"
@@ -2293,17 +2623,27 @@
             "betweenness": 0.0009177839399735909,
             "eigenvector": 0.003982403664462724,
             "degree_cent": 0.013973486205661053,
-            "modularity": 0,
+            "modularity": 3,
             "id": "soulblues",
             "genre_name": "soul blues",
             "name": "Soul Blues"
+        },
+        {
+            "degree": 58,
+            "betweenness": 0.0056155246337190835,
+            "eigenvector": 0.0012378922985599094,
+            "degree_cent": 0.020781082049444642,
+            "modularity": 3,
+            "id": "jazztrumpet",
+            "genre_name": "jazz trumpet",
+            "name": "Jazz Trumpet"
         },
         {
             "degree": 67,
             "betweenness": 0.00020363656351929382,
             "eigenvector": 0.0378741755893896,
             "degree_cent": 0.0240057327122895,
-            "modularity": 0,
+            "modularity": 3,
             "id": "blues",
             "genre_name": "blues",
             "name": "Blues"
@@ -2313,7 +2653,7 @@
             "betweenness": 0.0038415395629809094,
             "eigenvector": 0.1687204369014861,
             "degree_cent": 0.048728054460766744,
-            "modularity": 0,
+            "modularity": 3,
             "id": "bluesrock",
             "genre_name": "blues rock",
             "name": "Blues Rock"
@@ -2323,17 +2663,27 @@
             "betweenness": 0.00027761687859999187,
             "eigenvector": 0.0618900464940378,
             "degree_cent": 0.025797205302758867,
-            "modularity": 0,
+            "modularity": 3,
             "id": "electricblues",
             "genre_name": "electric blues",
             "name": "Electric Blues"
+        },
+        {
+            "degree": 30,
+            "betweenness": 0.0011396942730711815,
+            "eigenvector": 0.0024697442941039225,
+            "degree_cent": 0.010748835542816195,
+            "modularity": 3,
+            "id": "rockkeyboard",
+            "genre_name": "rock keyboard",
+            "name": "Rock Keyboard"
         },
         {
             "degree": 67,
             "betweenness": 0.0026801868060129016,
             "eigenvector": 0.043805775051768664,
             "degree_cent": 0.0240057327122895,
-            "modularity": 0,
+            "modularity": 3,
             "id": "progressiverock",
             "genre_name": "progressive rock",
             "name": "Progressive Rock"
@@ -2343,7 +2693,7 @@
             "betweenness": 0.0035858676164896588,
             "eigenvector": 0.02043969674344737,
             "degree_cent": 0.028305266929415977,
-            "modularity": 1,
+            "modularity": 3,
             "id": "modernbluesrock",
             "genre_name": "modern blues rock",
             "name": "Modern Blues Rock"
@@ -2363,7 +2713,7 @@
             "betweenness": 0.003604866686726689,
             "eigenvector": 0.0008567591126804565,
             "degree_cent": 0.020781082049444642,
-            "modularity": 2,
+            "modularity": 1,
             "id": "filterhouse",
             "genre_name": "filter house",
             "name": "Filter House"
@@ -2383,7 +2733,7 @@
             "betweenness": 0.00603713948707207,
             "eigenvector": 0.09109791912425569,
             "degree_cent": 0.05231099964170548,
-            "modularity": 0,
+            "modularity": 3,
             "id": "traditionalfolk",
             "genre_name": "traditional folk",
             "name": "Traditional Folk"
@@ -2423,17 +2773,47 @@
             "betweenness": 0.0010027320219155645,
             "eigenvector": 0.021099594593907846,
             "degree_cent": 0.017556431386599784,
-            "modularity": 0,
+            "modularity": 3,
             "id": "classiccanadianrock",
             "genre_name": "classic canadian rock",
             "name": "Classic Canadian Rock"
+        },
+        {
+            "degree": 53,
+            "betweenness": 0.01643252300500453,
+            "eigenvector": 0.00030998539188117403,
+            "degree_cent": 0.018989609458975275,
+            "modularity": 3,
+            "id": "avantgarde",
+            "genre_name": "avant-garde",
+            "name": "Avant-Garde"
+        },
+        {
+            "degree": 47,
+            "betweenness": 0.0004898151629566399,
+            "eigenvector": 0.001399509490494447,
+            "degree_cent": 0.016839842350412037,
+            "modularity": 3,
+            "id": "avantgardejazz",
+            "genre_name": "avant-garde jazz",
+            "name": "Avant-Garde Jazz"
+        },
+        {
+            "degree": 49,
+            "betweenness": 0.0025827994019671325,
+            "eigenvector": 0.000762538722495949,
+            "degree_cent": 0.017556431386599784,
+            "modularity": 3,
+            "id": "freeimprovisation",
+            "genre_name": "free improvisation",
+            "name": "Free Improvisation"
         },
         {
             "degree": 51,
             "betweenness": 0.0006726196217028029,
             "eigenvector": 0.02711370719378041,
             "degree_cent": 0.01827302042278753,
-            "modularity": 0,
+            "modularity": 3,
             "id": "modernblues",
             "genre_name": "modern blues",
             "name": "Modern Blues"
@@ -2443,7 +2823,7 @@
             "betweenness": 0.0006736127034095168,
             "eigenvector": 0.005431836819693601,
             "degree_cent": 0.012182013615191686,
-            "modularity": 0,
+            "modularity": 3,
             "id": "texasblues",
             "genre_name": "texas blues",
             "name": "Texas Blues"
@@ -2473,7 +2853,7 @@
             "betweenness": 0.0024833562494757048,
             "eigenvector": 0.005722565332370722,
             "degree_cent": 0.015764958796130418,
-            "modularity": 0,
+            "modularity": 3,
             "id": "neoclassicalmetal",
             "genre_name": "neo classical metal",
             "name": "Neo Classical Metal"
@@ -2513,7 +2893,7 @@
             "betweenness": 0.0033654486300804505,
             "eigenvector": 0.08095617598956524,
             "degree_cent": 0.02758867789322823,
-            "modularity": 0,
+            "modularity": 3,
             "id": "heartlandrock",
             "genre_name": "heartland rock",
             "name": "Heartland Rock"
@@ -2539,6 +2919,16 @@
             "name": "Latin Alternative"
         },
         {
+            "degree": 75,
+            "betweenness": 0.009404539296739803,
+            "eigenvector": 0.0001342938168342841,
+            "degree_cent": 0.026872088857040486,
+            "modularity": 2,
+            "id": "latinrock",
+            "genre_name": "latin rock",
+            "name": "Latin Rock"
+        },
+        {
             "degree": 28,
             "betweenness": 0.01774828849388194,
             "eigenvector": 0.000606543070301574,
@@ -2553,7 +2943,7 @@
             "betweenness": 0.0024891878042566347,
             "eigenvector": 0.0017420639631723549,
             "degree_cent": 0.011823719097097814,
-            "modularity": 0,
+            "modularity": 3,
             "id": "comicmetal",
             "genre_name": "comic metal",
             "name": "Comic Metal"
@@ -2629,6 +3019,16 @@
             "name": "Vocal House"
         },
         {
+            "degree": 26,
+            "betweenness": 0.00012919477207245397,
+            "eigenvector": 0.00034637975288946893,
+            "degree_cent": 0.009315657470440702,
+            "modularity": 2,
+            "id": "chillr&b",
+            "genre_name": "chill r&b",
+            "name": "Chill R&B"
+        },
+        {
             "degree": 52,
             "betweenness": 0.002232658250817625,
             "eigenvector": 0.008938873439095874,
@@ -2653,7 +3053,7 @@
             "betweenness": 0.0021914351199959444,
             "eigenvector": 0.012277589955141742,
             "degree_cent": 0.015406664278036546,
-            "modularity": 0,
+            "modularity": 3,
             "id": "cosmicamerican",
             "genre_name": "cosmic american",
             "name": "Cosmic American"
@@ -2663,17 +3063,27 @@
             "betweenness": 0.009601189118985023,
             "eigenvector": 0.002634455201843324,
             "degree_cent": 0.013615191687567179,
-            "modularity": 1,
+            "modularity": 3,
             "id": "outsider",
             "genre_name": "outsider",
             "name": "Outsider"
+        },
+        {
+            "degree": 22,
+            "betweenness": 0.0003385948961000409,
+            "eigenvector": 0.0006007014750627261,
+            "degree_cent": 0.007882479398065209,
+            "modularity": 1,
+            "id": "britishsingersongwriter",
+            "genre_name": "british singer-songwriter",
+            "name": "British Singer-Songwriter"
         },
         {
             "degree": 53,
             "betweenness": 0.0013200291060140481,
             "eigenvector": 0.04164984201232868,
             "degree_cent": 0.018989609458975275,
-            "modularity": 0,
+            "modularity": 3,
             "id": "britishblues",
             "genre_name": "british blues",
             "name": "British Blues"
@@ -2683,10 +3093,30 @@
             "betweenness": 0.00025337078482670725,
             "eigenvector": 0.030909974588998235,
             "degree_cent": 0.015406664278036546,
-            "modularity": 0,
+            "modularity": 3,
             "id": "britishinvasion",
             "genre_name": "british invasion",
             "name": "British Invasion"
+        },
+        {
+            "degree": 104,
+            "betweenness": 0.017391875076000967,
+            "eigenvector": 0.0037741471466424584,
+            "degree_cent": 0.03726262988176281,
+            "modularity": 3,
+            "id": "fourthworld",
+            "genre_name": "fourth world",
+            "name": "Fourth World"
+        },
+        {
+            "degree": 20,
+            "betweenness": 0.0007980135929123943,
+            "eigenvector": 0.0003772142028151378,
+            "degree_cent": 0.007165890361877463,
+            "modularity": 3,
+            "id": "spiritualjazz",
+            "genre_name": "spiritual jazz",
+            "name": "Spiritual Jazz"
         },
         {
             "degree": 37,
@@ -2803,7 +3233,7 @@
             "betweenness": 0.00019355265929886135,
             "eigenvector": 0.005631659299594852,
             "degree_cent": 0.010390541024722321,
-            "modularity": 1,
+            "modularity": 3,
             "id": "scottishnewwave",
             "genre_name": "scottish new wave",
             "name": "Scottish New Wave"
@@ -2829,11 +3259,21 @@
             "name": "Toronto Indie"
         },
         {
+            "degree": 36,
+            "betweenness": 0.0035460703056502205,
+            "eigenvector": 0.0005535729519793675,
+            "degree_cent": 0.012898602651379433,
+            "modularity": 3,
+            "id": "steampunk",
+            "genre_name": "steampunk",
+            "name": "Steampunk"
+        },
+        {
             "degree": 78,
             "betweenness": 0.002469138539035268,
             "eigenvector": 0.005728032014433714,
             "degree_cent": 0.027946972411322105,
-            "modularity": 0,
+            "modularity": 3,
             "id": "deathmetal",
             "genre_name": "death metal",
             "name": "Death Metal"
@@ -2843,7 +3283,7 @@
             "betweenness": 0.0013219109120001793,
             "eigenvector": 0.0012101444976029701,
             "degree_cent": 0.013973486205661053,
-            "modularity": 0,
+            "modularity": 3,
             "id": "swedishmetal",
             "genre_name": "swedish metal",
             "name": "Swedish Metal"
@@ -2883,17 +3323,57 @@
             "betweenness": 0.0027412627164808663,
             "eigenvector": 0.011337673319586006,
             "degree_cent": 0.03618774632748119,
-            "modularity": 1,
+            "modularity": 3,
             "id": "experimentalrock",
             "genre_name": "experimental rock",
             "name": "Experimental Rock"
+        },
+        {
+            "degree": 25,
+            "betweenness": 0.00021107424012572077,
+            "eigenvector": 0.0016816490872010703,
+            "degree_cent": 0.008957362952346828,
+            "modularity": 3,
+            "id": "krautrock",
+            "genre_name": "krautrock",
+            "name": "Krautrock"
+        },
+        {
+            "degree": 34,
+            "betweenness": 0.001732794156601835,
+            "eigenvector": 0.00010938962133999923,
+            "degree_cent": 0.012182013615191686,
+            "modularity": 1,
+            "id": "drillandbass",
+            "genre_name": "drill and bass",
+            "name": "Drill And Bass"
+        },
+        {
+            "degree": 48,
+            "betweenness": 0.0030556167039998187,
+            "eigenvector": 0.0003700076789158723,
+            "degree_cent": 0.01719813686850591,
+            "modularity": 2,
+            "id": "ninja",
+            "genre_name": "ninja",
+            "name": "Ninja"
+        },
+        {
+            "degree": 54,
+            "betweenness": 0.006875022861753738,
+            "eigenvector": 0.0005921942532798576,
+            "degree_cent": 0.01934790397706915,
+            "modularity": 1,
+            "id": "nujazz",
+            "genre_name": "nu jazz",
+            "name": "Nu Jazz"
         },
         {
             "degree": 73,
             "betweenness": 0.0064766639107487105,
             "eigenvector": 0.0019690515279161985,
             "degree_cent": 0.02615549982085274,
-            "modularity": 2,
+            "modularity": 1,
             "id": "triphop",
             "genre_name": "trip hop",
             "name": "Trip Hop"
@@ -2963,7 +3443,7 @@
             "betweenness": 0.0025499368839021312,
             "eigenvector": 0.01253667218670839,
             "degree_cent": 0.017914725904693656,
-            "modularity": 0,
+            "modularity": 3,
             "id": "britishfolk",
             "genre_name": "british folk",
             "name": "British Folk"
@@ -2973,7 +3453,7 @@
             "betweenness": 0.012903467379446542,
             "eigenvector": 0.0016152868074931104,
             "degree_cent": 0.024364027230383372,
-            "modularity": 1,
+            "modularity": 3,
             "id": "laboratorio",
             "genre_name": "laboratorio",
             "name": "Laboratorio"
@@ -2987,6 +3467,26 @@
             "id": "trapqueen",
             "genre_name": "trap queen",
             "name": "Trap Queen"
+        },
+        {
+            "degree": 29,
+            "betweenness": 0.00031024467266706256,
+            "eigenvector": 0.004162287728821369,
+            "degree_cent": 0.010390541024722321,
+            "modularity": 0,
+            "id": "ectofolk",
+            "genre_name": "ectofolk",
+            "name": "Ectofolk"
+        },
+        {
+            "degree": 26,
+            "betweenness": 0.000591837083330955,
+            "eigenvector": 0.00287538417484898,
+            "degree_cent": 0.009315657470440702,
+            "modularity": 0,
+            "id": "\"womensmusic\"",
+            "genre_name": "\"womens music\"",
+            "name": "\"Womens Music\""
         },
         {
             "degree": 157,
@@ -3023,7 +3523,7 @@
             "betweenness": 0.0010948370275763878,
             "eigenvector": 0.005607422995480518,
             "degree_cent": 0.013615191687567179,
-            "modularity": 0,
+            "modularity": 3,
             "id": "instrumentalrock",
             "genre_name": "instrumental rock",
             "name": "Instrumental Rock"
@@ -3033,7 +3533,7 @@
             "betweenness": 0.0018123139739549565,
             "eigenvector": 0.0036013198284286555,
             "degree_cent": 0.014331780723754926,
-            "modularity": 0,
+            "modularity": 3,
             "id": "progressivemetal",
             "genre_name": "progressive metal",
             "name": "Progressive Metal"
@@ -3053,7 +3553,7 @@
             "betweenness": 0.0007250067565254637,
             "eigenvector": 0.0048212347869747265,
             "degree_cent": 0.01254030813328556,
-            "modularity": 2,
+            "modularity": 3,
             "id": "canadiancountry",
             "genre_name": "canadian country",
             "name": "Canadian Country"
@@ -3117,6 +3617,16 @@
             "id": "\"punknroll\"",
             "genre_name": "\"punk n roll\"",
             "name": "\"Punk N Roll\""
+        },
+        {
+            "degree": 24,
+            "betweenness": 0.0007367621404642019,
+            "eigenvector": 6.060665223060619e-05,
+            "degree_cent": 0.008599068434252954,
+            "modularity": 1,
+            "id": "ukexperimentalelectronic",
+            "genre_name": "uk experimental electronic",
+            "name": "Uk Experimental Electronic"
         },
         {
             "degree": 80,
@@ -3183,7 +3693,7 @@
             "betweenness": 0.002392340200470626,
             "eigenvector": 0.04636823936032798,
             "degree_cent": 0.03188821211035471,
-            "modularity": 0,
+            "modularity": 3,
             "id": "rockandroll",
             "genre_name": "rock-and-roll",
             "name": "Rock-And-Roll"
@@ -3193,10 +3703,20 @@
             "betweenness": 0.0020843892059605866,
             "eigenvector": 0.006612607593447995,
             "degree_cent": 0.01719813686850591,
-            "modularity": 2,
+            "modularity": 3,
             "id": "phillysoul",
             "genre_name": "philly soul",
             "name": "Philly Soul"
+        },
+        {
+            "degree": 20,
+            "betweenness": 0.0004346773115091171,
+            "eigenvector": 0.0004667275960679235,
+            "degree_cent": 0.007165890361877463,
+            "modularity": 2,
+            "id": "dmvrap",
+            "genre_name": "dmv rap",
+            "name": "Dmv Rap"
         },
         {
             "degree": 34,
@@ -3213,7 +3733,7 @@
             "betweenness": 0.0011210790149781239,
             "eigenvector": 0.0007599508756422949,
             "degree_cent": 0.01827302042278753,
-            "modularity": 1,
+            "modularity": 2,
             "id": "vaportwitch",
             "genre_name": "vapor twitch",
             "name": "Vapor Twitch"
@@ -3247,6 +3767,16 @@
             "id": "politicalhiphop",
             "genre_name": "political hip hop",
             "name": "Political Hip Hop"
+        },
+        {
+            "degree": 34,
+            "betweenness": 0.0014284457291509661,
+            "eigenvector": 0.0010610308101006228,
+            "degree_cent": 0.012182013615191686,
+            "modularity": 3,
+            "id": "minimalism",
+            "genre_name": "minimalism",
+            "name": "Minimalism"
         },
         {
             "degree": 33,
@@ -3333,10 +3863,50 @@
             "betweenness": 0.003277132879962755,
             "eigenvector": 0.0009603967285685507,
             "degree_cent": 0.010748835542816195,
-            "modularity": 1,
+            "modularity": 0,
             "id": "australianalternativerock",
             "genre_name": "australian alternative rock",
             "name": "Australian Alternative Rock"
+        },
+        {
+            "degree": 31,
+            "betweenness": 0.0003593289133875089,
+            "eigenvector": 0.00011687593052550915,
+            "degree_cent": 0.011107130060910067,
+            "modularity": 1,
+            "id": "abstract",
+            "genre_name": "abstract",
+            "name": "Abstract"
+        },
+        {
+            "degree": 30,
+            "betweenness": 0.001249580575943991,
+            "eigenvector": 8.690281932069036e-05,
+            "degree_cent": 0.010748835542816195,
+            "modularity": 1,
+            "id": "bassmusic",
+            "genre_name": "bass music",
+            "name": "Bass Music"
+        },
+        {
+            "degree": 38,
+            "betweenness": 0.0007222589094214865,
+            "eigenvector": 0.0001765266052802437,
+            "degree_cent": 0.013615191687567179,
+            "modularity": 1,
+            "id": "glitch",
+            "genre_name": "glitch",
+            "name": "Glitch"
+        },
+        {
+            "degree": 39,
+            "betweenness": 0.0005702110382806364,
+            "eigenvector": 0.00043975892063441283,
+            "degree_cent": 0.013973486205661053,
+            "modularity": 1,
+            "id": "outsiderhouse",
+            "genre_name": "outsider house",
+            "name": "Outsider House"
         },
         {
             "degree": 27,
@@ -3353,7 +3923,7 @@
             "betweenness": 0.00010852160147359075,
             "eigenvector": 0.007597008575802347,
             "degree_cent": 0.007524184879971336,
-            "modularity": 0,
+            "modularity": 3,
             "id": "sleazerock",
             "genre_name": "sleaze rock",
             "name": "Sleaze Rock"
@@ -3383,7 +3953,7 @@
             "betweenness": 0.0012645676224632084,
             "eigenvector": 0.0023703928793027225,
             "degree_cent": 0.011107130060910067,
-            "modularity": 0,
+            "modularity": 3,
             "id": "psychedelicsoul",
             "genre_name": "psychedelic soul",
             "name": "Psychedelic Soul"
@@ -3403,7 +3973,7 @@
             "betweenness": 0.002995464168948214,
             "eigenvector": 0.02638741594823756,
             "degree_cent": 0.022214260121820133,
-            "modularity": 0,
+            "modularity": 3,
             "id": "beatlesque",
             "genre_name": "beatlesque",
             "name": "Beatlesque"
@@ -3433,7 +4003,7 @@
             "betweenness": 0.0018911052873653493,
             "eigenvector": 0.010248429781332554,
             "degree_cent": 0.019706198495163023,
-            "modularity": 1,
+            "modularity": 3,
             "id": "britpop",
             "genre_name": "britpop",
             "name": "Britpop"
@@ -3469,6 +4039,16 @@
             "name": "Garage Rock Revival"
         },
         {
+            "degree": 35,
+            "betweenness": 0.0026900070770633196,
+            "eigenvector": 6.791505429649589e-05,
+            "degree_cent": 0.01254030813328556,
+            "modularity": 2,
+            "id": "mexicanrock",
+            "genre_name": "mexican rock",
+            "name": "Mexican Rock"
+        },
+        {
             "degree": 20,
             "betweenness": 0.00023676912377385356,
             "eigenvector": 0.0007289680391728808,
@@ -3489,11 +4069,21 @@
             "name": "Diva House"
         },
         {
+            "degree": 27,
+            "betweenness": 0.006949410282272621,
+            "eigenvector": 0.00023282191004487843,
+            "degree_cent": 0.009673951988534575,
+            "modularity": 3,
+            "id": "frenchjazz",
+            "genre_name": "french jazz",
+            "name": "French Jazz"
+        },
+        {
             "degree": 34,
             "betweenness": 0.005964476387508404,
             "eigenvector": 0.0005684013399005684,
             "degree_cent": 0.012182013615191686,
-            "modularity": 0,
+            "modularity": 3,
             "id": "latinmetal",
             "genre_name": "latin metal",
             "name": "Latin Metal"
@@ -3503,7 +4093,7 @@
             "betweenness": 0.0012800058688425848,
             "eigenvector": 0.0032474694953090744,
             "degree_cent": 0.01719813686850591,
-            "modularity": 1,
+            "modularity": 0,
             "id": "banjo",
             "genre_name": "banjo",
             "name": "Banjo"
@@ -3513,7 +4103,7 @@
             "betweenness": 0.001309912868097922,
             "eigenvector": 0.0023077633377913648,
             "degree_cent": 0.019706198495163023,
-            "modularity": 2,
+            "modularity": 1,
             "id": "neosynthpop",
             "genre_name": "neo-synthpop",
             "name": "Neo-Synthpop"
@@ -3523,7 +4113,7 @@
             "betweenness": 0.0020654155139008374,
             "eigenvector": 0.000846097483455365,
             "degree_cent": 0.014690075241848798,
-            "modularity": 0,
+            "modularity": 3,
             "id": "blackmetal",
             "genre_name": "black metal",
             "name": "Black Metal"
@@ -3533,17 +4123,27 @@
             "betweenness": 0.0005902785991763931,
             "eigenvector": 0.0006661472028824749,
             "degree_cent": 0.008240773916159082,
-            "modularity": 0,
+            "modularity": 3,
             "id": "blackthrash",
             "genre_name": "black thrash",
             "name": "Black Thrash"
+        },
+        {
+            "degree": 36,
+            "betweenness": 0.001036895925505741,
+            "eigenvector": 0.0001934725450226403,
+            "degree_cent": 0.012898602651379433,
+            "modularity": 1,
+            "id": "wonky",
+            "genre_name": "wonky",
+            "name": "Wonky"
         },
         {
             "degree": 79,
             "betweenness": 0.0026981128356268628,
             "eigenvector": 0.019258657057835263,
             "degree_cent": 0.028305266929415977,
-            "modularity": 0,
+            "modularity": 3,
             "id": "rockabilly",
             "genre_name": "rockabilly",
             "name": "Rockabilly"
@@ -3619,6 +4219,16 @@
             "name": "Athens Indie"
         },
         {
+            "degree": 22,
+            "betweenness": 0.0005159418110730913,
+            "eigenvector": 0.00031976056424387416,
+            "degree_cent": 0.007882479398065209,
+            "modularity": 2,
+            "id": "viralrap",
+            "genre_name": "viral rap",
+            "name": "Viral Rap"
+        },
+        {
             "degree": 21,
             "betweenness": 0.00035747240895549757,
             "eigenvector": 0.0008166301748375727,
@@ -3633,7 +4243,7 @@
             "betweenness": 0.009214313882969807,
             "eigenvector": 0.002105829762881457,
             "degree_cent": 0.01934790397706915,
-            "modularity": 2,
+            "modularity": 0,
             "id": "celticrock",
             "genre_name": "celtic rock",
             "name": "Celtic Rock"
@@ -3653,7 +4263,7 @@
             "betweenness": 0.0021749940564679197,
             "eigenvector": 0.0002929082693852167,
             "degree_cent": 0.008240773916159082,
-            "modularity": 2,
+            "modularity": 1,
             "id": "experimentalvocal",
             "genre_name": "experimental vocal",
             "name": "Experimental Vocal"
@@ -3683,7 +4293,7 @@
             "betweenness": 0.00213729405842687,
             "eigenvector": 0.002208309459681869,
             "degree_cent": 0.008240773916159082,
-            "modularity": 0,
+            "modularity": 3,
             "id": "birminghammetal",
             "genre_name": "birmingham metal",
             "name": "Birmingham Metal"
@@ -3693,7 +4303,7 @@
             "betweenness": 0.00022098666984191002,
             "eigenvector": 0.0030745095606857843,
             "degree_cent": 0.008599068434252954,
-            "modularity": 1,
+            "modularity": 3,
             "id": "modernhardrock",
             "genre_name": "modern hard rock",
             "name": "Modern Hard Rock"
@@ -3703,7 +4313,7 @@
             "betweenness": 0.004381650464971756,
             "eigenvector": 0.002533643514259468,
             "degree_cent": 0.012898602651379433,
-            "modularity": 0,
+            "modularity": 3,
             "id": "nativeamerican",
             "genre_name": "native american",
             "name": "Native American"
@@ -3749,6 +4359,16 @@
             "name": "Portland Indie"
         },
         {
+            "degree": 25,
+            "betweenness": 0.0005491958948951,
+            "eigenvector": 0.00012674260464050864,
+            "degree_cent": 0.008957362952346828,
+            "modularity": 0,
+            "id": "christianpunk",
+            "genre_name": "christian punk",
+            "name": "Christian Punk"
+        },
+        {
             "degree": 21,
             "betweenness": 0.0005404504135997781,
             "eigenvector": 0.00037320853222179304,
@@ -3763,7 +4383,7 @@
             "betweenness": 0.00013506551535844426,
             "eigenvector": 0.00525955685198885,
             "degree_cent": 0.008599068434252954,
-            "modularity": 0,
+            "modularity": 3,
             "id": "jazzrock",
             "genre_name": "jazz rock",
             "name": "Jazz Rock"
@@ -3799,6 +4419,26 @@
             "name": "Australian Indie"
         },
         {
+            "degree": 29,
+            "betweenness": 0.0004622953604968155,
+            "eigenvector": 0.000821769745610918,
+            "degree_cent": 0.010390541024722321,
+            "modularity": 3,
+            "id": "experimentalambient",
+            "genre_name": "experimental ambient",
+            "name": "Experimental Ambient"
+        },
+        {
+            "degree": 25,
+            "betweenness": 0.00017089055585631452,
+            "eigenvector": 0.0037759745488890315,
+            "degree_cent": 0.008957362952346828,
+            "modularity": 3,
+            "id": "psychedelicfolk",
+            "genre_name": "psychedelic folk",
+            "name": "Psychedelic Folk"
+        },
+        {
             "degree": 21,
             "betweenness": 0.00015000231089216403,
             "eigenvector": 0.00038953183690827904,
@@ -3829,11 +4469,51 @@
             "name": "Psychedelic Punk"
         },
         {
+            "degree": 27,
+            "betweenness": 0.00010259810944120115,
+            "eigenvector": 0.001174007798971349,
+            "degree_cent": 0.009673951988534575,
+            "modularity": 3,
+            "id": "britishexperimental",
+            "genre_name": "british experimental",
+            "name": "British Experimental"
+        },
+        {
+            "degree": 26,
+            "betweenness": 9.666517729448635e-05,
+            "eigenvector": 0.0012191802019083878,
+            "degree_cent": 0.009315657470440702,
+            "modularity": 3,
+            "id": "britishindustrial",
+            "genre_name": "british industrial",
+            "name": "British Industrial"
+        },
+        {
+            "degree": 41,
+            "betweenness": 0.0021499506961298754,
+            "eigenvector": 0.001016724741493887,
+            "degree_cent": 0.014690075241848798,
+            "modularity": 3,
+            "id": "prototechno",
+            "genre_name": "proto-techno",
+            "name": "Proto-Techno"
+        },
+        {
+            "degree": 26,
+            "betweenness": 0.0014790820145861939,
+            "eigenvector": 0.0006599621586345937,
+            "degree_cent": 0.009315657470440702,
+            "modularity": 2,
+            "id": "popping",
+            "genre_name": "popping",
+            "name": "Popping"
+        },
+        {
             "degree": 71,
             "betweenness": 0.007875640578869874,
             "eigenvector": 0.014347222758893875,
             "degree_cent": 0.02543891078466499,
-            "modularity": 0,
+            "modularity": 3,
             "id": "zolo",
             "genre_name": "zolo",
             "name": "Zolo"
@@ -3863,10 +4543,20 @@
             "betweenness": 0.0010560507310598242,
             "eigenvector": 0.000767392839078331,
             "degree_cent": 0.010390541024722321,
-            "modularity": 0,
+            "modularity": 3,
             "id": "deathrash",
             "genre_name": "deathrash",
             "name": "Deathrash"
+        },
+        {
+            "degree": 25,
+            "betweenness": 0.00031230686216879267,
+            "eigenvector": 0.0016284890349231834,
+            "degree_cent": 0.008957362952346828,
+            "modularity": 3,
+            "id": "britfunk",
+            "genre_name": "brit funk",
+            "name": "Brit Funk"
         },
         {
             "degree": 53,
@@ -3883,7 +4573,7 @@
             "betweenness": 0.00041121419117629633,
             "eigenvector": 0.001278008389026783,
             "degree_cent": 0.012898602651379433,
-            "modularity": 1,
+            "modularity": 3,
             "id": "etherealwave",
             "genre_name": "ethereal wave",
             "name": "Ethereal Wave"
@@ -3893,10 +4583,20 @@
             "betweenness": 0.0016758936397478998,
             "eigenvector": 0.0012035130864769727,
             "degree_cent": 0.01146542457900394,
-            "modularity": 1,
+            "modularity": 3,
             "id": "alternativerootsrock",
             "genre_name": "alternative roots rock",
             "name": "Alternative Roots Rock"
+        },
+        {
+            "degree": 23,
+            "betweenness": 0.0002114990889560629,
+            "eigenvector": 0.00036636725737477046,
+            "degree_cent": 0.008240773916159082,
+            "modularity": 1,
+            "id": "ambientpop",
+            "genre_name": "ambient pop",
+            "name": "Ambient Pop"
         },
         {
             "degree": 23,
@@ -3933,7 +4633,7 @@
             "betweenness": 0.001145270453713265,
             "eigenvector": 0.0005968522356390649,
             "degree_cent": 0.010748835542816195,
-            "modularity": 0,
+            "modularity": 3,
             "id": "gothicmetal",
             "genre_name": "gothic metal",
             "name": "Gothic Metal"
@@ -3943,7 +4643,7 @@
             "betweenness": 0.0020653489369434016,
             "eigenvector": 0.004798052929156428,
             "degree_cent": 0.015048369759942672,
-            "modularity": 1,
+            "modularity": 3,
             "id": "artpunk",
             "genre_name": "art punk",
             "name": "Art Punk"
@@ -3953,7 +4653,7 @@
             "betweenness": 0.0005263053643881459,
             "eigenvector": 0.00832665771699147,
             "degree_cent": 0.012898602651379433,
-            "modularity": 0,
+            "modularity": 3,
             "id": "swamprock",
             "genre_name": "swamp rock",
             "name": "Swamp Rock"
@@ -3997,6 +4697,16 @@
             "id": "austindie",
             "genre_name": "austindie",
             "name": "Austindie"
+        },
+        {
+            "degree": 20,
+            "betweenness": 0.001129997473676688,
+            "eigenvector": 0.0003315598256447815,
+            "degree_cent": 0.007165890361877463,
+            "modularity": 3,
+            "id": "jazzviolin",
+            "genre_name": "jazz violin",
+            "name": "Jazz Violin"
         },
         {
             "degree": 43,
@@ -4073,10 +4783,20 @@
             "betweenness": 2.7287717119867704e-05,
             "eigenvector": 0.01047232729113335,
             "degree_cent": 0.008240773916159082,
-            "modularity": 0,
+            "modularity": 3,
             "id": "sunshinepop",
             "genre_name": "sunshine pop",
             "name": "Sunshine Pop"
+        },
+        {
+            "degree": 27,
+            "betweenness": 0.00032822737495448147,
+            "eigenvector": 0.0004829724715784479,
+            "degree_cent": 0.009673951988534575,
+            "modularity": 1,
+            "id": "electroclash",
+            "genre_name": "electroclash",
+            "name": "Electroclash"
         },
         {
             "degree": 48,
@@ -4103,7 +4823,7 @@
             "betweenness": 0.00044710489776496164,
             "eigenvector": 0.001048988210411792,
             "degree_cent": 0.007882479398065209,
-            "modularity": 0,
+            "modularity": 3,
             "id": "progressivegroovemetal",
             "genre_name": "progressive groove metal",
             "name": "Progressive Groove Metal"
@@ -4119,6 +4839,26 @@
             "name": "Modern Power Pop"
         },
         {
+            "degree": 21,
+            "betweenness": 7.654858106480525e-05,
+            "eigenvector": 0.0002398474705569869,
+            "degree_cent": 0.007524184879971336,
+            "modularity": 0,
+            "id": "christianindie",
+            "genre_name": "christian indie",
+            "name": "Christian Indie"
+        },
+        {
+            "degree": 24,
+            "betweenness": 0.0004267752154045959,
+            "eigenvector": 0.00023186263033702197,
+            "degree_cent": 0.008599068434252954,
+            "modularity": 1,
+            "id": "gothenburgindie",
+            "genre_name": "gothenburg indie",
+            "name": "Gothenburg Indie"
+        },
+        {
             "degree": 33,
             "betweenness": 0.0007056626588960747,
             "eigenvector": 0.0006233640688253936,
@@ -4127,6 +4867,26 @@
             "id": "swedishindiepop",
             "genre_name": "swedish indie pop",
             "name": "Swedish Indie Pop"
+        },
+        {
+            "degree": 22,
+            "betweenness": 0.0001863086808952172,
+            "eigenvector": 0.0015855522177532372,
+            "degree_cent": 0.007882479398065209,
+            "modularity": 0,
+            "id": "austinsingersongwriter",
+            "genre_name": "austin singer-songwriter",
+            "name": "Austin Singer-Songwriter"
+        },
+        {
+            "degree": 22,
+            "betweenness": 0.0002675828570365659,
+            "eigenvector": 0.00023156935038525972,
+            "degree_cent": 0.007882479398065209,
+            "modularity": 1,
+            "id": "hauntology",
+            "genre_name": "hauntology",
+            "name": "Hauntology"
         }
     ],
     "links": [
@@ -4136,9 +4896,24 @@
             "target": "alternativerock"
         },
         {
+            "weight": 2,
+            "source": "comic",
+            "target": "poprock"
+        },
+        {
             "weight": 4,
             "source": "comic",
             "target": "rock"
+        },
+        {
+            "weight": 1,
+            "source": "comic",
+            "target": "artrock"
+        },
+        {
+            "weight": 1,
+            "source": "comic",
+            "target": "indiepop"
         },
         {
             "weight": 1,
@@ -4153,7 +4928,22 @@
         {
             "weight": 1,
             "source": "sadrap",
+            "target": "pop"
+        },
+        {
+            "weight": 1,
+            "source": "sadrap",
             "target": "modernrock"
+        },
+        {
+            "weight": 1,
+            "source": "calirap",
+            "target": "pop"
+        },
+        {
+            "weight": 4,
+            "source": "hollywood",
+            "target": "pop"
         },
         {
             "weight": 5,
@@ -4171,6 +4961,16 @@
             "target": "modernrock"
         },
         {
+            "weight": 4,
+            "source": "bostonrock",
+            "target": "poprock"
+        },
+        {
+            "weight": 2,
+            "source": "bostonrock",
+            "target": "artrock"
+        },
+        {
             "weight": 2,
             "source": "bostonrock",
             "target": "rock"
@@ -4184,6 +4984,16 @@
             "weight": 44,
             "source": "dancerock",
             "target": "alternativerock"
+        },
+        {
+            "weight": 23,
+            "source": "dancerock",
+            "target": "poprock"
+        },
+        {
+            "weight": 98,
+            "source": "dancerock",
+            "target": "artrock"
         },
         {
             "weight": 65,
@@ -4206,9 +5016,29 @@
             "target": "modernrock"
         },
         {
+            "weight": 11,
+            "source": "dancerock",
+            "target": "artpop"
+        },
+        {
+            "weight": 3,
+            "source": "dancerock",
+            "target": "indiepop"
+        },
+        {
+            "weight": 45,
+            "source": "newromantic",
+            "target": "artrock"
+        },
+        {
             "weight": 7,
             "source": "newromantic",
             "target": "dancepop"
+        },
+        {
+            "weight": 9,
+            "source": "newromantic",
+            "target": "poprock"
         },
         {
             "weight": 24,
@@ -4216,9 +5046,19 @@
             "target": "rock"
         },
         {
+            "weight": 2,
+            "source": "newromantic",
+            "target": "artpop"
+        },
+        {
             "weight": 5,
             "source": "newromantic",
             "target": "alternativerock"
+        },
+        {
+            "weight": 69,
+            "source": "newwave",
+            "target": "artrock"
         },
         {
             "weight": 5,
@@ -4236,9 +5076,24 @@
             "target": "rock"
         },
         {
+            "weight": 8,
+            "source": "newwave",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "newwave",
+            "target": "indiepop"
+        },
+        {
             "weight": 6,
             "source": "newwave",
             "target": "indierock"
+        },
+        {
+            "weight": 8,
+            "source": "newwave",
+            "target": "poprock"
         },
         {
             "weight": 2,
@@ -4251,14 +5106,49 @@
             "target": "alternativerock"
         },
         {
+            "weight": 55,
+            "source": "newwavepop",
+            "target": "poprock"
+        },
+        {
             "weight": 25,
             "source": "newwavepop",
             "target": "dancepop"
         },
         {
+            "weight": 54,
+            "source": "newwavepop",
+            "target": "artrock"
+        },
+        {
             "weight": 41,
             "source": "newwavepop",
             "target": "rock"
+        },
+        {
+            "weight": 3,
+            "source": "newwavepop",
+            "target": "pop"
+        },
+        {
+            "weight": 6,
+            "source": "newwavepop",
+            "target": "artpop"
+        },
+        {
+            "weight": 7,
+            "source": "indier&b",
+            "target": "pop"
+        },
+        {
+            "weight": 6,
+            "source": "indiesoul",
+            "target": "artpop"
+        },
+        {
+            "weight": 6,
+            "source": "indiesoul",
+            "target": "pop"
         },
         {
             "weight": 6,
@@ -4274,6 +5164,16 @@
             "weight": 2,
             "source": "indiesoul",
             "target": "modernrock"
+        },
+        {
+            "weight": 2,
+            "source": "indiesoul",
+            "target": "indiepop"
+        },
+        {
+            "weight": 26,
+            "source": "alternativemetal",
+            "target": "poprock"
         },
         {
             "weight": 62,
@@ -4297,6 +5197,16 @@
         },
         {
             "weight": 5,
+            "source": "alternativemetal",
+            "target": "artrock"
+        },
+        {
+            "weight": 1,
+            "source": "alternativemetal",
+            "target": "indiepop"
+        },
+        {
+            "weight": 5,
             "source": "industrialmetal",
             "target": "alternativerock"
         },
@@ -4309,6 +5219,11 @@
             "weight": 3,
             "source": "industrialmetal",
             "target": "modernrock"
+        },
+        {
+            "weight": 11,
+            "source": "numetal",
+            "target": "poprock"
         },
         {
             "weight": 31,
@@ -4324,6 +5239,11 @@
             "weight": 45,
             "source": "numetal",
             "target": "rock"
+        },
+        {
+            "weight": 3,
+            "source": "numetal",
+            "target": "artrock"
         },
         {
             "weight": 7,
@@ -4346,6 +5266,11 @@
             "target": "modernrock"
         },
         {
+            "weight": 3,
+            "source": "raprock",
+            "target": "poprock"
+        },
+        {
             "weight": 17,
             "source": "raprock",
             "target": "rock"
@@ -4354,6 +5279,16 @@
             "weight": 27,
             "source": "boyband",
             "target": "dancepop"
+        },
+        {
+            "weight": 11,
+            "source": "boyband",
+            "target": "pop"
+        },
+        {
+            "weight": 8,
+            "source": "boyband",
+            "target": "poprock"
         },
         {
             "weight": 1,
@@ -5191,6 +6126,16 @@
             "target": "complextro"
         },
         {
+            "weight": 13,
+            "source": "europop",
+            "target": "pop"
+        },
+        {
+            "weight": 20,
+            "source": "europop",
+            "target": "poprock"
+        },
+        {
             "weight": 1,
             "source": "europop",
             "target": "modernrock"
@@ -5198,7 +6143,42 @@
         {
             "weight": 2,
             "source": "europop",
+            "target": "artrock"
+        },
+        {
+            "weight": 2,
+            "source": "europop",
             "target": "rock"
+        },
+        {
+            "weight": 2,
+            "source": "europop",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "electropowerpop"
+        },
+        {
+            "weight": 6,
+            "source": "pop",
+            "target": "poppunk"
+        },
+        {
+            "weight": 95,
+            "source": "pop",
+            "target": "poprap"
+        },
+        {
+            "weight": 205,
+            "source": "pop",
+            "target": "postteenpop"
+        },
+        {
+            "weight": 8,
+            "source": "pop",
+            "target": "indiecoustica"
         },
         {
             "weight": 42,
@@ -5206,14 +6186,744 @@
             "target": "modernrock"
         },
         {
+            "weight": 42,
+            "source": "pop",
+            "target": "neomellow"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "pianorock"
+        },
+        {
+            "weight": 64,
+            "source": "pop",
+            "target": "poprock"
+        },
+        {
+            "weight": 55,
+            "source": "pop",
+            "target": "edm"
+        },
+        {
+            "weight": 105,
+            "source": "pop",
+            "target": "electropop"
+        },
+        {
+            "weight": 59,
+            "source": "pop",
+            "target": "indiepoptimism"
+        },
+        {
+            "weight": 187,
+            "source": "pop",
+            "target": "popdance"
+        },
+        {
+            "weight": 67,
+            "source": "pop",
+            "target": "tropicalhouse"
+        },
+        {
+            "weight": 26,
+            "source": "pop",
+            "target": "socialmediapop"
+        },
+        {
+            "weight": 38,
+            "source": "pop",
+            "target": "hippop"
+        },
+        {
+            "weight": 23,
+            "source": "pop",
+            "target": "neosoul"
+        },
+        {
+            "weight": 79,
+            "source": "pop",
+            "target": "r&b"
+        },
+        {
+            "weight": 72,
+            "source": "pop",
+            "target": "urbancontemporary"
+        },
+        {
+            "weight": 19,
+            "source": "pop",
+            "target": "hiphop"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "britishsoul"
+        },
+        {
+            "weight": 39,
+            "source": "pop",
+            "target": "ukpop"
+        },
+        {
+            "weight": 38,
+            "source": "pop",
+            "target": "alternativer&b"
+        },
+        {
+            "weight": 11,
+            "source": "pop",
+            "target": "canadiancontemporaryr&b"
+        },
+        {
+            "weight": 14,
+            "source": "pop",
+            "target": "canadianpop"
+        },
+        {
+            "weight": 12,
+            "source": "pop",
+            "target": "bigroom"
+        },
+        {
+            "weight": 26,
+            "source": "pop",
+            "target": "electrohouse"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "progressiveelectrohouse"
+        },
+        {
+            "weight": 35,
+            "source": "pop",
+            "target": "indiecafepop"
+        },
+        {
+            "weight": 47,
+            "source": "pop",
+            "target": "viralpop"
+        },
+        {
+            "weight": 25,
+            "source": "pop",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "canadianhiphop"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "etherpop"
+        },
+        {
+            "weight": 17,
+            "source": "pop",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "canadianelectropop"
+        },
+        {
+            "weight": 18,
+            "source": "pop",
+            "target": "escaperoom"
+        },
+        {
+            "weight": 14,
+            "source": "pop",
+            "target": "indieelectropop"
+        },
+        {
+            "weight": 20,
+            "source": "pop",
+            "target": "metropopolis"
+        },
+        {
+            "weight": 12,
+            "source": "pop",
+            "target": "vaporsoul"
+        },
+        {
+            "weight": 12,
+            "source": "pop",
+            "target": "house"
+        },
+        {
+            "weight": 15,
+            "source": "pop",
+            "target": "girlgroup"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "dmvrap"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "norwegianpop"
+        },
+        {
+            "weight": 25,
+            "source": "pop",
+            "target": "popr&b"
+        },
+        {
+            "weight": 16,
+            "source": "pop",
+            "target": "trap"
+        },
+        {
+            "weight": 8,
+            "source": "pop",
+            "target": "candypop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "hiphouse"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "lgbtq+hiphop"
+        },
+        {
+            "weight": 12,
+            "source": "pop",
+            "target": "trapqueen"
+        },
+        {
+            "weight": 15,
+            "source": "pop",
+            "target": "latin"
+        },
+        {
+            "weight": 14,
+            "source": "pop",
+            "target": "latinpop"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "raplatina"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "reggaeton"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "traplatino"
+        },
+        {
+            "weight": 6,
+            "source": "pop",
+            "target": "atlhiphop"
+        },
+        {
+            "weight": 16,
+            "source": "pop",
+            "target": "rap"
+        },
+        {
+            "weight": 10,
+            "source": "pop",
+            "target": "southernhiphop"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "nzpop"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "colombianpop"
+        },
+        {
+            "weight": 5,
+            "source": "pop",
+            "target": "rockenespanol"
+        },
+        {
+            "weight": 10,
+            "source": "pop",
+            "target": "ukdance"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "latinalternative"
+        },
+        {
+            "weight": 5,
+            "source": "pop",
+            "target": "latinarenapop"
+        },
+        {
+            "weight": 7,
+            "source": "pop",
+            "target": "mexicanpop"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "australiandance"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "viralrap"
+        },
+        {
+            "weight": 13,
+            "source": "pop",
+            "target": "modernalternativerock"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "doubledrumming"
+        },
+        {
             "weight": 9,
             "source": "pop",
             "target": "rock"
         },
         {
+            "weight": 2,
+            "source": "pop",
+            "target": "stompandholler"
+        },
+        {
+            "weight": 10,
+            "source": "pop",
+            "target": "australianpop"
+        },
+        {
+            "weight": 8,
+            "source": "pop",
+            "target": "indietronica"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "shimmerpop"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "progressivehouse"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "hyperpop"
+        },
+        {
+            "weight": 6,
+            "source": "pop",
+            "target": "contemporarycountry"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "country"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "countrydawn"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "countryroad"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "oklahomacountry"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "downtempo"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "shiverpop"
+        },
+        {
+            "weight": 6,
+            "source": "pop",
+            "target": "nycpop"
+        },
+        {
+            "weight": 11,
+            "source": "pop",
+            "target": "popedm"
+        },
+        {
+            "weight": 8,
+            "source": "pop",
+            "target": "swedishpop"
+        },
+        {
+            "weight": 8,
+            "source": "pop",
+            "target": "acousticpop"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "permanentwave"
+        },
+        {
+            "weight": 6,
+            "source": "pop",
+            "target": "bedroompop"
+        },
+        {
+            "weight": 5,
+            "source": "pop",
+            "target": "miamihiphop"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "electronictrap"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "folkpop"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "brostep"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "moombahton"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "ninja"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "laindie"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "trapsoul"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "ukcontemporaryr&b"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "lapop"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "vaportwitch"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "tropical"
+        },
+        {
+            "weight": 6,
+            "source": "pop",
+            "target": "afrofuturism"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "triphop"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "baroquepop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "softrock"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "chillwave"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "gravewave"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "pixie"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "neonpoppunk"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "moderncountryrock"
+        },
+        {
+            "weight": 7,
+            "source": "pop",
+            "target": "swedishelectropop"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "swedishsynthpop"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "indieanthemfolk"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "popping"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "chicagorap"
+        },
+        {
+            "weight": 4,
+            "source": "pop",
+            "target": "chillr&b"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "singersongwriter"
+        },
+        {
             "weight": 1,
             "source": "pop",
             "target": "indierock"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "texascountry"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "chicagohouse"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "vocalhouse"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "eurodance"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "minnesotahiphop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "spanishpop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "swedishindiepop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "canadianrock"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "houstonrap"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "soul"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "deeptropicalhouse"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "queenshiphop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "latinrock"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "mexicanrock"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "popemo"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "indiepoprap"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "deephouse"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "divahouse"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "lilith"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "neosynthpop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "chamberpop"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "dreamo"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "bubblegumdance"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "newjackswing"
+        },
+        {
+            "weight": 3,
+            "source": "pop",
+            "target": "gauzepop"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "vaporpop"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "nugaze"
+        },
+        {
+            "weight": 2,
+            "source": "pop",
+            "target": "hopebeat"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "alternativedance"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "newfrenchtouch"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "nudisco"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "celticrock"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "trance"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "brooklynindie"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "gangsterrap"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "complextro"
+        },
+        {
+            "weight": 1,
+            "source": "pop",
+            "target": "germantechno"
         },
         {
             "weight": 43,
@@ -6126,9 +7836,29 @@
             "target": "modernrock"
         },
         {
+            "weight": 9,
+            "source": "dancepunk",
+            "target": "artrock"
+        },
+        {
             "weight": 27,
             "source": "dancepunk",
             "target": "rock"
+        },
+        {
+            "weight": 11,
+            "source": "dancepunk",
+            "target": "artpop"
+        },
+        {
+            "weight": 26,
+            "source": "dancepunk",
+            "target": "indiepop"
+        },
+        {
+            "weight": 2,
+            "source": "dancepunk",
+            "target": "poprock"
         },
         {
             "weight": 6,
@@ -6144,6 +7874,16 @@
             "weight": 7,
             "source": "doubledrumming",
             "target": "rock"
+        },
+        {
+            "weight": 6,
+            "source": "doubledrumming",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "doubledrumming",
+            "target": "poprock"
         },
         {
             "weight": 138,
@@ -7666,9 +9406,39 @@
             "target": "vaportwitch"
         },
         {
+            "weight": 1,
+            "source": "posthardcore",
+            "target": "poprock"
+        },
+        {
             "weight": 7,
             "source": "posthardcore",
             "target": "rock"
+        },
+        {
+            "weight": 6,
+            "source": "posthardcore",
+            "target": "artrock"
+        },
+        {
+            "weight": 1,
+            "source": "posthardcore",
+            "target": "indiepop"
+        },
+        {
+            "weight": 9,
+            "source": "alternativer&b",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "alternativer&b",
+            "target": "indiepop"
+        },
+        {
+            "weight": 4,
+            "source": "christianrock",
+            "target": "poprock"
         },
         {
             "weight": 1,
@@ -7676,9 +9446,24 @@
             "target": "rock"
         },
         {
+            "weight": 33,
+            "source": "postgrunge",
+            "target": "poprock"
+        },
+        {
             "weight": 32,
             "source": "postgrunge",
             "target": "rock"
+        },
+        {
+            "weight": 33,
+            "source": "folk",
+            "target": "poprock"
+        },
+        {
+            "weight": 28,
+            "source": "folk",
+            "target": "artrock"
         },
         {
             "weight": 44,
@@ -7686,9 +9471,49 @@
             "target": "rock"
         },
         {
+            "weight": 3,
+            "source": "folk",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "folk",
+            "target": "indiepop"
+        },
+        {
+            "weight": 64,
+            "source": "lilith",
+            "target": "poprock"
+        },
+        {
             "weight": 13,
             "source": "lilith",
             "target": "rock"
+        },
+        {
+            "weight": 5,
+            "source": "lilith",
+            "target": "artrock"
+        },
+        {
+            "weight": 4,
+            "source": "lilith",
+            "target": "artpop"
+        },
+        {
+            "weight": 6,
+            "source": "lilith",
+            "target": "indiepop"
+        },
+        {
+            "weight": 41,
+            "source": "mellowgold",
+            "target": "poprock"
+        },
+        {
+            "weight": 73,
+            "source": "mellowgold",
+            "target": "artrock"
         },
         {
             "weight": 155,
@@ -7696,9 +9521,744 @@
             "target": "rock"
         },
         {
+            "weight": 1,
+            "source": "mellowgold",
+            "target": "artpop"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "funkmetal"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "funkrock"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "reggaefusion"
+        },
+        {
             "weight": 83,
             "source": "poprock",
             "target": "rock"
+        },
+        {
+            "weight": 42,
+            "source": "poprock",
+            "target": "acousticpop"
+        },
+        {
+            "weight": 123,
+            "source": "poprock",
+            "target": "neomellow"
+        },
+        {
+            "weight": 27,
+            "source": "poprock",
+            "target": "indiecoustica"
+        },
+        {
+            "weight": 28,
+            "source": "poprock",
+            "target": "pianorock"
+        },
+        {
+            "weight": 15,
+            "source": "poprock",
+            "target": "neonpoppunk"
+        },
+        {
+            "weight": 7,
+            "source": "poprock",
+            "target": "pixie"
+        },
+        {
+            "weight": 5,
+            "source": "poprock",
+            "target": "popemo"
+        },
+        {
+            "weight": 30,
+            "source": "poprock",
+            "target": "poppunk"
+        },
+        {
+            "weight": 21,
+            "source": "poprock",
+            "target": "viralpop"
+        },
+        {
+            "weight": 5,
+            "source": "poprock",
+            "target": "laindie"
+        },
+        {
+            "weight": 32,
+            "source": "poprock",
+            "target": "modernalternativerock"
+        },
+        {
+            "weight": 31,
+            "source": "poprock",
+            "target": "softrock"
+        },
+        {
+            "weight": 8,
+            "source": "poprock",
+            "target": "urbancontemporary"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "bubblegumdance"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "eurodance"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "hiphouse"
+        },
+        {
+            "weight": 34,
+            "source": "poprock",
+            "target": "permanentwave"
+        },
+        {
+            "weight": 13,
+            "source": "poprock",
+            "target": "emo"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "socalpoppunk"
+        },
+        {
+            "weight": 9,
+            "source": "poprock",
+            "target": "canadianpop"
+        },
+        {
+            "weight": 7,
+            "source": "poprock",
+            "target": "canadiansingersongwriter"
+        },
+        {
+            "weight": 21,
+            "source": "poprock",
+            "target": "singersongwriter"
+        },
+        {
+            "weight": 31,
+            "source": "poprock",
+            "target": "indiepoptimism"
+        },
+        {
+            "weight": 12,
+            "source": "poprock",
+            "target": "indiefolk"
+        },
+        {
+            "weight": 9,
+            "source": "poprock",
+            "target": "newamericana"
+        },
+        {
+            "weight": 26,
+            "source": "poprock",
+            "target": "stompandholler"
+        },
+        {
+            "weight": 5,
+            "source": "poprock",
+            "target": "christianalternativerock"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "dreamo"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "screamo"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "indieanthemfolk"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "hopebeat"
+        },
+        {
+            "weight": 29,
+            "source": "poprock",
+            "target": "indiepop"
+        },
+        {
+            "weight": 33,
+            "source": "poprock",
+            "target": "postteenpop"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "antifolk"
+        },
+        {
+            "weight": 8,
+            "source": "poprock",
+            "target": "ectofolk"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "\"womensmusic\""
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "indietronica"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "shimmerpop"
+        },
+        {
+            "weight": 7,
+            "source": "poprock",
+            "target": "canadianrock"
+        },
+        {
+            "weight": 9,
+            "source": "poprock",
+            "target": "metropopolis"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "australianalternativerock"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "australianpop"
+        },
+        {
+            "weight": 5,
+            "source": "poprock",
+            "target": "australianrock"
+        },
+        {
+            "weight": 9,
+            "source": "poprock",
+            "target": "indiecafepop"
+        },
+        {
+            "weight": 8,
+            "source": "poprock",
+            "target": "jamband"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "cowpunk"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "bluesrock"
+        },
+        {
+            "weight": 11,
+            "source": "poprock",
+            "target": "grunge"
+        },
+        {
+            "weight": 23,
+            "source": "poprock",
+            "target": "classicrock"
+        },
+        {
+            "weight": 11,
+            "source": "poprock",
+            "target": "britpop"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "madchester"
+        },
+        {
+            "weight": 16,
+            "source": "poprock",
+            "target": "rootsrock"
+        },
+        {
+            "weight": 11,
+            "source": "poprock",
+            "target": "countryrock"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "electricblues"
+        },
+        {
+            "weight": 19,
+            "source": "poprock",
+            "target": "folkrock"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "modernfolkrock"
+        },
+        {
+            "weight": 22,
+            "source": "poprock",
+            "target": "albumrock"
+        },
+        {
+            "weight": 14,
+            "source": "poprock",
+            "target": "heartlandrock"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "classiccanadianrock"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "candypop"
+        },
+        {
+            "weight": 8,
+            "source": "poprock",
+            "target": "artrock"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "beatlesque"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "glammetal"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "glamrock"
+        },
+        {
+            "weight": 8,
+            "source": "poprock",
+            "target": "hardrock"
+        },
+        {
+            "weight": 11,
+            "source": "poprock",
+            "target": "powerpop"
+        },
+        {
+            "weight": 8,
+            "source": "poprock",
+            "target": "alternativecountry"
+        },
+        {
+            "weight": 15,
+            "source": "poprock",
+            "target": "popdance"
+        },
+        {
+            "weight": 7,
+            "source": "poprock",
+            "target": "contemporarycountry"
+        },
+        {
+            "weight": 8,
+            "source": "poprock",
+            "target": "country"
+        },
+        {
+            "weight": 7,
+            "source": "poprock",
+            "target": "countryroad"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "moderncountryrock"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "deepnewamericana"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "funk"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "celticrock"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "melancholia"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "scottishrock"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "yachtrock"
+        },
+        {
+            "weight": 9,
+            "source": "poprock",
+            "target": "electropop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "texascountry"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "electronica"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "sophistipop"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "triphop"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "countrydawn"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "welshrock"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "chamberpop"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "baroquepop"
+        },
+        {
+            "weight": 6,
+            "source": "poprock",
+            "target": "ukpop"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "alternativedance"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "electronicrock"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "bigbeat"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "chamberpsych"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "neosynthpop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "newrave"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "swedishalternativerock"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "hippop"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "tropicalhouse"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "neosoul"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "modernpowerpop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "freakfolk"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "neopsychedelic"
+        },
+        {
+            "weight": 5,
+            "source": "poprock",
+            "target": "traditionalfolk"
+        },
+        {
+            "weight": 6,
+            "source": "poprock",
+            "target": "poprap"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "r&b"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "britishsoul"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "banjo"
+        },
+        {
+            "weight": 12,
+            "source": "poprock",
+            "target": "folkpop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "countrypop"
+        },
+        {
+            "weight": 6,
+            "source": "poprock",
+            "target": "alternativepop"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "janglepop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "laboratorio"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "undergroundpowerpop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "nycpop"
+        },
+        {
+            "weight": 8,
+            "source": "poprock",
+            "target": "opm"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "ccm"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "christianindie"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "christianmusic"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "worship"
+        },
+        {
+            "weight": 4,
+            "source": "poprock",
+            "target": "canadianindie"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "outlawcountry"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "chicagoindie"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "wrestling"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "newjerseyindie"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "australianindie"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "christianpunk"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "swedishelectropop"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "swedishpop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "austinsingersongwriter"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "lapop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "discohouse"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "symphonicrock"
+        },
+        {
+            "weight": 2,
+            "source": "poprock",
+            "target": "girlgroup"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "southernrock"
+        },
+        {
+            "weight": 3,
+            "source": "poprock",
+            "target": "bowpop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "postpunk"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "punk"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "dreampop"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "shoegaze"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "indiepoprap"
+        },
+        {
+            "weight": 1,
+            "source": "poprock",
+            "target": "psychedelicrock"
+        },
+        {
+            "weight": 6,
+            "source": "hyperpop",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "adultstandards",
+            "target": "artrock"
         },
         {
             "weight": 2,
@@ -7706,9 +10266,39 @@
             "target": "rock"
         },
         {
+            "weight": 98,
+            "source": "albumrock",
+            "target": "artrock"
+        },
+        {
             "weight": 217,
             "source": "albumrock",
             "target": "rock"
+        },
+        {
+            "weight": 1,
+            "source": "albumrock",
+            "target": "artpop"
+        },
+        {
+            "weight": 94,
+            "source": "artrock",
+            "target": "classicrock"
+        },
+        {
+            "weight": 39,
+            "source": "artrock",
+            "target": "classicukpop"
+        },
+        {
+            "weight": 78,
+            "source": "artrock",
+            "target": "folkrock"
+        },
+        {
+            "weight": 21,
+            "source": "artrock",
+            "target": "glamrock"
         },
         {
             "weight": 114,
@@ -7716,9 +10306,824 @@
             "target": "rock"
         },
         {
+            "weight": 71,
+            "source": "artrock",
+            "target": "softrock"
+        },
+        {
+            "weight": 83,
+            "source": "artrock",
+            "target": "symphonicrock"
+        },
+        {
+            "weight": 12,
+            "source": "artrock",
+            "target": "yachtrock"
+        },
+        {
+            "weight": 14,
+            "source": "artrock",
+            "target": "chamberpsych"
+        },
+        {
+            "weight": 49,
+            "source": "artrock",
+            "target": "experimental"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "nowave"
+        },
+        {
+            "weight": 45,
+            "source": "artrock",
+            "target": "postpunk"
+        },
+        {
+            "weight": 19,
+            "source": "artrock",
+            "target": "sophistipop"
+        },
+        {
+            "weight": 30,
+            "source": "artrock",
+            "target": "ukpostpunk"
+        },
+        {
+            "weight": 48,
+            "source": "artrock",
+            "target": "countryrock"
+        },
+        {
+            "weight": 66,
+            "source": "artrock",
+            "target": "progressiverock"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "afrofuturism"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "afropop"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "avantgardejazz"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "contemporarypostbop"
+        },
+        {
+            "weight": 17,
+            "source": "artrock",
+            "target": "fourthworld"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "freejazz"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "jazz"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "jazzfunk"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "spiritualjazz"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "world"
+        },
+        {
+            "weight": 22,
+            "source": "artrock",
+            "target": "synthpop"
+        },
+        {
+            "weight": 22,
+            "source": "artrock",
+            "target": "experimentalrock"
+        },
+        {
+            "weight": 7,
+            "source": "artrock",
+            "target": "krautrock"
+        },
+        {
+            "weight": 62,
+            "source": "artrock",
+            "target": "psychedelicrock"
+        },
+        {
+            "weight": 11,
+            "source": "artrock",
+            "target": "spacerock"
+        },
+        {
+            "weight": 42,
+            "source": "artrock",
+            "target": "bluesrock"
+        },
+        {
+            "weight": 12,
+            "source": "artrock",
+            "target": "ambient"
+        },
+        {
+            "weight": 27,
+            "source": "artrock",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "cello"
+        },
+        {
+            "weight": 21,
+            "source": "artrock",
+            "target": "freakfolk"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "minimalism"
+        },
+        {
+            "weight": 47,
+            "source": "artrock",
+            "target": "hardrock"
+        },
+        {
+            "weight": 13,
+            "source": "artrock",
+            "target": "heartlandrock"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "southernrock"
+        },
+        {
+            "weight": 17,
+            "source": "artrock",
+            "target": "britishblues"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "germanrock"
+        },
+        {
+            "weight": 20,
+            "source": "artrock",
+            "target": "melancholia"
+        },
+        {
+            "weight": 7,
+            "source": "artrock",
+            "target": "scottishnewwave"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "classiccanadianrock"
+        },
+        {
+            "weight": 38,
+            "source": "artrock",
+            "target": "rootsrock"
+        },
+        {
+            "weight": 14,
+            "source": "artrock",
+            "target": "beatlesque"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "bubblegumpop"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "janglepop"
+        },
+        {
+            "weight": 18,
+            "source": "artrock",
+            "target": "powerpop"
+        },
+        {
+            "weight": 19,
+            "source": "artrock",
+            "target": "pubrock"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "baroquepop"
+        },
+        {
+            "weight": 10,
+            "source": "artrock",
+            "target": "gbvfi"
+        },
+        {
+            "weight": 26,
+            "source": "artrock",
+            "target": "jazzfusion"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "rockdrums"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "alternativecountry"
+        },
+        {
+            "weight": 10,
+            "source": "artrock",
+            "target": "antifolk"
+        },
+        {
+            "weight": 6,
+            "source": "artrock",
+            "target": "chamberpop"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "indiefolk"
+        },
+        {
+            "weight": 10,
+            "source": "artrock",
+            "target": "electricblues"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "supergroup"
+        },
+        {
+            "weight": 6,
+            "source": "artrock",
+            "target": "jazzrock"
+        },
+        {
+            "weight": 3,
+            "source": "artrock",
+            "target": "metal"
+        },
+        {
+            "weight": 16,
+            "source": "artrock",
+            "target": "singersongwriter"
+        },
+        {
+            "weight": 12,
+            "source": "artrock",
+            "target": "compositionalambient"
+        },
+        {
+            "weight": 3,
+            "source": "artrock",
+            "target": "experimentalambient"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "hardcorepunk"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "madchester"
+        },
+        {
+            "weight": 12,
+            "source": "artrock",
+            "target": "punk"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "ska"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "outsider"
+        },
+        {
+            "weight": 15,
+            "source": "artrock",
+            "target": "protopunk"
+        },
+        {
+            "weight": 21,
+            "source": "artrock",
+            "target": "zolo"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "garagepsych"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "glammetal"
+        },
+        {
+            "weight": 8,
+            "source": "artrock",
+            "target": "drone"
+        },
+        {
+            "weight": 9,
+            "source": "artrock",
+            "target": "industrial"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "dreampop"
+        },
+        {
+            "weight": 3,
+            "source": "artrock",
+            "target": "etherealwave"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "scottishindie"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "shoegaze"
+        },
+        {
+            "weight": 29,
+            "source": "artrock",
+            "target": "permanentwave"
+        },
+        {
+            "weight": 9,
+            "source": "artrock",
+            "target": "artpunk"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "ambientpop"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "blues"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "bowpop"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "instrumentalrock"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "hinrg"
+        },
+        {
+            "weight": 6,
+            "source": "artrock",
+            "target": "indiepop"
+        },
+        {
+            "weight": 12,
+            "source": "artrock",
+            "target": "lofi"
+        },
+        {
+            "weight": 8,
+            "source": "artrock",
+            "target": "noisepop"
+        },
+        {
+            "weight": 3,
+            "source": "artrock",
+            "target": "nugaze"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "slowcore"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "funkrock"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "disco"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "electronica"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "alternativepop"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "modernpowerpop"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "americancontemporaryclassical"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "brillbuildingpop"
+        },
+        {
+            "weight": 8,
+            "source": "artrock",
+            "target": "traditionalfolk"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "acidrock"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "funkmetal"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "grunge"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "frenchjazz"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "jazzviolin"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "laboratorio"
+        },
+        {
+            "weight": 6,
+            "source": "artrock",
+            "target": "britishfolk"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "psychedelicfolk"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "newage"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "avantgarde"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "freeimprovisation"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "jazztrumpet"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "microhouse"
+        },
+        {
+            "weight": 3,
+            "source": "artrock",
+            "target": "pianorock"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "rockkeyboard"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "electro"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "prototechno"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "outsiderhouse"
+        },
+        {
+            "weight": 5,
+            "source": "artrock",
+            "target": "experimentalpop"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "experimentalvocal"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "britfunk"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "postdisco"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "australianrock"
+        },
+        {
+            "weight": 10,
+            "source": "artrock",
+            "target": "britishinvasion"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "alternativedance"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "chillwave"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "escaperoom"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "hauntology"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "intelligentdancemusic"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "c86"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "scottishrock"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "industrialrock"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "punkblues"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "progressivemetal"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "acidhouse"
+        },
+        {
+            "weight": 3,
+            "source": "artrock",
+            "target": "britishexperimental"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "britishindustrial"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "ukamericana"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "modernblues"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "canadianmetal"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "gothicrock"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "mathrock"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "postrock"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "freakbeat"
+        },
+        {
+            "weight": 4,
+            "source": "artrock",
+            "target": "merseybeat"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "stompandholler"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "modernalternativerock"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "noiserock"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "britpop"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "indietronica"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "neopsychedelic"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "cosmicamerican"
+        },
+        {
+            "weight": 2,
+            "source": "artrock",
+            "target": "indiegaragerock"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "rockandroll"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "metropopolis"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "tapeclub"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "olympiawaindie"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "classicgaragerock"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "icelandicpop"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "celticrock"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "darkwave"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "steampunk"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "phillysoul"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "jamband"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "neuedeutschewelle"
+        },
+        {
+            "weight": 1,
+            "source": "artrock",
+            "target": "bebop"
+        },
+        {
             "weight": 235,
             "source": "classicrock",
             "target": "rock"
+        },
+        {
+            "weight": 1,
+            "source": "classicrock",
+            "target": "artpop"
         },
         {
             "weight": 19,
@@ -7729,6 +11134,11 @@
             "weight": 128,
             "source": "folkrock",
             "target": "rock"
+        },
+        {
+            "weight": 2,
+            "source": "folkrock",
+            "target": "artpop"
         },
         {
             "weight": 23,
@@ -8689,6 +12099,1376 @@
             "weight": 1,
             "source": "rock",
             "target": "popemo"
+        },
+        {
+            "weight": 1,
+            "source": "softrock",
+            "target": "artpop"
+        },
+        {
+            "weight": 12,
+            "source": "experimental",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "experimental",
+            "target": "indiepop"
+        },
+        {
+            "weight": 2,
+            "source": "psychedelicrock",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "electro",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "bowpop",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "cello",
+            "target": "artpop"
+        },
+        {
+            "weight": 10,
+            "source": "popdance",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "popdance",
+            "target": "indiepop"
+        },
+        {
+            "weight": 2,
+            "source": "countryrock",
+            "target": "artpop"
+        },
+        {
+            "weight": 38,
+            "source": "electropop",
+            "target": "artpop"
+        },
+        {
+            "weight": 29,
+            "source": "electropop",
+            "target": "indiepop"
+        },
+        {
+            "weight": 2,
+            "source": "tropicalhouse",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "tropicalhouse",
+            "target": "artpop"
+        },
+        {
+            "weight": 4,
+            "source": "postteenpop",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "postteenpop",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "darkwave",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "gothicrock",
+            "target": "artpop"
+        },
+        {
+            "weight": 17,
+            "source": "canadianindie",
+            "target": "indiepop"
+        },
+        {
+            "weight": 2,
+            "source": "canadianrock",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "riotgrrrl",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "riotgrrrl",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "neosoul",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "bigbeat",
+            "target": "artpop"
+        },
+        {
+            "weight": 23,
+            "source": "electronica",
+            "target": "artpop"
+        },
+        {
+            "weight": 3,
+            "source": "electronica",
+            "target": "indiepop"
+        },
+        {
+            "weight": 5,
+            "source": "intelligentdancemusic",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "techno",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "pubrock",
+            "target": "artpop"
+        },
+        {
+            "weight": 24,
+            "source": "chamberpsych",
+            "target": "artpop"
+        },
+        {
+            "weight": 4,
+            "source": "chamberpsych",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "postpunk",
+            "target": "indiepop"
+        },
+        {
+            "weight": 3,
+            "source": "postpunk",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "sophistipop",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "ukpostpunk",
+            "target": "indiepop"
+        },
+        {
+            "weight": 4,
+            "source": "ukpostpunk",
+            "target": "artpop"
+        },
+        {
+            "weight": 3,
+            "source": "acousticpop",
+            "target": "indiepop"
+        },
+        {
+            "weight": 3,
+            "source": "neomellow",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "synthpop",
+            "target": "artpop"
+        },
+        {
+            "weight": 4,
+            "source": "indiecoustica",
+            "target": "indiepop"
+        },
+        {
+            "weight": 7,
+            "source": "pianorock",
+            "target": "indiepop"
+        },
+        {
+            "weight": 4,
+            "source": "pianorock",
+            "target": "artpop"
+        },
+        {
+            "weight": 4,
+            "source": "indiepoptimism",
+            "target": "artpop"
+        },
+        {
+            "weight": 55,
+            "source": "indiepoptimism",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "funk",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "funk",
+            "target": "indiepop"
+        },
+        {
+            "weight": 20,
+            "source": "escaperoom",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "escaperoom",
+            "target": "indiepop"
+        },
+        {
+            "weight": 10,
+            "source": "ambient",
+            "target": "artpop"
+        },
+        {
+            "weight": 8,
+            "source": "compositionalambient",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "drift",
+            "target": "artpop"
+        },
+        {
+            "weight": 9,
+            "source": "drone",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "postrock",
+            "target": "artpop"
+        },
+        {
+            "weight": 14,
+            "source": "dreampop",
+            "target": "artpop"
+        },
+        {
+            "weight": 7,
+            "source": "dreampop",
+            "target": "indiepop"
+        },
+        {
+            "weight": 7,
+            "source": "shoegaze",
+            "target": "indiepop"
+        },
+        {
+            "weight": 10,
+            "source": "shoegaze",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "swedishpop",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "emo",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "emo",
+            "target": "indiepop"
+        },
+        {
+            "weight": 23,
+            "source": "antifolk",
+            "target": "indiepop"
+        },
+        {
+            "weight": 8,
+            "source": "antifolk",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "folkpunk",
+            "target": "artpop"
+        },
+        {
+            "weight": 1,
+            "source": "folkpunk",
+            "target": "indiepop"
+        },
+        {
+            "weight": 3,
+            "source": "lapop",
+            "target": "artpop"
+        },
+        {
+            "weight": 2,
+            "source": "lapop",
+            "target": "indiepop"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "norwegianpop"
+        },
+        {
+            "weight": 15,
+            "source": "artpop",
+            "target": "chamberpop"
+        },
+        {
+            "weight": 46,
+            "source": "artpop",
+            "target": "freakfolk"
+        },
+        {
+            "weight": 24,
+            "source": "artpop",
+            "target": "indiefolk"
+        },
+        {
+            "weight": 42,
+            "source": "artpop",
+            "target": "indiepop"
+        },
+        {
+            "weight": 4,
+            "source": "artpop",
+            "target": "smallroom"
+        },
+        {
+            "weight": 14,
+            "source": "artpop",
+            "target": "stompandholler"
+        },
+        {
+            "weight": 7,
+            "source": "artpop",
+            "target": "bubblegrunge"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "indiegaragerock"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "lofiindie"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "phillyindie"
+        },
+        {
+            "weight": 4,
+            "source": "artpop",
+            "target": "canadianelectropop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "canadianpop"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "indieelectropop"
+        },
+        {
+            "weight": 16,
+            "source": "artpop",
+            "target": "metropopolis"
+        },
+        {
+            "weight": 7,
+            "source": "artpop",
+            "target": "vaporsoul"
+        },
+        {
+            "weight": 8,
+            "source": "artpop",
+            "target": "baroquepop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "chicagoindie"
+        },
+        {
+            "weight": 17,
+            "source": "artpop",
+            "target": "melancholia"
+        },
+        {
+            "weight": 23,
+            "source": "artpop",
+            "target": "alternativedance"
+        },
+        {
+            "weight": 28,
+            "source": "artpop",
+            "target": "chillwave"
+        },
+        {
+            "weight": 15,
+            "source": "artpop",
+            "target": "experimentalpop"
+        },
+        {
+            "weight": 19,
+            "source": "artpop",
+            "target": "newrave"
+        },
+        {
+            "weight": 9,
+            "source": "artpop",
+            "target": "noisepop"
+        },
+        {
+            "weight": 15,
+            "source": "artpop",
+            "target": "nugaze"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "afrofuturism"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "laindie"
+        },
+        {
+            "weight": 4,
+            "source": "artpop",
+            "target": "neopsychedelic"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "newweirdamerica"
+        },
+        {
+            "weight": 13,
+            "source": "artpop",
+            "target": "fourthworld"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "minimalism"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "atlantaindie"
+        },
+        {
+            "weight": 4,
+            "source": "artpop",
+            "target": "garagepsych"
+        },
+        {
+            "weight": 5,
+            "source": "artpop",
+            "target": "moderndreampop"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "abstract"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "bassmusic"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "drillandbass"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "glitch"
+        },
+        {
+            "weight": 6,
+            "source": "artpop",
+            "target": "microhouse"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "ninja"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "outsiderhouse"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "ukexperimentalelectronic"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "etherpop"
+        },
+        {
+            "weight": 9,
+            "source": "artpop",
+            "target": "neosynthpop"
+        },
+        {
+            "weight": 14,
+            "source": "artpop",
+            "target": "indietronica"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "wonky"
+        },
+        {
+            "weight": 8,
+            "source": "artpop",
+            "target": "brooklynindie"
+        },
+        {
+            "weight": 4,
+            "source": "artpop",
+            "target": "alternativecountry"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "experimentalvocal"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "icelandicpop"
+        },
+        {
+            "weight": 10,
+            "source": "artpop",
+            "target": "permanentwave"
+        },
+        {
+            "weight": 8,
+            "source": "artpop",
+            "target": "triphop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "modernfolkrock"
+        },
+        {
+            "weight": 11,
+            "source": "artpop",
+            "target": "singersongwriter"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "slowcore"
+        },
+        {
+            "weight": 12,
+            "source": "artpop",
+            "target": "shimmerpop"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "candypop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "ukpop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "folktronica"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "etherealwave"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "scottishindie"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "indiesurf"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "artpunk"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "ambientpop"
+        },
+        {
+            "weight": 4,
+            "source": "artpop",
+            "target": "experimentalrock"
+        },
+        {
+            "weight": 7,
+            "source": "artpop",
+            "target": "lofi"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "modernalternativerock"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "noiserock"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "shiverpop"
+        },
+        {
+            "weight": 5,
+            "source": "artpop",
+            "target": "swedishelectropop"
+        },
+        {
+            "weight": 3,
+            "source": "artpop",
+            "target": "swedishsynthpop"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "gbvfi"
+        },
+        {
+            "weight": 4,
+            "source": "artpop",
+            "target": "gravewave"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "electra"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "experimentalambient"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "portlandindie"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "americancontemporaryclassical"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "alternativeemo"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "indiepunk"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "britishsoul"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "rootsrock"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "traditionalfolk"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "avantgarde"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "freeimprovisation"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "freejazz"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "jazztrumpet"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "ambientfolk"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "electroclash"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "britishfolk"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "britishsingersongwriter"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "laboratorio"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "downtempo"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "gothenburgindie"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "nzpop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "swedishindiepop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "soul"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "hauntology"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "britpop"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "newjerseyindie"
+        },
+        {
+            "weight": 2,
+            "source": "artpop",
+            "target": "alternativepop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "olympiawaindie"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "minimaltechno"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "gauzepop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "vaporpop"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "tapeclub"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "cosmicamerican"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "psychedelicfolk"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "ectofolk"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "nujazz"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "athensindie"
+        },
+        {
+            "weight": 1,
+            "source": "artpop",
+            "target": "e6fi"
+        },
+        {
+            "weight": 29,
+            "source": "laindie",
+            "target": "indiepop"
+        },
+        {
+            "weight": 64,
+            "source": "modernalternativerock",
+            "target": "indiepop"
+        },
+        {
+            "weight": 2,
+            "source": "outlawcountry",
+            "target": "indiepop"
+        },
+        {
+            "weight": 15,
+            "source": "vaporsoul",
+            "target": "indiepop"
+        },
+        {
+            "weight": 1,
+            "source": "dreamo",
+            "target": "indiepop"
+        },
+        {
+            "weight": 35,
+            "source": "chillwave",
+            "target": "indiepop"
+        },
+        {
+            "weight": 20,
+            "source": "metropopolis",
+            "target": "indiepop"
+        },
+        {
+            "weight": 50,
+            "source": "shimmerpop",
+            "target": "indiepop"
+        },
+        {
+            "weight": 5,
+            "source": "permanentwave",
+            "target": "indiepop"
+        },
+        {
+            "weight": 6,
+            "source": "alternativecountry",
+            "target": "indiepop"
+        },
+        {
+            "weight": 3,
+            "source": "rootsrock",
+            "target": "indiepop"
+        },
+        {
+            "weight": 2,
+            "source": "indieanthemfolk",
+            "target": "indiepop"
+        },
+        {
+            "weight": 10,
+            "source": "indiecafepop",
+            "target": "indiepop"
+        },
+        {
+            "weight": 5,
+            "source": "indiepop",
+            "target": "newjerseyindie"
+        },
+        {
+            "weight": 16,
+            "source": "indiepop",
+            "target": "chamberpop"
+        },
+        {
+            "weight": 49,
+            "source": "indiepop",
+            "target": "freakfolk"
+        },
+        {
+            "weight": 55,
+            "source": "indiepop",
+            "target": "indiefolk"
+        },
+        {
+            "weight": 4,
+            "source": "indiepop",
+            "target": "smallroom"
+        },
+        {
+            "weight": 83,
+            "source": "indiepop",
+            "target": "stompandholler"
+        },
+        {
+            "weight": 15,
+            "source": "indiepop",
+            "target": "bubblegrunge"
+        },
+        {
+            "weight": 24,
+            "source": "indiepop",
+            "target": "indiegaragerock"
+        },
+        {
+            "weight": 4,
+            "source": "indiepop",
+            "target": "lofiindie"
+        },
+        {
+            "weight": 7,
+            "source": "indiepop",
+            "target": "phillyindie"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "torontoindie"
+        },
+        {
+            "weight": 13,
+            "source": "indiepop",
+            "target": "baroquepop"
+        },
+        {
+            "weight": 7,
+            "source": "indiepop",
+            "target": "chicagoindie"
+        },
+        {
+            "weight": 11,
+            "source": "indiepop",
+            "target": "melancholia"
+        },
+        {
+            "weight": 7,
+            "source": "indiepop",
+            "target": "hopebeat"
+        },
+        {
+            "weight": 34,
+            "source": "indiepop",
+            "target": "alternativedance"
+        },
+        {
+            "weight": 7,
+            "source": "indiepop",
+            "target": "experimentalpop"
+        },
+        {
+            "weight": 24,
+            "source": "indiepop",
+            "target": "newrave"
+        },
+        {
+            "weight": 11,
+            "source": "indiepop",
+            "target": "noisepop"
+        },
+        {
+            "weight": 20,
+            "source": "indiepop",
+            "target": "nugaze"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "vaporpop"
+        },
+        {
+            "weight": 6,
+            "source": "indiepop",
+            "target": "neopsychedelic"
+        },
+        {
+            "weight": 4,
+            "source": "indiepop",
+            "target": "newweirdamerica"
+        },
+        {
+            "weight": 32,
+            "source": "indiepop",
+            "target": "indietronica"
+        },
+        {
+            "weight": 13,
+            "source": "indiepop",
+            "target": "newamericana"
+        },
+        {
+            "weight": 17,
+            "source": "indiepop",
+            "target": "brooklynindie"
+        },
+        {
+            "weight": 12,
+            "source": "indiepop",
+            "target": "indiesurf"
+        },
+        {
+            "weight": 6,
+            "source": "indiepop",
+            "target": "moderndreampop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "c86"
+        },
+        {
+            "weight": 4,
+            "source": "indiepop",
+            "target": "e6fi"
+        },
+        {
+            "weight": 3,
+            "source": "indiepop",
+            "target": "gbvfi"
+        },
+        {
+            "weight": 15,
+            "source": "indiepop",
+            "target": "lofi"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "olympiawaindie"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "tapeclub"
+        },
+        {
+            "weight": 3,
+            "source": "indiepop",
+            "target": "tweepop"
+        },
+        {
+            "weight": 3,
+            "source": "indiepop",
+            "target": "scottishindie"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "scottishrock"
+        },
+        {
+            "weight": 4,
+            "source": "indiepop",
+            "target": "portlandindie"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "australianpop"
+        },
+        {
+            "weight": 3,
+            "source": "indiepop",
+            "target": "etherpop"
+        },
+        {
+            "weight": 3,
+            "source": "indiepop",
+            "target": "indieelectropop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "nzpop"
+        },
+        {
+            "weight": 3,
+            "source": "indiepop",
+            "target": "alternativepop"
+        },
+        {
+            "weight": 3,
+            "source": "indiepop",
+            "target": "garagepsych"
+        },
+        {
+            "weight": 7,
+            "source": "indiepop",
+            "target": "neosynthpop"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "singersongwriter"
+        },
+        {
+            "weight": 16,
+            "source": "indiepop",
+            "target": "bedroompop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "australiandance"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "australianelectropop"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "electronicrock"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "filterhouse"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "nudisco"
+        },
+        {
+            "weight": 4,
+            "source": "indiepop",
+            "target": "bayareaindie"
+        },
+        {
+            "weight": 5,
+            "source": "indiepop",
+            "target": "austindie"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "atlantaindie"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "experimentalrock"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "noiserock"
+        },
+        {
+            "weight": 3,
+            "source": "indiepop",
+            "target": "deepnewamericana"
+        },
+        {
+            "weight": 5,
+            "source": "indiepop",
+            "target": "modernfolkrock"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "canadianpop"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "lofiemo"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "slowcore"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "indiepunk"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "swedishalternativerock"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "modernpowerpop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "powerpop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "alternativeemo"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "gothenburgindie"
+        },
+        {
+            "weight": 4,
+            "source": "indiepop",
+            "target": "swedishindiepop"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "ambientfolk"
+        },
+        {
+            "weight": 6,
+            "source": "indiepop",
+            "target": "nycpop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "welshrock"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "shiverpop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "swedishelectropop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "swedishsynthpop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "northcarolinaroots"
+        },
+        {
+            "weight": 4,
+            "source": "indiepop",
+            "target": "folkpop"
+        },
+        {
+            "weight": 3,
+            "source": "indiepop",
+            "target": "athensindie"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "canadiansingersongwriter"
+        },
+        {
+            "weight": 2,
+            "source": "indiepop",
+            "target": "traditionalfolk"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "ukpop"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "kiwirock"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "ukamericana"
+        },
+        {
+            "weight": 1,
+            "source": "indiepop",
+            "target": "garagerock"
         }
     ]
 }
