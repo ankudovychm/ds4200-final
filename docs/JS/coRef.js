@@ -97,7 +97,7 @@ function graph(filepath) {
             // Build elements.
             svg.append('g').attr('class', 'links'); // links
             svg.append('g').attr('class', 'nodes'); // nodes
-            svg.append('g').attr('class', 'labels').style('display', 'none'); // labels
+            svg.append('g').attr('class', 'labels'); // labels
 
 // Build tooltip.
 const tooltip = d3.select('.network')
@@ -164,6 +164,13 @@ const toolBody = tooltip
                     .distanceMax(1000)
                 )
                 .force("center", d3.forceCenter(width / 2, height / 2))
+                .force("gravity", d3.forceManyBody()
+                    .strength()
+                )
+                .force("collision", d3.forceCollide()
+                    .radius(d => d.r * 2)
+                )
+                .force('center', d3.forceCenter(width / 2, height / 2));
 
 
             // Add nodes, links, & labels to simulation and tell them to move in unison with each tick.
@@ -192,7 +199,7 @@ const toolBody = tooltip
                         .attr("cy", d => d.y);
 
                     // Check if the nodes have essentially stopped moving
-                    const minVelocityThreshold = 0.0005; // Define a very small velocity threshold
+                    const minVelocityThreshold = 0.005; // Define a very small velocity threshold
                     let isStable = true;  // Flag to track if all nodes are stable
 
                     window.simulation.nodes().forEach((d) => {
@@ -203,11 +210,6 @@ const toolBody = tooltip
 
                     if (isStable) {
                         window.simulation.stop(); // Stop the simulation when all nodes have minimal velocity
-                        // Re-apply label logic to update text and sizing based on node degree
-                        label
-                            .text(d => { return d.degree > 75 ? d.name : ''; })
-                            .attr('font-size', d => fontSizeScale(d.degree));
-                        d3.select('.labels').style('display', 'block');
                     }
                 }
 
@@ -265,8 +267,8 @@ const toolBody = tooltip
                         .attr('id', d => d.id.toLowerCase())
 
                         // Sets coordinates of center of node
-                        .attr("cx", width / 2)
-                        .attr("cy", height / 2)
+                        .attr("cx", d => d.x)
+                        .attr("cy", d => d.y)
 
                         // Sets size and color
                         .attr('r', (d) => nodeScale(d.degree))
@@ -286,11 +288,11 @@ const toolBody = tooltip
                         .attr('class', 'label')
                         .attr('pointer-events', 'none')
                         // Label is shown if degree over 3.0, and it is scaled based off degree
-                        .text(d => { if (d.degree > 75) { return d.name } else { return '' } })
+                        .text(d => { if (d.degree > 100) { return d.name } else { return '' } })
                         .attr('font-size', d => fontSizeScale(d.degree)),
 
                     update => update // If text is updated, handled the same way
-                        .text(d => { if (d.degree > 75) { return d.name } else { return '' } })
+                        .text(d => { if (d.degree > 100) { return d.name } else { return '' } })
                         .attr('font-size', d => fontSizeScale(d.degree)),
 
                     exit => exit.transition().remove() // transition out
@@ -447,14 +449,10 @@ node.on('mousemove', function (event) {
                         return NewNodes.includes(o.__proto__.id) ? "visible" : "hidden";
                     });
 
-                // Then, only display on the remaining if degree is above 3, but only if simulation has stopped
-                if (window.simulationStopped) {
-                    label
-                        .text(d => { if (d.degree > 75.0) { return d.name } else { return '' } })
-                        .attr('display', 'block');
-                } else {
-                    label.attr('display', 'none');
-                }
+                // Then, only display on the remaining if degree is above 3
+                label
+                    .text(d => { if (d.degree > 75.0) { return d.name } else { return '' } })
+                    .attr('display', 'block');
 
                 // filtered nodes have their visibility set to none, so this only affects important ones
                 node.style('opacity', 1);
