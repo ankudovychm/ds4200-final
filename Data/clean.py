@@ -63,6 +63,7 @@ data_folder = os.path.join(os.path.dirname(__file__))
 # List all CSV files in the Data folder
 files = [f for f in os.listdir(data_folder) if f.endswith(".csv")]
 
+"""
 for i in files:
     print(i)
     check_full(i)
@@ -80,4 +81,9 @@ print(near_duplicates_df)
 print("")
 print("Songs Released in different years")
 print(find_year_differences(df))
+"""
 
+df = pd.read_csv("data.csv")
+print(len(df["name"]), "songs")
+
+print(len(df["name"]), "songs")
