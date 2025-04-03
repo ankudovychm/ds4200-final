@@ -81,7 +81,7 @@ artist_chart = alt.Chart(artist_stats).mark_bar().encode(
     rank='rank(count)',
     sort=[alt.SortField('count', order='descending')]
 ).transform_filter(alt.datum.rank <= selection_count
-                   ).properties(width=400, height=300, title="Top Artists by Number of Songs Produced")
+                   ).properties(width=400, height=300, title="Top Artists by Number of Songs")
 
 # Genre bar chart
 genre_chart = alt.Chart(genre_stats).mark_bar().encode(
