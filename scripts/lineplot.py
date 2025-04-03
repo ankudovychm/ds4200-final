@@ -1,8 +1,9 @@
+
 import pandas as pd
 import altair as alt
 
 # Load data
-df = pd.read_csv('../data/data.csv')
+df = pd.read_csv('data.csv')
 
 # Create 'decade' column
 df['decade'] = (df['year'] // 10) * 10
@@ -18,34 +19,23 @@ agg_df = df.groupby('decade').agg({
     'valence': 'mean'
 }).reset_index()
 
-# Rename columns for clarity
-agg_df.rename(columns={
-    'danceability': 'danceability_mean',
-    'energy': 'energy_mean',
-    'instrumentalness': 'instrumentalness_mean',
-    'liveness': 'liveness_mean',
-    'speechiness': 'speechiness_mean',
-    'acousticness': 'acousticness_mean',
-    'valence': 'valence_mean'
-}, inplace=True)
-
-# Filter for the desired features
-selected_features = ['danceability_mean', 'energy_mean', 'instrumentalness_mean', 
-                     'liveness_mean', 'speechiness_mean', 'acousticness_mean', 'valence_mean']
-
 # Melt the dataframe
-df_melted = agg_df.melt(id_vars='decade', value_vars=selected_features, 
-                         var_name='feature', value_name='mean')
+df_melted = agg_df.melt(id_vars='decade', value_vars=agg_df.columns[1:], 
+                       var_name='feature', value_name='mean')
 
-# Create multi-selection
-selection = alt.selection_point(
+# Multi-selection for features
+feature_selection = alt.selection_point(
     fields=['feature'],
     bind='legend',
-    toggle=True  # Allow multi-selection
+    toggle=True
 )
 
-# Create the Altair chart
-chart = alt.Chart(df_melted).mark_line(point=True).encode(
+# Toggle for regression lines
+regression_toggle = alt.binding_checkbox(name='Show Regression Lines')
+regression_selection = alt.param(value=False, bind=regression_toggle)
+
+# Base line chart
+line_chart = alt.Chart(df_melted).mark_line(point=True).encode(
     x=alt.X('decade:O', title='Decade', axis=alt.Axis(labelAngle=-45)),
     y=alt.Y('mean:Q', title='Feature Value', scale=alt.Scale(domain=[0, 1])),
     color=alt.Color('feature:N', 
@@ -53,20 +43,36 @@ chart = alt.Chart(df_melted).mark_line(point=True).encode(
                         title="Feature", 
                         labelExpr="replace(datum.label, '_mean', '')"
                     )),
-    opacity=alt.condition(selection, alt.value(1), alt.value(0.1)),
+    opacity=alt.condition(feature_selection, alt.value(1), alt.value(0.1)),
     tooltip=[
         alt.Tooltip('decade:O', title='Decade'),
         alt.Tooltip('feature:N', title='Feature'),
         alt.Tooltip('mean:Q', title='Mean', format='.3f')
     ]
-).properties(
-    width='container',
-    height=450,
-    title='Average Song Characteristics Over Decades'
-).add_params(
-    selection
-)
-chart.autosize = {"type": "fit", "contains": "padding"}
+).add_params(feature_selection)
 
-# Save the chart to an HTML file
-chart.save('../docs/ChartFiles/line.html')
+# Regression lines with toggle visibility
+regression_chart = alt.Chart(df_melted).transform_regression(
+    'decade', 'mean', groupby=['feature']
+).mark_line(strokeDash=[5, 3]).encode(
+    x=alt.X('decade:O'),
+    y=alt.Y('mean:Q'),
+    color=alt.Color('feature:N'),
+    opacity=alt.condition(
+        feature_selection & regression_selection,
+        alt.value(1), 
+        alt.value(0)
+    )
+)
+
+# Combine charts
+final_chart = (line_chart + regression_chart).add_params(
+    regression_selection
+).properties(
+    width=700,
+    height=450,
+    title='Average Song Characteristics Over Decades with Regression Lines'
+)
+
+# Save the chart
+final_chart.save('chart_with_regression.html')
