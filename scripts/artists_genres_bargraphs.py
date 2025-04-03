@@ -2,7 +2,6 @@ import pandas as pd
 import altair as alt
 import ast
 
-# Read the data
 data1 = pd.read_csv('data.csv')
 data2 = pd.read_csv('data_w_genres.csv')
 
@@ -17,48 +16,45 @@ data2_exploded = data2_exploded.dropna(subset=['genres'])
 df = pd.merge(data1_exploded, data2_exploded, left_on='artists', right_on='artists', how='inner')
 
 def map_genre(genre):
-    genre = str(genre).lower()  # Force genre to be a string and convert to lowercase
-    # Check for specific keywords and map to the standardized genre name
-    if 'pop' in genre:
-        return 'pop'
-    elif 'rap' in genre:
-        return 'rap'
-    elif 'hip-hop' in genre or 'hip hop' in genre or 'hiphop' in genre:
-        return 'hip-hop'
-    elif 'rock' in genre:
-        return 'rock'
-    elif 'country' in genre:
-        return 'country'
-    elif 'electronic' in genre:
-        return 'electronic'
-    elif 'r&b' in genre or 'rnb' in genre:
-        return 'r&b'
-    elif 'jazz' in genre:
-        return 'jazz'
-    elif 'classical' in genre:
-        return 'classical'
-    elif 'reggae' in genre:
-        return 'reggae'
-    elif 'metal' in genre:
-        return 'metal'
-    elif 'tango' in genre:
-        return 'tango'
-    else:
-        return genre  # If none of the above, return the genre as is
+    genre = str(genre).lower()  
+    genre_mapping = {
+        "pop": "pop",
+        "rap": "rap",
+        "hip-hop": "hip-hop",
+        "hip hop": "hip-hop",
+        "hiphop": "hip-hop",
+        "rock": "rock",
+        "country": "country",
+        "electronic": "electronic",
+        "r&b": "r&b",
+        "rnb": "r&b",
+        "jazz": "jazz",
+        "classical": "classical",
+        "reggae": "reggae",
+        "metal": "metal",
+        "tango": "tango",
+        "contemporary": "contemporary",
+        "tropical": "tropical"
+    }
 
-# Apply genre mapping with the updated function
+    for key in genre_mapping:
+        if key in genre:
+            return genre_mapping[key]
+
+    # Return the original genre if no match
+    return genre
+
 df['genres_mapped'] = df['genres'].apply(map_genre)
 
-# Convert year to decade
 df['decade'] = (df['year'] // 10) * 10
 
-# Group data for artists and genres
+# Group data for artists
 artist_stats = df.groupby(['decade', 'artists']).agg(
     count=('artists', 'size'),  
     avg_popularity=('popularity_x', 'mean')  
 ).reset_index()
 
-# Group data for genres (using genres_mapped)
+# Group data for genres 
 genre_stats = df.explode('genres_mapped').groupby(['decade', 'genres_mapped']).agg(
     count=('genres_mapped', 'size'),
     avg_popularity=('popularity_x', 'mean')
@@ -81,7 +77,7 @@ artist_chart = alt.Chart(artist_stats).mark_bar().encode(
     rank='rank(count)',
     sort=[alt.SortField('count', order='descending')]
 ).transform_filter(alt.datum.rank <= selection_count
-                   ).properties(width=400, height=300, title="Top Artists by Number of Songs")
+                   ).properties(width=600, height=300, title="Top Artists by Number of Songs")
 
 # Genre bar chart
 genre_chart = alt.Chart(genre_stats).mark_bar().encode(
@@ -93,8 +89,8 @@ genre_chart = alt.Chart(genre_stats).mark_bar().encode(
     rank='rank(count)',
     sort=[alt.SortField('count', order='descending')]
 ).transform_filter(alt.datum.rank <= selection_count
-                   ).properties(width=400, height=300, title="Top Genres by Number of Songs")
-# Combine charts with sliders below
+                   ).properties(width=600, height=300, title="Top Genres by Number of Songs")
+
 final_chart = alt.vconcat(
     artist_chart,
     genre_chart
@@ -102,5 +98,6 @@ final_chart = alt.vconcat(
     selection_decade,
     selection_count)
 
-# Display the chart
+final_chart.autosize = {"type": "fit", "contains": "padding"}
+
 final_chart.save('artist_genre_bargraphs.html')
