@@ -481,6 +481,15 @@ node.on('mousemove', function (event) {
 
             resolve();
 
+            // Once everything is loaded, simulate user input on the slider:
+setTimeout(function () {
+  const degMinSlider = document.getElementById('deg-minrange');
+  if (degMinSlider) {
+    degMinSlider.value = 150;
+    degMinSlider.dispatchEvent(new Event('input', { bubbles: true }));
+    degMinSlider.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+}, .1);
         });
     });
 

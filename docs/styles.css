@@ -125,6 +125,9 @@ h3 {
 .main{
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .textbox{
@@ -136,6 +139,14 @@ h3 {
     font-size: 1.125rem;
     line-height: 1.6;
     letter-spacing: 0.5px;
+
+}
+
+.textbox .vis {
+    display: inline-block;
+    width: 48%;
+    margin: 1%;
+    vertical-align: top;
 }
 
 #vis{
@@ -385,4 +396,48 @@ g.network-labels>text.label {
     background: #fff;
     border-radius: 50px;
     position: relative;
+}
+
+.attribute-image {
+  border: 2px solid var(--accent-color);
+  border-radius: 6px;
+  margin: 20px 0;
+  max-width: 50%;
+  height: auto;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 300px;
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+input[type=range]::-moz-range-track {
+  background: var(--accent-color);
+  height: 6px;
+  border-radius: 5px;
 }

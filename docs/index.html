@@ -58,6 +58,7 @@ Music is an ever-evolving form of art, mirroring cultural shifts over time. Anal
 
       <br> <br>
     <h2>About the Data</h2>
+
     <div class = "textbox">
         	The dataset is sourced from Spotify’s API (<a href="https://developer.spotify.com/documentation/web-api">documentation here</a>) and published on <a href="https://www.kaggle.com/datasets/vatsalmavani/spotify-dataset/data">Kaggle</a>.  It includes a number of categorical and quantitative data points. In the dataset, there are a number of different views, with data from 1921 to 2020. They include data on specific songs, as well as averaged by genre, year, and artist. The full dataset features this information for over 170,000 songs, and there are 19 total attributes for each. This project will focus mainly on the songs data, which includes data on each song, such as genre, artists, release date and popularity. It also includes ‘vibe’ based metrics about the song, which are defined in detail below. We focused on these attributes of songs that capture aspects that make people like specific songs over others.
 Musical Attributes (<a href="https://developer.spotify.com/documentation/web-api/reference/get-audio-features">more info here</a>):
@@ -76,10 +77,18 @@ All attributes are scored on a scale from 0.0 to 1.0, and determined by the Spot
  <br><br>
         <strong>Instrumentalness -</strong> Predicts whether a track contains no vocals, values above 0.5 having a good likelihood of containing no vocal content. Vocals here refers to words, not sounds such as “ooh” and “aah”.
 
+
          <br><br>
+
+
 
 The data included a massive pull from the Spotify API, with <strong>over 170,000 songs</strong>,made by <strong>almost 29,000
     artists</strong>, seperated into <strong>almsot 3,000 genres.</strong>
+
+         <br><br>
+         Below you will see an example of a few popular songs and the levels of each of their attributes.
+         <br><br>
+                    <img src="ChartFiles/musical_attribute_levels_radar.jpg" alt="Musical Attribute Levels Radar" class="attribute-image" />
 
     </div>
 

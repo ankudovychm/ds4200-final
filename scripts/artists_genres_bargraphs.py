@@ -2,8 +2,8 @@ import pandas as pd
 import altair as alt
 import ast
 
-data1 = pd.read_csv('data.csv')
-data2 = pd.read_csv('data_w_genres.csv')
+data1 = pd.read_csv('../Data/data.csv')
+data2 = pd.read_csv('../Data/data_w_genres.csv')
 
 # Convert string lists to actual lists
 data1['artists'] = data1['artists'].apply(ast.literal_eval)
@@ -71,33 +71,66 @@ selection_count = alt.param(name="top_n", value=5, bind=slider_count)
 artist_chart = alt.Chart(artist_stats).mark_bar().encode(
     x=alt.X('count:Q', title='Number of Songs'),
     y=alt.Y('artists:N', sort='-x', title='Top Artists'),
-    color=alt.Color('avg_popularity:Q', scale=alt.Scale(domain=[0, 100], scheme='redyellowgreen'), title='Popularity'),
+    color=alt.Color(
+        'avg_popularity:Q',
+        scale=alt.Scale(domain=[0, 100], scheme='redyellowgreen'),
+        title='Popularity',
+        legend=alt.Legend(labelLimit=200)
+    ),
     tooltip=['artists', 'count', 'avg_popularity']
 ).transform_filter(selection_decade).transform_window(
     rank='rank(count)',
     sort=[alt.SortField('count', order='descending')]
 ).transform_filter(alt.datum.rank <= selection_count
-                   ).properties(width=600, height=300, title="Top Artists by Number of Songs")
+                   ).properties(width=300, height=250, title="Top Artists by Number of Songs")
 
 # Genre bar chart
 genre_chart = alt.Chart(genre_stats).mark_bar().encode(
     x=alt.X('count:Q', title='Number of Songs'),
     y=alt.Y('genres_mapped:N', sort='-x', title='Top Genres'),
-    color=alt.Color('avg_popularity:Q', scale=alt.Scale(domain=[0, 100], scheme='magma'), title='Popularity'),
+    color=alt.Color(
+        'avg_popularity:Q',
+        scale=alt.Scale(domain=[0, 100], scheme='magma'),
+        title='Popularity',
+        legend=alt.Legend(labelLimit=200)
+    ),
     tooltip=['genres_mapped', 'count', 'avg_popularity']
 ).transform_filter(selection_decade).transform_window(
     rank='rank(count)',
     sort=[alt.SortField('count', order='descending')]
 ).transform_filter(alt.datum.rank <= selection_count
-                   ).properties(width=600, height=300, title="Top Genres by Number of Songs")
+                   ).properties(width=300, height=250, title="Top Genres by Number of Songs")
 
-final_chart = alt.vconcat(
+combined_chart = alt.hconcat(
     artist_chart,
     genre_chart
-).add_params(
+)
+
+sliders = alt.Chart().mark_text().encode().add_params(
     selection_decade,
-    selection_count)
+    selection_count
+).properties(height=50)
 
-final_chart.autosize = {"type": "fit", "contains": "padding"}
+final_chart = alt.vconcat(
+    combined_chart,
+    sliders
+)
 
-final_chart.save('artist_genre_bargraphs.html')
+final_chart = final_chart.configure_concat(
+    spacing=30
+).configure_view(
+    continuousWidth=350,
+    continuousHeight=250,
+    stroke=None
+).configure_axis(
+    labelFontSize=12,
+    titleFontSize=14,
+    labelPadding=30
+).configure_legend(
+    labelLimit=200,
+    titleLimit=100
+).configure(
+    padding={"left": 100, "right": 100}
+)
+
+final_chart.save('../docs/ChartFiles/artist_genre_bargraphs.html')
